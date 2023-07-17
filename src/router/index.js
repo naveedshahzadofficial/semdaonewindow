@@ -1,11 +1,23 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-
+import LoginView from "@/views/LoginView.vue";
+import { LayoutDefault } from "@/layouts";
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    name: "login",
+    component: LoginView,
+  },
+  {
+    path: "/app",
+    name: "app",
+    component: LayoutDefault,
+    children: [
+      {
+        path: "/app/dashboard",
+        name: "dashboard",
+        component: () => import("@/views/DashboardView.vue"),
+      },
+    ],
   },
   {
     path: "/about",
@@ -16,6 +28,8 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  // catch all redirect to home page
+  { path: "/:pathMatch(.*)*", redirect: "/" },
 ];
 
 const router = createRouter({
