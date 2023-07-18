@@ -1,5 +1,7 @@
 <script setup>
-defineProps(["tile"]);
+import { defineProps } from "vue";
+
+defineProps({ tile: { required: true, type: Object } });
 </script>
 <template>
   <div
