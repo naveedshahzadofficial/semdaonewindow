@@ -65,7 +65,7 @@ const tileServices = ref([
     </div>
     <div
       v-show="activeTab === 1"
-      class="border border-gray-400 px-8 py-8 min-h-screen"
+      class="border border-gray-400 px-8 py-8 min-h-[500px]"
     >
       <h2 class="font-semibold py-2">String a Business</h2>
       <p class="font-normal pb-4">
@@ -106,7 +106,7 @@ const tileServices = ref([
 
     <div
       v-show="activeTab === 2"
-      class="border border-gray-400 px-8 py-8 min-h-screen"
+      class="border border-gray-400 px-8 py-8 min-h-[500px]"
     >
       <div class="flex justify-between items-center pt-2">
         <div
@@ -224,19 +224,44 @@ const tileServices = ref([
               <span
                 class="font-medium text-base text-primary-dark group-hover:text-primary-light"
               >
-                Utility Connection s
+                Utility Connections
               </span>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="flex justify-center items-center"></div>
+      <div class="flex justify-center items-center mt-8">
+        <div
+          class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-3xl"
+        >
+          <span class="relative"
+            ><img
+              class="object-cover transition-opacity"
+              src="@/assets/images/construction-permits.png"
+              alt="Business Information Resources"
+            />
+            <img
+              class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+              src="@/assets/images/construction-permits-hover.png"
+              alt="Business Information Resources"
+            />
+          </span>
+          <span
+            class="border-r border-white h-10 mr-4 group-hover:border-primary-light"
+          ></span>
+          <span
+            class="w-44 font-medium text-base text-primary-dark group-hover:text-primary-light"
+          >
+            Business Information Resources
+          </span>
+        </div>
+      </div>
     </div>
 
     <div
       v-show="activeTab === 3"
-      class="border border-gray-400 px-8 py-8 min-h-screen"
+      class="border border-gray-400 px-8 py-8 min-h-[500px]"
     >
       <h2 class="font-semibold py-2">Unregistered Business</h2>
       <p class="font-normal pb-4">
