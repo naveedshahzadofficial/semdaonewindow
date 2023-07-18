@@ -17,6 +17,56 @@ const routes = [
         name: "dashboard",
         component: () => import("@/views/DashboardView.vue"),
       },
+      {
+        path: "/app/sectors",
+        name: "sectors",
+        component: () => import("@/views/SectorView.vue"),
+      },
+      {
+        path: "/app/plan",
+        name: "plan",
+        component: () => import("@/views/PlanView.vue"),
+      },
+      {
+        path: "/app/start",
+        name: "start",
+        component: () => import("@/views/StartView.vue"),
+      },
+      {
+        path: "/app/grow",
+        name: "grow",
+        component: () => import("@/views/GrowView.vue"),
+      },
+      {
+        path: "/app/trading-services",
+        name: "trading-services",
+        component: () => import("@/views/TradingServicesView.vue"),
+      },
+      {
+        path: "/app/sezs-services",
+        name: "sezs-services",
+        component: () => import("@/views/SezsServicesView.vue"),
+      },
+      {
+        path: "/app/industrial-services",
+        name: "industrial-services",
+        component: () => import("@/views/IndustrialServicesView.vue"),
+      },
+      {
+        path: "/app/expansion-diversification",
+        name: "expansion-diversification-services",
+        component: () => import("@/views/ExpansionDiversificationView.vue"),
+      },
+      {
+        path: "/app/construction-permits",
+        name: "construction-permits",
+        component: () => import("@/views/ConstructionPermitsView.vue"),
+      },
+      {
+        path: "/app/utility-connections",
+        name: "utility-connections",
+        component: () => import("@/views/UtilityConnections.vue"),
+      },
     ],
   },
   {
