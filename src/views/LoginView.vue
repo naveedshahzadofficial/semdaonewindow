@@ -35,13 +35,10 @@ async function onSubmit(values) {
     <div
       class="font-poppins font-normal text-primary-dark text-base text-justify px-16"
     >
-      One window system is a one-stop shop where government organizations or
-      departments consolidate their services and information into a single
-      access point or platform. This allows individuals or businesses to submit
-      all necessary documentation, complete required procedures, and obtain
-      relevant permits or licenses through one system. This streamlined approach
-      simplifies the process for users by providing a single interface or
-      location for all their needs.
+      SMEDA one window is a one-stop shop where government organizations or
+      departments have consolidated their services and information. To acquire
+      permits, licenses or relevant information, submit necessary documents,
+      complete required procedures.
     </div>
     <!-- Begin: Login Form -->
     <div class="px-6 py-4 lg:px-8 bg-[#f2f2f2] bg-opacity-40 rounded-xl">
@@ -49,8 +46,7 @@ async function onSubmit(values) {
         <h2
           class="font-poppins font-normal text-center text-primary-dark text-sm"
         >
-          To access our services please login if you already registered with
-          SMEDA
+          If you've already registered, please Login to access your account
         </h2>
         <hr class="mt-2 h-px bg-gray-200 border-0 dark:bg-gray-700" />
 
@@ -125,7 +121,7 @@ async function onSubmit(values) {
             <a
               href="#"
               class="font-poppins font-semibold text-primary-dark hover:text-primary-light"
-              >New User? Signup and register your SMEs with SMEDA</a
+              >If you've not registered yet, Sign up here</a
             >
           </p>
         </div>
