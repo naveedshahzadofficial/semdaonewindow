@@ -4,8 +4,9 @@ import { defineProps } from "vue";
 defineProps({ tile: { required: true, type: Object } });
 </script>
 <template>
-  <RouterLink
-    :to="{ name: tile.link }"
+  <a
+    :href="tile.link"
+    target="_blank"
     :class="tile.classes"
     class="group h-60 w-60 rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
   >
@@ -23,7 +24,7 @@ defineProps({ tile: { required: true, type: Object } });
     </span>
 
     <h2
-      class="font-medium text-center text-white text-xl group-hover:text-primary-dark"
+      class="font-normal text-center text-white text-xl group-hover:text-primary-dark"
     >
       {{ tile.title }}
     </h2>
@@ -32,5 +33,5 @@ defineProps({ tile: { required: true, type: Object } });
       :src="tile.icon_side"
       :alt="tile.title"
     />
-  </RouterLink>
+  </a>
 </template>

@@ -1,3 +1,9 @@
+<script setup>
+import { onMounted } from "vue";
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
+</script>
 <template>
   <div class="-mx-6">
     <h1 class="flex items-center">

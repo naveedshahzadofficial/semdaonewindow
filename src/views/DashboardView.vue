@@ -1,38 +1,38 @@
-<script setup></script>
+<script setup>
+import { TileCircleComponent } from "@/components";
+import { onMounted } from "vue";
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
+</script>
 <template>
   <section>
     <!-- Start: Tiles -->
-    <div class="flex items-center justify-center gap-6 py-32">
-      <div
-        class="group h-[237px] w-[275px] bg-gradient-to-r from-blue-600 to-green-300 bg-opacity-70 rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer hover:scale-110 transition-transform"
-      >
-        <div
-          class="absolute top-0 left-1/2 transform -translate-x-1/2 flex items-center"
-        >
-          <div
-            class="w-[153px] h-[153px] bg-gradient-to-r from-blue-600 to-green-300 border-4 rounded-full flex justify-center items-center -mt-20"
-          >
-            <span class="relative">
-              <img
-                class="object-cover transition-opacity"
-                src="@/assets/images/start-icon.png"
-                alt="Start"
-              />
-              <img
-                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                src="@/assets/images/start-icon-hover.png"
-                alt="Start"
-              />
-            </span>
-          </div>
-        </div>
-
-        <h2
-          class="text-center font-medium text-primary-dark text-3xl group-hover:text-white"
-        >
-          Plan
-        </h2>
-      </div>
+    <div class="flex items-center justify-center gap-14 py-32">
+      <TileCircleComponent
+        :tile="{
+          title: 'Plan',
+          icon: require('@/assets/images/plain-icon.png'),
+          icon_hover: require('@/assets/images/plain-icon-hover.png'),
+          link: 'plan',
+        }"
+      />
+      <TileCircleComponent
+        :tile="{
+          title: 'Start',
+          icon: require('@/assets/images/start-icon.png'),
+          icon_hover: require('@/assets/images/start-icon-hover.png'),
+          link: 'start',
+        }"
+      />
+      <TileCircleComponent
+        :tile="{
+          title: 'Grow',
+          icon: require('@/assets/images/grow-icon.png'),
+          icon_hover: require('@/assets/images/grow-icon-hover.png'),
+          link: 'grow',
+        }"
+      />
     </div>
     <!-- End: Tiles -->
   </section>

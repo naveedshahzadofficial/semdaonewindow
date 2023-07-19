@@ -1,23 +1,30 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
 const tileServices = ref([
   {
     id: 1,
     name: "Trading Services",
     icon: require("@/assets/images/trading-services.png"),
     icon_hover: require("@/assets/images/trading-services-hover.png"),
+    link: "trading-services",
   },
   {
     id: 2,
     name: "SEZs Services",
     icon: require("@/assets/images/sezs-services.png"),
     icon_hover: require("@/assets/images/sezs-services-hover.png"),
+    link: "sezs-services",
   },
   {
     id: 3,
     name: "Industrial Services",
     icon: require("@/assets/images/industrial-services.png"),
     icon_hover: require("@/assets/images/industrial-services-hover.png"),
+    link: "industrial-services",
   },
 ]);
 </script>
@@ -45,7 +52,8 @@ const tileServices = ref([
             v-for="(tileService, index) in tileServices"
             :key="tileService.id"
           >
-            <div
+            <RouterLink
+              :to="{ name: tileService.link }"
               class="flex flex-col items-center group cursor-pointer gap-1.5"
             >
               <span class="relative"
@@ -64,7 +72,7 @@ const tileServices = ref([
                 class="font-medium text-base text-primary-dark group-hover:text-primary-light"
                 >{{ tileService.name }}</span
               >
-            </div>
+            </RouterLink>
 
             <div
               v-if="index !== tileServices.length - 1"
@@ -79,7 +87,10 @@ const tileServices = ref([
         class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-400 to-green-200 bg-opacity-50 m-2"
       >
         <div class="h-full flex flex-col justify-center items-center py-6">
-          <div class="flex flex-col items-center group cursor-pointer gap-1.5">
+          <RouterLink
+            :to="{ name: 'expansion-diversification' }"
+            class="flex flex-col items-center group cursor-pointer gap-1.5"
+          >
             <span class="relative"
               ><img
                 class="transition-opacity"
@@ -97,14 +108,17 @@ const tileServices = ref([
             >
               Expansion / Diversification
             </span>
-          </div>
+          </RouterLink>
         </div>
       </div>
       <div
         class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-400 to-green-200 bg-opacity-50 m-2"
       >
         <div class="h-full flex flex-col justify-evenly items-center py-6">
-          <div class="flex flex-col items-center group cursor-pointer gap-1.5">
+          <RouterLink
+            :to="{ name: 'construction-permits' }"
+            class="flex flex-col items-center group cursor-pointer gap-1.5"
+          >
             <span class="relative"
               ><img
                 class="transition-opacity"
@@ -122,13 +136,16 @@ const tileServices = ref([
             >
               Construction Permits
             </span>
-          </div>
+          </RouterLink>
 
           <div class="flex w-2/4">
             <hr class="w-full h-px bg-primary-dark bg-opacity-60 border-0" />
           </div>
 
-          <div class="flex flex-col items-center group cursor-pointer gap-1.5">
+          <RouterLink
+            :to="{ name: 'utility-connections' }"
+            class="flex flex-col items-center group cursor-pointer gap-1.5"
+          >
             <span class="relative"
               ><img
                 class="transition-opacity"
@@ -146,13 +163,14 @@ const tileServices = ref([
             >
               Utility Connections
             </span>
-          </div>
+          </RouterLink>
         </div>
       </div>
     </div>
 
     <div class="flex justify-center items-center mt-8">
-      <div
+      <RouterLink
+        :to="{ name: 'business-information-resources' }"
         class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-3xl"
       >
         <span class="relative"
@@ -175,7 +193,7 @@ const tileServices = ref([
         >
           Business Information Resources
         </span>
-      </div>
+      </RouterLink>
     </div>
   </div>
 </template>

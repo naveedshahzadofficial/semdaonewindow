@@ -1,3 +1,9 @@
+<script setup>
+import { onMounted } from "vue";
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
+</script>
 <template>
   <div class="-mx-6">
     <h1 class="flex items-center">
@@ -29,5 +35,11 @@
       addition to its operational goals, the PSW system also focuses on data
       processing capabilities.
     </p>
+    <a
+      href="https://www.psw.gov.pk/"
+      target="_blank"
+      class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white"
+      >Pakistan Single Window
+    </a>
   </div>
 </template>
