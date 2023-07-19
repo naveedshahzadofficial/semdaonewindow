@@ -51,7 +51,7 @@ watch(selectProvince, () => {
     <!-- Start: Tiles -->
     <div class="flex items-center justify-center gap-8 py-10">
       <div
-        class="group h-[270px] w-[201px] bg-[#B47EED] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
+        class="group h-[270px] w-[250px] bg-[#B47EED] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
       >
         <span class="relative">
           <img
@@ -85,7 +85,7 @@ watch(selectProvince, () => {
         />
       </div>
       <div
-        class="group h-[270px] w-[201px] bg-[#2FBBA1] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
+        class="group h-[270px] w-[250px] bg-[#2FBBA1] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
       >
         <span class="relative">
           <img
@@ -133,7 +133,7 @@ watch(selectProvince, () => {
         />
       </div>
       <div
-        class="group h-[270px] w-[201px] bg-[#FA8365] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
+        class="group h-[270px] w-[250px] bg-[#FA8365] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
       >
         <span class="relative">
           <img

@@ -189,7 +189,7 @@ const tileServices = ref([
           class="border-r border-white h-10 mr-4 group-hover:border-primary-light"
         ></span>
         <span
-          class="w-44 font-medium text-base text-primary-dark group-hover:text-primary-light"
+          class="w-full px-5 font-medium text-base text-primary-dark group-hover:text-primary-light"
         >
           Business Information Resources
         </span>

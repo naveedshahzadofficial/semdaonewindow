@@ -22,10 +22,8 @@ onMounted(() => {
 
   <div class="px-8 py-8 min-h-[500px]">
     <p class="font-normal pb-4">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-      molestias aspernatur maiores vel explicabo qui ut hic omnis,
-      reprehenderit, magni exercitationem, possimus atque commodi vitae quos
-      quidem vero officiis nihil.
+      In order to acquire business-specific information, kindly make a selection
+      from the following options
     </p>
 
     <!-- Start: Tiles -->

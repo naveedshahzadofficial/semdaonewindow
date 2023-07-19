@@ -38,19 +38,7 @@ onMounted(() => {
       These are general guidelines, specific requirements can vary depending on
       your location and the nature of your business. It is advisable to consult
       with legal and financial professionals who can provide guidance tailored
-      to your specific circumstances. For further details,
-      <a
-        href="#"
-        class="text-primary-light hover:text-primary-dark hover:underline"
-        target="_blank"
-        >click here</a
-      >
+      to your specific circumstances.
     </p>
-
-    <a
-      href="#"
-      class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white"
-      >Registration Portal Link</a
-    >
   </div>
 </template>

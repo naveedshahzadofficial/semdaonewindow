@@ -22,10 +22,8 @@ onMounted(() => {
 
   <div class="px-8 py-8 min-h-[500px]">
     <p class="font-normal pb-4">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta natus
-      consectetur iusto quos quasi. Facilis laborum fuga tempore voluptate
-      quibusdam, accusamus quidem doloremque similique. Non cumque ea velit enim
-      fuga?
+      Access sector-specific information, including Business Guides, Commercial
+      Contracts, Pre-Feasibility Studies, and Regulatory Procedures
     </p>
 
     <!-- Start: Tiles -->
