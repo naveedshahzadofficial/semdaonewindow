@@ -35,7 +35,7 @@ onMounted(() => {
           title: 'Pre-feasibility Studies',
           icon: require('@/assets/images/pre-feasibility-studies.png'),
           icon_hover: require('@/assets/images/pre-feasibility-studies-hover.png'),
-          icon_side: require('@/assets/images/pre-feasibility-studies-hover.png'),
+          icon_side: require('@/assets/images/pre-feasibility-studies-opacity.png'),
           classes: 'bg-[#CE8654]',
           link: 'https://smeda.org/index.php?option=com_phocadownload&view=category&id=122&Itemid=308',
         }"
@@ -46,7 +46,7 @@ onMounted(() => {
           title: 'Business Guides',
           icon: require('@/assets/images/business-guides.png'),
           icon_hover: require('@/assets/images/business-guides-hover.png'),
-          icon_side: require('@/assets/images/business-guides-hover.png'),
+          icon_side: require('@/assets/images/business-guides-opacity.png'),
           classes: 'bg-[#41C4F2]',
           link: 'https://smeda.org/index.php?option=com_phocadownload&view=category&id=164&Itemid=981',
         }"
@@ -57,7 +57,7 @@ onMounted(() => {
           title: 'Commercial Contracts',
           icon: require('@/assets/images/commercial-contracts.png'),
           icon_hover: require('@/assets/images/commercial-contracts-hover.png'),
-          icon_side: require('@/assets/images/commercial-contracts-hover.png'),
+          icon_side: require('@/assets/images/commercial-contracts-opacity.png'),
           classes: 'bg-[#FA8365]',
           link: 'https://smeda.org/index.php?option=com_phocadownload&view=category&id=7&Itemid=363',
         }"
@@ -68,7 +68,7 @@ onMounted(() => {
           title: 'Regulatory Procedures',
           icon: require('@/assets/images/regulatory-procedures.png'),
           icon_hover: require('@/assets/images/regulatory-procedures-hover.png'),
-          icon_side: require('@/assets/images/regulatory-procedures-hover.png'),
+          icon_side: require('@/assets/images/regulatory-procedures-opacity.png'),
           classes: 'bg-[#B47EED]',
           link: 'https://smeda.org/index.php?option=com_phocadownload&view=category&id=15&Itemid=138',
         }"
@@ -80,7 +80,7 @@ onMounted(() => {
           title: 'Cluster Profiles',
           icon: require('@/assets/images/cluster-profiles.png'),
           icon_hover: require('@/assets/images/cluster-profiles-hover.png'),
-          icon_side: require('@/assets/images/cluster-profiles-hover.png'),
+          icon_side: require('@/assets/images/cluster-profiles-opacity.png'),
           classes: 'bg-[#E7AC22]',
           link: 'https://smeda.org/index.php?option=com_phocadownload&view=category&id=40&Itemid=742',
         }"
@@ -91,7 +91,7 @@ onMounted(() => {
           title: 'District Economic Profiles',
           icon: require('@/assets/images/district-economic-profiles.png'),
           icon_hover: require('@/assets/images/district-economic-profiles-hover.png'),
-          icon_side: require('@/assets/images/district-economic-profiles-hover.png'),
+          icon_side: require('@/assets/images/district-economic-profiles-opacity.png'),
           classes: 'bg-[#864267]',
           link: 'https://smeda.org/index.php?option=com_phocadownload&view=category&id=186&Itemid=1024',
         }"
@@ -102,7 +102,7 @@ onMounted(() => {
           title: 'Sector Briefs',
           icon: require('@/assets/images/sector-briefs.png'),
           icon_hover: require('@/assets/images/sector-briefs-hover.png'),
-          icon_side: require('@/assets/images/sector-briefs-hover.png'),
+          icon_side: require('@/assets/images/sector-briefs-opacity.png'),
           classes: 'bg-[#2FBBA1]',
           link: 'https://smeda.org/index.php?option=com_phocadownload&view=category&id=28&Itemid=139',
         }"
@@ -113,7 +113,7 @@ onMounted(() => {
           title: 'More',
           icon: require('@/assets/images/more.png'),
           icon_hover: require('@/assets/images/more-hover.png'),
-          icon_side: require('@/assets/images/more-hover.png'),
+          icon_side: require('@/assets/images/more-opacity.png'),
           classes: 'bg-[#E04F56]',
           link: 'https://smeda.org/index.php?option=com_phocadownload&view=category&id=168&Itemid=996',
         }"

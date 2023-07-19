@@ -19,17 +19,15 @@ onMounted(() => {
 
   <div class="px-8 py-8 min-h-[500px]">
     <p class="font-normal pb-4">
-      To acquire construction permits and their associated information,
-      including official authorizations to commence construction or renovation
-      projects within a specific geographical region, please refer to the link
-      below. The provided resource encompasses crucial details for the
-      following: 
-      <ul class="pb-4 list-disc ps-8">
-        <li>Approval of Building Plans</li>
-        <li>Private Housing Scheme Approval</li>
-        <li>Change of Land Use</li>
-        <li>Issuance of Completion Certificates</li>
-      </ul>
+      Driven by a profound commitment to the construction industry's progress
+      and efficient construction permits, the Government of Punjab's e-Khidmat
+      project pioneers specialized industrial services. To acquire construction
+      permits and their associated information, including official
+      authorizations to commence construction or renovation projects within a
+      specific geographical region.
+    </p>
+    <p class="font-normal pb-4">
+      To access more information, kindly click below.
     </p>
 
     <a
@@ -38,6 +36,5 @@ onMounted(() => {
       class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white"
       >e-Khidmat Markaz
     </a>
-
   </div>
 </template>

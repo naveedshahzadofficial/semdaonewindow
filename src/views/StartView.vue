@@ -1,7 +1,6 @@
 <script setup>
 import { onMounted, ref, watch } from "vue";
 const businessLink = ref(null);
-const businessType = ref("");
 const selectProvince = ref("");
 onMounted(() => {
   window.scrollTo(0, 0);
@@ -9,52 +8,27 @@ onMounted(() => {
 
 const links = ref([
   {
-    business_type: "aop",
     province: "punjab",
     name: "AOP Punjab",
     link: "https://register.business.punjab.gov.pk",
   },
   {
-    business_type: "aop",
     province: "sindh",
     name: "AOP Sindh",
     link: "https://business.sindh.gov.pk/",
   },
   {
-    business_type: "aop",
     province: "balochistan",
     name: "AOP Balochistan",
     link: "https://business.balochistan.gov.pk/",
   },
-  {
-    business_type: "company",
-    province: "",
-    name: "SECP",
-    link: "https://eservices.secp.gov.pk/eServices/",
-  },
-  {
-    business_type: "soleProprietorship",
-    province: "",
-    name: "FBR",
-    link: "https://www.fbr.gov.pk/",
-  },
 ]);
 
-watch([businessType, selectProvince], () => {
-  console.log(businessType.value);
+watch(selectProvince, () => {
   console.log(selectProvince.value);
-  if (businessType.value === "aop") {
-    businessLink.value = links.value.find(
-      (link) =>
-        link.province === selectProvince.value &&
-        link.business_type === businessType.value
-    );
-  } else {
-    selectProvince.value = "";
-    businessLink.value = links.value.find(
-      (link) => link.business_type === businessType.value
-    );
-  }
+  businessLink.value = links.value.find(
+    (link) => link.province === selectProvince.value
+  );
 });
 </script>
 <template>
@@ -66,72 +40,75 @@ watch([businessType, selectProvince], () => {
           alt="heading-icon"
         />
       </span>
-      <span class="text-primary-dark font-semibold">Start</span>
+      <span class="text-primary-dark font-semibold">Start Your Business</span>
     </h1>
   </div>
+  <h2 class="font-normal px-8 py-2 text-primary-dark">
+    How would you link to register your business.
+  </h2>
 
   <div class="px-8 py-8 min-h-fit">
-    <h2 class="font-semibold py-2">Unregistered Business</h2>
-    <p class="font-normal pb-4">
-      In order to register your business, kindly furnish the required
-      information. Please ensure that the information you provide corresponds to
-      the nature and activities of your business.
-    </p>
-
-    <form class="p-4">
-      <!-- Radio buttons -->
-      <div class="my-4">
-        <label
-          for="businessType"
-          class="block mb-2 text-blue-600"
-          >Business Type</label
-        >
-        <label class="inline-flex items-center">
-          <input
-            v-model="businessType"
-            type="radio"
-            class="form-radio"
-            name="businessType"
-            value="aop"
-          />
-          <span class="ml-2">Association of Persons</span>
-        </label>
-        <label class="inline-flex items-center ml-6">
-          <input
-            v-model="businessType"
-            type="radio"
-            class="form-radio"
-            name="businessType"
-            value="company"
-          />
-          <span class="ml-2">Company</span>
-        </label>
-        <label class="inline-flex items-center ml-6">
-          <input
-            v-model="businessType"
-            type="radio"
-            class="form-radio"
-            name="businessType"
-            value="soleProprietorship"
-          />
-          <span class="ml-2">Sole Proprietorship</span>
-        </label>
-      </div>
-
-      <!-- Select dropdown -->
+    <!-- Start: Tiles -->
+    <div class="flex items-center justify-center gap-8 py-10">
       <div
-        class="my-4"
-        v-if="businessType === 'aop'"
+        class="group h-[270px] w-[201px] bg-[#B47EED] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
       >
-        <label
-          for="province"
-          class="block mb-2 text-blue-600"
-          >Province</label
+        <span class="relative">
+          <img
+            class="object-cover transition-opacity"
+            src="@/assets/images/sole-proprietorship.png"
+            alt="Sole Proprietorship"
+          />
+          <img
+            class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+            src="@/assets/images/sole-proprietorship-hover.png"
+            alt="Sole Proprietorship"
+          />
+        </span>
+
+        <h2
+          class="font-normal text-center text-primary-dark text-base group-hover:text-white break-words px-2"
         >
+          Sole Proprietorship
+        </h2>
+        <a
+          href="https://www.fbr.gov.pk/"
+          target="_blank"
+          class="rounded-sm text-center px-2 py-1 text-black bg-slate-100 hover:text-primary-dark"
+          >Register Here</a
+        >
+
+        <img
+          class="absolute bottom-0 right-0 opacity-10 object-cover overflow-hidden"
+          src="@/assets/images/sole-proprietorship-opacity.png"
+          alt="Sole Proprietorship"
+        />
+      </div>
+      <div
+        class="group h-[270px] w-[201px] bg-[#2FBBA1] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
+      >
+        <span class="relative">
+          <img
+            class="object-cover transition-opacity"
+            src="@/assets/images/association-of-persons.png"
+            alt="Association of Persons"
+          />
+          <img
+            class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+            src="@/assets/images/association-of-persons-hover.png"
+            alt="Association of Persons"
+          />
+        </span>
+
+        <h2
+          class="font-normal text-center text-primary-dark text-base group-hover:text-white break-words px-2"
+        >
+          Association of Persons
+        </h2>
+
         <select
           v-model="selectProvince"
-          id="province"
-          class="bg-blue-600 text-white text-base rounded-lg focus:ring-blue-200 focus:border-blue-200 block p-1.5"
+          class="bg-slate-100 text-black text-base rounded-sm py-1 px-1.5 w-40"
         >
           <option value="">Select Province</option>
           <option value="punjab">Punjab</option>
@@ -142,20 +119,63 @@ watch([businessType, selectProvince], () => {
           <option value="gilgit">Gilgit-Baltistan</option>
           <option value="kashmir">Azad Jammu and Kashmir</option>
         </select>
-      </div>
-
-      <div v-if="businessLink">
-        <p class="font-normal py-4">
-          To register your partnership firm with register of firm office please
-          follow the link blow
-        </p>
 
         <a
-          :href="businessLink.link"
-          class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white"
-          >{{ businessLink.name }}</a
+          :href="businessLink?.link"
+          target="_blank"
+          class="rounded-sm text-center px-2 py-1 text-black bg-slate-100 hover:text-primary-dark"
+          >Register Here</a
         >
+        <img
+          class="absolute bottom-0 right-0 opacity-10 object-cover overflow-hidden"
+          src="@/assets/images/association-of-persons-opacity.png"
+          alt="Association of Persons"
+        />
       </div>
-    </form>
+      <div
+        class="group h-[270px] w-[201px] bg-[#FA8365] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
+      >
+        <span class="relative">
+          <img
+            class="object-cover transition-opacity"
+            src="@/assets/images/company.png"
+            alt="Company"
+          />
+          <img
+            class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+            src="@/assets/images/company-hover.png"
+            alt="Company"
+          />
+        </span>
+
+        <h2
+          class="font-normal text-center text-primary-dark text-base group-hover:text-white break-words px-2"
+        >
+          Company
+        </h2>
+        <a
+          href="https://eservices.secp.gov.pk/eServices/"
+          target="_blank"
+          class="rounded-sm text-center px-2 py-1 text-black bg-slate-100 hover:text-primary-dark"
+          >Register Here</a
+        >
+        <img
+          class="absolute bottom-0 right-0 opacity-10 object-cover overflow-hidden"
+          src="@/assets/images/company-opacity.png"
+          alt="Company"
+        />
+      </div>
+    </div>
+    <!-- End: Tiles -->
+
+    <p class="font-normal pt-8">
+      Depend upon the number of people employed, registration with the following
+      departments is also mandatory.
+    </p>
+
+    <ul class="pb-4 list-disc ps-8">
+      <li>Labour & Human Resource Department</li>
+      <li>Employees Social Security Institute</li>
+    </ul>
   </div>
 </template>

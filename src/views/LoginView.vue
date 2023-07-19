@@ -23,42 +23,45 @@ async function onSubmit(values) {
 
 <template>
   <div
-    class="md:h-screen flex flex-col gap-4 justify-center items-center bg-[url('@/assets/images/bg.jpg')] bg-cover bg-no-repeat"
+    class="md:h-screen items-center justify-center py-8 px-12 bg-[url('@/assets/images/bg.jpg')] bg-cover bg-no-repeat"
   >
-    <img
-      src="@/assets/images/logo.png"
-      alt="SMEDA-Logo"
-    />
-    <h1 class="font-poppins font-bold text-primary-light text-4xl">
-      SMEDA ONE WINDOW
-    </h1>
-    <div
-      class="font-poppins font-normal text-primary-dark text-base text-justify px-16"
-    >
-      SMEDA one window is a one-stop shop where government organizations or
-      departments have consolidated their services and information. To acquire
-      permits, licenses or relevant information, submit necessary documents,
-      complete required procedures.
-    </div>
     <!-- Begin: Login Form -->
-    <div class="px-6 py-4 lg:px-8 bg-[#f2f2f2] bg-opacity-40 rounded-xl">
-      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-        <h2
-          class="font-poppins font-normal text-center text-primary-dark text-sm"
-        >
-          If you've already registered, please Login to access your account
-        </h2>
-        <hr class="mt-2 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+    <div
+      class="flex flex-col items-center justify-center gap-6 px-6 py-8 bg-[#f2f2f2] bg-opacity-40 rounded-xl"
+    >
+      <img
+        src="@/assets/images/logo.png"
+        alt="SMEDA-Logo"
+      />
+      <h1 class="font-poppins font-bold text-primary-light text-4xl">
+        SMEDA ONE WINDOW
+      </h1>
+      <div
+        class="font-poppins font-normal text-primary-dark text-sm text-justify px-16"
+      >
+        SMEDA One Window is a one-stop shop where government organizations or
+        departments have consolidated their services and information. To acquire
+        permits, licenses or relevant information, submit necessary documents
+        and complete the required procedures.
+      </div>
+      <h2
+        class="font-poppins font-normal text-center text-primary-dark text-sm"
+      >
+        Please Login to access your account
+      </h2>
 
-        <div class="mt-4">
-          <Form
-            @submit="onSubmit"
-            :validation-schema="schema"
-            v-slot="{ errors, isSubmitting }"
-            class="space-y-4"
-            action="#"
-            method="POST"
-          >
+      <div>
+        <Form
+          @submit="onSubmit"
+          :validation-schema="schema"
+          v-slot="{ errors, isSubmitting }"
+          class="space-y-4"
+          action="#"
+          method="POST"
+        >
+          <hr class="mt-2 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+
+          <div class="flex flex-row gap-6">
             <div>
               <label
                 for="username"
@@ -98,33 +101,34 @@ async function onSubmit(values) {
                 <div class="text-red-500">{{ errors.password }}</div>
               </div>
             </div>
-
-            <div>
-              <button
-                :disabled="isSubmitting"
-                type="submit"
-                class="flex w-full justify-center rounded-xl bg-gradient-to-r from-teal-600 to-blue-400 border border-primary-dark transform px-3 py-1.5 text-sm font-semibold leading-6 text-primary-dark shadow-sm"
-              >
-                Login
-              </button>
-              <div class="text-sm mt-2 text-right">
-                <a
-                  href="#"
-                  class="font-poppins font-normal text-sm text-primary-light hover:text-primary-dark"
-                  >Forgot password?</a
-                >
-              </div>
-            </div>
-          </Form>
-
-          <p class="mt-4 text-center text-sm text-gray-500">
-            <a
-              href="#"
-              class="font-poppins font-semibold text-primary-dark hover:text-primary-light"
-              >If you've not registered yet, Sign up here</a
+          </div>
+          <div class="flex flex-col items-center">
+            <button
+              :disabled="isSubmitting"
+              type="submit"
+              class="flex lg:w-4/6 md:w-4/5 justify-center rounded-xl bg-gradient-to-r from-teal-600 to-blue-400 border border-primary-dark transform px-3 py-1 text-sm font-semibold leading-6 text-primary-dark shadow-sm"
             >
-          </p>
-        </div>
+              Login
+            </button>
+            <div class="text-sm mt-2 w-4/6 text-right">
+              <a
+                target="_blank"
+                href="https://smerp.smeda.org/password/reset"
+                class="text-right font-poppins font-normal text-sm text-primary-light hover:text-primary-dark"
+                >Forgot password?</a
+              >
+            </div>
+          </div>
+        </Form>
+
+        <p class="mt-4 text-center text-sm text-gray-500">
+          <a
+            href="https://smerp.smeda.org"
+            target="_blank"
+            class="font-poppins font-semibold text-primary-dark hover:text-primary-light"
+            >New user? Signup and register your SMEs with SMEDA
+          </a>
+        </p>
       </div>
     </div>
     <!-- End: Login Form -->

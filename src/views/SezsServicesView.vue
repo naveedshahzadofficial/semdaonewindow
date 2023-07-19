@@ -19,15 +19,15 @@ onMounted(() => {
 
   <div class="px-8 py-8 min-h-[500px]">
     <p class="font-normal pb-4">
-      Special Economic Zone (SEZ) represents a delineated geographical region
-      within a country that aims to foster accelerated economic expansion and
-      attract foreign investment. SEZs typically enjoy distinctive and
-      advantageous economic regulations, encompassing tax incentives, reduced
-      tariffs, streamlined customs protocols, and relaxed labor laws. These
-      zones are established to cultivate an investor-centric milieu, prompting
-      the establishment of local and international businesses, encompassing
-      manufacturing units, thereby fostering substantial economic growth and
-      employment opportunities. For further details, click here.
+      Empowering businesses with the cutting-edge SEZMIS platform, the Board of
+      Investment (BOI) paves the way for sustained growth and prosperity. SECP
+      registered companies can take advantage of distinctive and advantageous
+      economic regulations, which include tax incentives, reduced tariffs,
+      streamlined customs protocols, and relaxed labor laws, by registering
+      themselves as an Enterprise on SEZMIS.
+    </p>
+    <p class="font-normal pb-4">
+      For further details and registration, click on the button below
     </p>
     <a
       href="https://sezmis.invest.gov.pk/sez"

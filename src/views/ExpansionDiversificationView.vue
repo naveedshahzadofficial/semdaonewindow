@@ -33,9 +33,9 @@ onMounted(() => {
       <TileComponent
         :tile="{
           title: 'Cutlery',
-          icon: require('@/assets/images/construction-permits.png'),
-          icon_hover: require('@/assets/images/construction-permits-hover.png'),
-          icon_side: require('@/assets/images/construction-permits.png'),
+          icon: require('@/assets/images/cutlery.png'),
+          icon_hover: require('@/assets/images/cutlery-hover.png'),
+          icon_side: require('@/assets/images/cutlery-opacity.png'),
           classes: 'bg-orange-400',
           link: 'cutlery',
         }"
@@ -44,9 +44,9 @@ onMounted(() => {
       <TileComponent
         :tile="{
           title: 'Pharmaceuticals',
-          icon: require('@/assets/images/construction-permits.png'),
-          icon_hover: require('@/assets/images/construction-permits-hover.png'),
-          icon_side: require('@/assets/images/construction-permits.png'),
+          icon: require('@/assets/images/pharmaceuticals.png'),
+          icon_hover: require('@/assets/images/pharmaceuticals-hover.png'),
+          icon_side: require('@/assets/images/pharmaceuticals-opacity.png'),
           classes: 'bg-blue-400',
           link: 'pharmaceuticals',
         }"
@@ -55,9 +55,9 @@ onMounted(() => {
       <TileComponent
         :tile="{
           title: 'Agrofood',
-          icon: require('@/assets/images/construction-permits.png'),
-          icon_hover: require('@/assets/images/construction-permits-hover.png'),
-          icon_side: require('@/assets/images/construction-permits.png'),
+          icon: require('@/assets/images/agrofood.png'),
+          icon_hover: require('@/assets/images/agrofood-hover.png'),
+          icon_side: require('@/assets/images/agrofood-opacity.png'),
           classes: 'bg-red-400',
           link: 'agro-food',
         }"
@@ -66,9 +66,9 @@ onMounted(() => {
       <TileComponent
         :tile="{
           title: 'Autoparts',
-          icon: require('@/assets/images/construction-permits.png'),
-          icon_hover: require('@/assets/images/construction-permits-hover.png'),
-          icon_side: require('@/assets/images/construction-permits.png'),
+          icon: require('@/assets/images/autoparts.png'),
+          icon_hover: require('@/assets/images/autoparts-hover.png'),
+          icon_side: require('@/assets/images/autoparts-opacity.png'),
           classes: 'bg-slate-400',
           link: 'auto-parts',
         }"

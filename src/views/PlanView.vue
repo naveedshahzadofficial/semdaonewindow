@@ -13,7 +13,7 @@ onMounted(() => {
           alt="heading-icon"
         />
       </span>
-      <span class="text-primary-dark font-semibold">Plan</span>
+      <span class="text-primary-dark font-semibold">Plan Your Business</span>
     </h1>
   </div>
 

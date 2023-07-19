@@ -19,14 +19,18 @@ onMounted(() => {
 
   <div class="px-8 py-8 min-h-[500px]">
     <p class="font-normal pb-4">
-      Industrial services encompass a comprehensive suite of specialized
-      offerings tailored for Inspection Authorities, Manufacturers, and
-      Operators engaged in the management of Boilers and Pressure vessels.
-      Additionally, these services extend their offerings to address the unique
-      interests of Dealers, Manufacturers, Repairers, and Users of Weights &
-      Measures, delivering indispensable information and customized assistance
-      to optimize their operational practices. To access more information,
-      kindly click the button below.
+      Integrating convenience and efficiency, e-Khidmat by the Government of
+      Punjab presents specialized Industrial services aimed at providing optimal
+      support for the Industry. It encompasses a comprehensive suite of
+      specialized services tailored for Inspection authorities, Manufacturers,
+      and Operators engaged in the management of Boilers and Pressure vessels.
+      Additionally, it also addresses the interests of Dealers, Manufacturers,
+      Repairers, and Users of Weights & Measures, delivering indispensable
+      information and customized assistance to optimize their operational
+      practices.
+    </p>
+    <p class="font-normal pb-4">
+      For further details and registration, click on the button below
     </p>
     <a
       href="https://ekhidmat.punjab.gov.pk/industrial-services"

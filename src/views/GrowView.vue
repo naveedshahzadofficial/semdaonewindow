@@ -38,7 +38,7 @@ const tileServices = ref([
           alt="heading-icon"
         />
       </span>
-      <span class="text-primary-dark font-semibold">Grow</span>
+      <span class="text-primary-dark font-semibold">Grow Your Business</span>
     </h1>
   </div>
 
