@@ -24,12 +24,12 @@ defineProps({ tile: { required: true, type: Object } });
     </span>
 
     <h2
-      class="font-normal text-center text-white text-xl group-hover:text-primary-dark"
+      class="font-normal text-center text-primary-dark text-xl group-hover:text-white"
     >
       {{ tile.title }}
     </h2>
     <img
-      class="absolute bottom-0 right-0 opacity-50"
+      class="absolute -bottom-2 -right-2 opacity-30 object-cover"
       :src="tile.icon_side"
       :alt="tile.title"
     />

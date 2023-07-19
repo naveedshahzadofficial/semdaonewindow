@@ -28,7 +28,7 @@ defineProps({ tile: { required: true, type: Object } });
       {{ tile.title }}
     </h2>
     <img
-      class="absolute bottom-0 right-0 opacity-50"
+      class="absolute bottom-0 right-0 opacity-50 object-cover"
       :src="tile.icon_side"
       :alt="tile.title"
     />
