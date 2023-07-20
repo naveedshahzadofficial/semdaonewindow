@@ -110,6 +110,12 @@ const routes = [
         meta: { title: "Autoparts" },
         component: () => import("@/views/AutopartsView.vue"),
       },
+      {
+        path: "/app/general-registrations-licenses",
+        name: "general-registrations-licenses",
+        meta: { title: "General Registrations Licenses" },
+        component: () => import("@/views/GeneralRegistrationsLicensesView.vue"),
+      },
     ],
   },
   {
@@ -132,7 +138,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  document.title = (to.meta.title || "Dashboard") + " - SEMDA ONE WINDOW";
+  document.title = (to.meta.title || "Dashboard") + " - SME ONE WINDOW";
   next();
 });
 

@@ -31,28 +31,44 @@ td {
         <span class="text-primary-dark font-semibold">Cutlery Sector</span>
       </h1>
     </div>
-    <div class="mx-8">
-      <a
-        href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=29:light-engineering&Itemid=139"
-        target="_blank"
-        class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white"
-        >Sector Brief</a
-      >
-    </div>
   </div>
 
   <div class="px-8 py-8 min-h-[500px]">
-    <table class="border bottom-1">
-      <thead>
-        <tr>
-          <th
-            class="border border-slate-300 py-4 bg-gradient-to-r from-blue-600 to-green-300 text-white font-medium text-lg"
-            colspan="2"
-          >
-            General Registrations/Licenses
-          </th>
-        </tr>
-      </thead>
+    <h1
+      class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
+    >
+      Sector Briefs
+    </h1>
+    <ul class="pb-4 list-disc ps-8">
+      <li>
+        <a
+          href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20-%20Kitchenware%20Cutlery%202020.pdf"
+          class="text-primary-dark hover:underline"
+          >Kitchenware Cutlery [2020]</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20-%20Non-Kitchenware%20Cutlery%202020.pdf"
+          class="text-primary-dark hover:underline"
+          >Non-Kitchenware Cutlery [2020]</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20of%20Pakistan%202018.pdf"
+          class="text-primary-dark hover:underline"
+          >Cutlery Sector of Pakistan [2018]</a
+        >
+      </li>
+    </ul>
+
+    <h1
+      class="mt-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-t-md text-white py-2 px-2"
+    >
+      General Registrations/Licenses
+    </h1>
+    <table>
       <tbody>
         <tr>
           <td class="w-1/3">

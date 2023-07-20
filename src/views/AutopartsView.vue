@@ -31,28 +31,49 @@ td {
         <span class="text-primary-dark font-semibold">Autoparts</span>
       </h1>
     </div>
-    <div class="mx-8">
-      <a
-        href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=149:automobiles-and-transport&Itemid=308"
-        target="_blank"
-        class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white"
-        >Pre-Feasibility Reports</a
-      >
-    </div>
   </div>
 
   <div class="px-8 py-8 min-h-[500px]">
-    <table class="border bottom-1">
-      <thead>
-        <tr>
-          <th
-            class="border border-slate-300 py-4 bg-gradient-to-r from-blue-600 to-green-300 text-white font-medium text-lg"
-            colspan="2"
-          >
-            General Registrations/Licenses
-          </th>
-        </tr>
-      </thead>
+    <h1
+      class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
+    >
+      Pre-Feasibility Reports
+    </h1>
+    <ul class="pb-4 list-disc ps-8">
+      <li>
+        <a
+          href="https://smeda.org/phocadownload/Prefeasibility_Studies/Engineering_and_Manufacturing/Motorcycle%20Chain%20Manufacturing%20Unit%20Rs.%20247.13%20million%20Jan-2023.pdf"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Motorcycle Chain Manufacturing Unit [Rs. 247.13 million, Jan-2023]</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://smeda.org/phocadownload/Prefeasibility_Studies/Automobiles_and_Transport/Setting%20up%20Tractor%20and%20Agricultural%20Equipment%20Repair%20Unit%20Rs.%203.4%20million%20Aug-2021.pdf"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Setting up Tractor / Agricultural Equipment Repair Unit [Rs. 3.4
+          million, Aug-2021]</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://smeda.org/phocadownload/Prefeasibility_Studies/Automobiles_and_Transport/Setting-up%20Automotive%20Glass%20Replacement%20Shop%20Rs.%201.75%20million%20Aug-2021.pdf"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Setting-up Automotive Glass Replacement Shop [Rs. 1.75 million,
+          Aug-2021]</a
+        >
+      </li>
+    </ul>
+
+    <h1
+      class="mt-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-t-md text-white py-2 px-2"
+    >
+      General Registrations/Licenses
+    </h1>
+    <table>
       <tbody>
         <tr>
           <td class="w-1/3">

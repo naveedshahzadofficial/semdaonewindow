@@ -40,5 +40,39 @@ onMounted(() => {
       with legal and financial professionals who can provide guidance tailored
       to your specific circumstances.
     </p>
+    <ul class="pb-4 list-disc ps-8">
+      <li>
+        <a
+          href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=196:business-startup&Itemid=981"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Business Guides</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://smeda.org/index.php?option=com_content&view=article&id=146&Itemid=676"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Business Development Training Videos</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=225&Itemid=1386"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Basic Financial Model</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=122&Itemid=308"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Pre-feasibility Studies</a
+        >
+      </li>
+    </ul>
   </div>
 </template>

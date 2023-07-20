@@ -34,7 +34,7 @@ async function onSubmit(values) {
           alt="SMEDA-Logo"
         />
         <h1 class="font-poppins font-bold text-primary-light text-4xl">
-          SMEDA ONE WINDOW
+          SME ONE WINDOW
         </h1>
         <div
           class="font-poppins font-normal text-primary-dark text-base text-justify px-16"
@@ -128,12 +128,15 @@ async function onSubmit(values) {
       </Form>
 
       <p class="my-6 text-center text-sm text-gray-500">
-        <a
-          href="https://smerp.smeda.org"
-          target="_blank"
-          class="font-semibold text-primary-dark hover:text-primary-light"
-          >New user? Signup and register your SMEs with SMEDA
-        </a>
+        <span class="font-semibold text-primary-dark"
+          >New user?
+          <a
+            class="hover:text-primary-light"
+            href="https://smerp.smeda.org/register"
+            target="_blank"
+            >Signup and register your SMEs with SMEDA</a
+          >
+        </span>
       </p>
     </div>
     <!-- End: Login Form -->

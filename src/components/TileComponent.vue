@@ -7,7 +7,7 @@ defineProps({ tile: { required: true, type: Object } });
   <RouterLink
     :to="{ name: tile.link }"
     :class="tile.classes"
-    class="group h-[237px] w-[201px] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
+    class="group h-[237px] w-[201px] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer overflow-hidden"
   >
     <span class="relative">
       <img
@@ -29,7 +29,7 @@ defineProps({ tile: { required: true, type: Object } });
     </h2>
 
     <img
-      class="absolute bottom-0 right-0 opacity-10 object-cover overflow-hidden"
+      class="absolute -bottom-7 -right-7 opacity-20 object-cover"
       :src="tile.icon_side"
       :alt="tile.title"
     />

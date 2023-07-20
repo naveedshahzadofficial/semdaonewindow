@@ -33,35 +33,53 @@ td {
         >
       </h1>
     </div>
-
-    <div class="mx-8">
-      <a
-        href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=145:health-and-medical&Itemid=308"
-        target="_blank"
-        class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white mr-2"
-        >Pre-Feasibility Reports</a
-      >
-      <a
-        href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=28&Itemid=139"
-        target="_blank"
-        class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white"
-        >Sector Brief</a
-      >
-    </div>
   </div>
 
   <div class="px-8 py-8 min-h-[500px]">
+    <h1
+      class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
+    >
+      Sector Briefs
+    </h1>
+    <ul class="pb-4 list-disc ps-8">
+      <li>
+        <a
+          href="https://smeda.org/phocadownload/Sectoral_Information/Pharmaceutical%20Sector%202022.pdf"
+          class="text-primary-dark hover:underline"
+          >Pharmaceutical Sector [2022]</a
+        >
+      </li>
+    </ul>
+    <h1
+      class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
+    >
+      Pharmaceutical Pre-Feasibility Reports
+    </h1>
+    <ul class="pb-4 list-disc ps-8">
+      <li>
+        <a
+          href="https://smeda.org/phocadownload/Prefeasibility_Studies/Health_and_Medical/Medical%20Store%20Rs.%205.95%20million%20Oct-2021.pdf"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Medical Store [Rs. 5.95 million, Oct-2021]</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://smeda.org/phocadownload/Prefeasibility_Studies/Health_and_Medical/Pharmaceutical%20Distribution%20and%20Marketing%20Unit%20Rs.%20103.89%20million%20Dec-2022.pdf"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Pharmaceutical Distribution and Marketing Unit [Rs. 103.89 million,
+          Dec-2022]</a
+        >
+      </li>
+    </ul>
+    <h1
+      class="mt-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-t-md text-white py-2 px-2"
+    >
+      General Registrations/Licenses
+    </h1>
     <table>
-      <thead>
-        <tr>
-          <th
-            class="border border-slate-300 py-4 bg-gradient-to-r from-blue-600 to-green-300 text-white font-medium text-lg"
-            colspan="2"
-          >
-            General Registrations/Licenses
-          </th>
-        </tr>
-      </thead>
       <tbody>
         <tr>
           <td>

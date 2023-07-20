@@ -6,7 +6,7 @@ defineProps({ tile: { required: true, type: Object } });
 <template>
   <RouterLink
     :to="{ name: tile.link }"
-    class="group h-[237px] w-[275px] bg-gradient-to-r from-blue-600 to-green-300 bg-opacity-70 rounded-2xl flex flex-col items-center justify-center relative gap-4 cursor-pointer"
+    class="group h-[268px] w-[275px] bg-gradient-to-r from-blue-600 to-green-300 bg-opacity-70 rounded-2xl flex flex-col items-center justify-center relative gap-4 cursor-pointer"
   >
     <div
       class="absolute top-0 left-1/2 transform -translate-x-1/2 flex items-center"
@@ -34,5 +34,12 @@ defineProps({ tile: { required: true, type: Object } });
     >
       {{ tile.title }}
     </h2>
+
+    <p
+      v-if="tile.tag_line"
+      class="text-black font-normal text-center"
+    >
+      {{ tile.tag_line }}
+    </p>
   </RouterLink>
 </template>

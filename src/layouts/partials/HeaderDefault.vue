@@ -9,7 +9,7 @@
           class="mr-4 h-20"
         />
         <h1 class="font-poppins font-bold text-white text-3xl">
-          SMEDA ONE WINDOW
+          SME ONE WINDOW
         </h1>
       </div>
     </div>

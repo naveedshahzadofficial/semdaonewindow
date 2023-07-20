@@ -1,5 +1,8 @@
 <script setup>
 import { onMounted, ref, watch } from "vue";
+
+const isOpen = ref(false);
+
 const businessLink = ref(null);
 const selectProvince = ref("");
 onMounted(() => {
@@ -22,6 +25,11 @@ const links = ref([
     name: "AOP Balochistan",
     link: "https://business.balochistan.gov.pk/",
   },
+  {
+    province: "kpk",
+    name: "AOP KPK",
+    link: "https://business.kp.gov.pk/guidelines",
+  },
 ]);
 
 watch(selectProvince, () => {
@@ -29,6 +37,9 @@ watch(selectProvince, () => {
   businessLink.value = links.value.find(
     (link) => link.province === selectProvince.value
   );
+  if (businessLink.value && businessLink.value?.link) {
+    window.open(businessLink.value?.link, "_blank");
+  }
 });
 </script>
 <template>
@@ -44,14 +55,16 @@ watch(selectProvince, () => {
     </h1>
   </div>
   <h2 class="font-normal px-8 py-2 text-primary-dark">
-    How would you link to register your business.
+    How would you like to register your business.
   </h2>
 
   <div class="px-8 py-8 min-h-fit">
     <!-- Start: Tiles -->
     <div class="flex items-center justify-center space-x-8 py-10">
-      <div
-        class="group h-[270px] w-[250px] bg-[#B47EED] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
+      <a
+        href="https://www.fbr.gov.pk/"
+        target="_blank"
+        class="group h-[270px] w-[250px] bg-[#B47EED] rounded-3xl flex flex-col items-center justify-center relative gap-3 overflow-hidden cursor-pointer"
       >
         <span class="relative">
           <img
@@ -71,21 +84,16 @@ watch(selectProvince, () => {
         >
           Sole Proprietorship
         </h2>
-        <a
-          href="https://www.fbr.gov.pk/"
-          target="_blank"
-          class="rounded-sm text-center px-2 py-1 text-black bg-slate-100 hover:text-primary-dark"
-          >Register Here</a
-        >
 
         <img
-          class="absolute bottom-0 right-0 opacity-10 object-cover overflow-hidden"
+          class="absolute -bottom-2 -right-3 opacity-20 object-cover"
           src="@/assets/images/sole-proprietorship-opacity.png"
           alt="Sole Proprietorship"
         />
-      </div>
+      </a>
       <div
-        class="group h-[270px] w-[250px] bg-[#2FBBA1] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
+        @click.prevent="isOpen = true"
+        class="group h-[270px] w-[250px] bg-[#2FBBA1] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer overflow-hidden"
       >
         <span class="relative">
           <img
@@ -106,35 +114,16 @@ watch(selectProvince, () => {
           Association of Persons
         </h2>
 
-        <select
-          v-model="selectProvince"
-          class="bg-slate-100 text-black text-base rounded-sm py-1 px-1.5 w-40"
-        >
-          <option value="">Select Province</option>
-          <option value="punjab">Punjab</option>
-          <option value="islamabad">Islamabad Capital Territory</option>
-          <option value="sindh">Sindh</option>
-          <option value="kpk">Khyber Pakhtunkhwa</option>
-          <option value="balochistan">Balochistan</option>
-          <option value="gilgit">Gilgit-Baltistan</option>
-          <option value="kashmir">Azad Jammu and Kashmir</option>
-        </select>
-
-        <a
-          v-if="businessLink?.link"
-          :href="businessLink?.link"
-          target="_blank"
-          class="rounded-sm text-center px-2 py-1 text-black bg-slate-100 hover:text-primary-dark"
-          >Register Here</a
-        >
         <img
-          class="absolute bottom-0 right-0 opacity-10 object-cover overflow-hidden"
+          class="absolute -bottom-1 -right-4 opacity-20 object-cover"
           src="@/assets/images/association-of-persons-opacity.png"
           alt="Association of Persons"
         />
       </div>
-      <div
-        class="group h-[270px] w-[250px] bg-[#FA8365] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
+      <a
+        href="https://eservices.secp.gov.pk/eServices/"
+        target="_blank"
+        class="group h-[270px] w-[250px] bg-[#FA8365] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer overflow-hidden"
       >
         <span class="relative">
           <img
@@ -154,29 +143,47 @@ watch(selectProvince, () => {
         >
           Company
         </h2>
-        <a
-          href="https://eservices.secp.gov.pk/eServices/"
-          target="_blank"
-          class="rounded-sm text-center px-2 py-1 text-black bg-slate-100 hover:text-primary-dark"
-          >Register Here</a
-        >
+
         <img
-          class="absolute bottom-0 right-0 opacity-10 object-cover overflow-hidden"
+          class="absolute -bottom-1 -right-4 opacity-20 object-cover"
           src="@/assets/images/company-opacity.png"
           alt="Company"
         />
-      </div>
+      </a>
     </div>
     <!-- End: Tiles -->
+  </div>
 
-    <p class="font-normal pt-8">
-      Depend upon the number of people employed, registration with the following
-      departments is also mandatory.
-    </p>
+  <!-- Modal Overlay -->
+  <div
+    v-if="isOpen"
+    class="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center z-50"
+  >
+    <!-- Modal Content -->
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-sm">
+      <h2 class="text-primary-dark text-base font-bold mb-4">Province</h2>
+      <div>
+        <select
+          v-model="selectProvince"
+          class="bg-slate-100 text-black text-base rounded-sm py-1 px-1.5 w-40"
+        >
+          <option value="">Select Province</option>
+          <option value="punjab">Punjab</option>
+          <option value="islamabad">Islamabad Capital Territory</option>
+          <option value="sindh">Sindh</option>
+          <option value="kpk">Khyber Pakhtunkhwa</option>
+          <option value="balochistan">Balochistan</option>
+          <option value="gilgit">Gilgit-Baltistan</option>
+          <option value="kashmir">Azad Jammu and Kashmir</option>
+        </select>
+      </div>
 
-    <ul class="pb-4 list-disc ps-8">
-      <li>Labour & Human Resource Department</li>
-      <li>Employees Social Security Institute</li>
-    </ul>
+      <button
+        @click="isOpen = false"
+        class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Close
+      </button>
+    </div>
   </div>
 </template>

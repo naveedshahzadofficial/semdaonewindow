@@ -31,40 +31,62 @@ td {
         <span class="text-primary-dark font-semibold">Agro Food</span>
       </h1>
     </div>
-    <div class="mx-8">
-      <a
-        href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=124:agriculture-food-processing&Itemid=308"
-        target="_blank"
-        class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white mr-2"
-        >Pre-feasibility report</a
-      >
-      <a
-        href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=28&Itemid=139"
-        target="_blank"
-        class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white mr-2"
-        >Sector Brief</a
-      >
-      <a
-        href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=176:agrofood&Itemid=981"
-        target="_blank"
-        class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white"
-        >Business Guides</a
-      >
-    </div>
   </div>
 
   <div class="px-8 py-8 min-h-[500px]">
-    <table class="border bottom-1">
-      <thead>
-        <tr>
-          <th
-            class="border border-slate-300 py-4 bg-gradient-to-r from-blue-600 to-green-300 text-white font-medium text-lg"
-            colspan="2"
-          >
-            General Registrations/Licenses
-          </th>
-        </tr>
-      </thead>
+    <h1
+      class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
+    >
+      Sector Briefs
+    </h1>
+    <ul class="pb-4 list-disc ps-8">
+      <li>
+        <a
+          href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=36:horticultureaagriculture&Itemid=139"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Horticulture & Agriculture</a
+        >
+      </li>
+    </ul>
+
+    <h1
+      class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
+    >
+      Pre-feasibility report
+    </h1>
+    <ul class="pb-4 list-disc ps-8">
+      <li>
+        <a
+          href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=124:agriculture-food-processing&Itemid=308"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Agriculture and Food Processing</a
+        >
+      </li>
+    </ul>
+
+    <h1
+      class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
+    >
+      Business Guides
+    </h1>
+    <ul class="pb-4 list-disc ps-8">
+      <li>
+        <a
+          href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=176:agrofood&Itemid=981"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Agrofood</a
+        >
+      </li>
+    </ul>
+    <h1
+      class="mt-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-t-md text-white py-2 px-2"
+    >
+      General Registrations/Licenses
+    </h1>
+    <table>
       <tbody>
         <tr>
           <td class="w-1/3">

@@ -1,6 +1,9 @@
 <script setup>
 import { TileCircleComponent } from "@/components";
 import { onMounted } from "vue";
+import mitt from "mitt";
+const emitter = mitt();
+emitter.emit(["breadcrumbs"]);
 onMounted(() => {
   window.scrollTo(0, 0);
 });
@@ -15,6 +18,7 @@ onMounted(() => {
           icon: require('@/assets/images/plain-icon.png'),
           icon_hover: require('@/assets/images/plain-icon-hover.png'),
           link: 'plan',
+          tag_line: 'Navigate Toward Success',
         }"
       />
       <TileCircleComponent
@@ -23,6 +27,7 @@ onMounted(() => {
           icon: require('@/assets/images/start-icon.png'),
           icon_hover: require('@/assets/images/start-icon-hover.png'),
           link: 'start',
+          tag_line: 'Empowering Dreams, Igniting Success',
         }"
       />
       <TileCircleComponent
@@ -31,6 +36,7 @@ onMounted(() => {
           icon: require('@/assets/images/grow-icon.png'),
           icon_hover: require('@/assets/images/grow-icon-hover.png'),
           link: 'grow',
+          tag_line: 'Unlock Your Potential',
         }"
       />
     </div>

@@ -1,8 +1,16 @@
 <script setup>
-import { HeaderDefault, FooterDefault } from "./partials";
+import { ref } from "vue";
+import { HeaderDefault, FooterDefault, BreadCrumbs } from "./partials";
+const breadcrumbs = ref();
+import mitt from "mitt";
+const emitter = mitt();
+emitter.on("breadcrumbs", (_breadcrumbs) => {
+  breadcrumbs.value = _breadcrumbs;
+});
 </script>
 <template>
   <HeaderDefault />
+  <BreadCrumbs :breadcrumbs="breadcrumbs" />
   <div
     class="min-h-screen bg-[url('@/assets/images/bg-dashboard.jpg')] bg-cover bg-no-repeat"
   >
