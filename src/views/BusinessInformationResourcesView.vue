@@ -27,7 +27,7 @@ onMounted(() => {
     </p>
 
     <!-- Start: Tiles -->
-    <div class="flex items-center justify-center gap-10 py-10">
+    <div class="flex items-center justify-center space-x-10 py-10">
       <TileLinkComponent
         :tile="{
           title: 'Pre-feasibility Studies',
@@ -72,7 +72,7 @@ onMounted(() => {
         }"
       />
     </div>
-    <div class="flex items-center justify-center gap-10 py-10">
+    <div class="flex items-center justify-center space-x-10 py-10">
       <TileLinkComponent
         :tile="{
           title: 'Cluster Profiles',

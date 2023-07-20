@@ -8,7 +8,7 @@ onMounted(() => {
 <template>
   <section>
     <!-- Start: Tiles -->
-    <div class="flex items-center justify-center gap-14 py-32">
+    <div class="flex items-center justify-center space-x-14 py-32">
       <TileCircleComponent
         :tile="{
           title: 'Plan',

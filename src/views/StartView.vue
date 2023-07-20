@@ -49,7 +49,7 @@ watch(selectProvince, () => {
 
   <div class="px-8 py-8 min-h-fit">
     <!-- Start: Tiles -->
-    <div class="flex items-center justify-center gap-8 py-10">
+    <div class="flex items-center justify-center space-x-8 py-10">
       <div
         class="group h-[270px] w-[250px] bg-[#B47EED] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer"
       >

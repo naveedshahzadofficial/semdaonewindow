@@ -27,7 +27,7 @@ onMounted(() => {
     </p>
 
     <!-- Start: Tiles -->
-    <div class="flex items-center justify-center gap-6 py-10">
+    <div class="flex items-center justify-center space-x-10 py-10">
       <TileComponent
         :tile="{
           title: 'Cutlery',
