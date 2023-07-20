@@ -3,7 +3,7 @@
     class="bg-gradient-to-r from-blue-600 to-green-300 py-1.5 fixed bottom-0 w-full"
   >
     <div
-      class="container mx-auto px-4 text-center text-white font-poppins font-light text-xs"
+      class="w-full mx-auto px-4 text-center text-white font-poppins font-light text-xs"
     >
       <div class="flex justify-between">
         <div>

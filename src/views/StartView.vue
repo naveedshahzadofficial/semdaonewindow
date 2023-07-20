@@ -121,6 +121,7 @@ watch(selectProvince, () => {
         </select>
 
         <a
+          v-if="businessLink?.link"
           :href="businessLink?.link"
           target="_blank"
           class="rounded-sm text-center px-2 py-1 text-black bg-slate-100 hover:text-primary-dark"
