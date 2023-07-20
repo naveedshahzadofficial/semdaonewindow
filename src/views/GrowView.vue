@@ -1,8 +1,12 @@
 <script setup>
-import { ref, onMounted } from "vue";
-
+import { ref, onMounted, defineEmits } from "vue";
+const emit = defineEmits(["breadcrumbs"]);
 onMounted(() => {
   window.scrollTo(0, 0);
+  emit("breadcrumbs", [
+    { title: "Home", link: "dashboard" },
+    { title: "Grow", link: "" },
+  ]);
 });
 const tileServices = ref([
   {

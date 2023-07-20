@@ -2,11 +2,9 @@
 import { ref } from "vue";
 import { HeaderDefault, FooterDefault, BreadCrumbs } from "./partials";
 const breadcrumbs = ref();
-import mitt from "mitt";
-const emitter = mitt();
-emitter.on("breadcrumbs", (_breadcrumbs) => {
+const onLoadedBreadcrumbs = (_breadcrumbs) => {
   breadcrumbs.value = _breadcrumbs;
-});
+};
 </script>
 <template>
   <HeaderDefault />
@@ -16,7 +14,7 @@ emitter.on("breadcrumbs", (_breadcrumbs) => {
   >
     <main>
       <div class="w-full mx-auto px-4 py-8">
-        <router-view />
+        <router-view @breadcrumbs="onLoadedBreadcrumbs" />
       </div>
     </main>
   </div>

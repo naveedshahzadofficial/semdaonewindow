@@ -21,12 +21,6 @@ const routes = [
         component: () => import("@/views/DashboardView.vue"),
       },
       {
-        path: "/app/sectors",
-        name: "sectors",
-        meta: { title: "Sectors" },
-        component: () => import("@/views/SectorView.vue"),
-      },
-      {
         path: "/app/plan",
         name: "plan",
         meta: { title: "Plan" },
@@ -117,16 +111,6 @@ const routes = [
         component: () => import("@/views/GeneralRegistrationsLicensesView.vue"),
       },
     ],
-  },
-  {
-    path: "/about",
-    name: "about",
-    meta: { title: "about" },
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
   // catch all redirect to home page
   { path: "/:pathMatch(.*)*", redirect: "/" },

@@ -1,7 +1,14 @@
 <script setup>
-import { onMounted } from "vue";
+import { onMounted, defineEmits } from "vue";
+const emit = defineEmits(["breadcrumbs"]);
 onMounted(() => {
   window.scrollTo(0, 0);
+  emit("breadcrumbs", [
+    { title: "Home", link: "dashboard" },
+    { title: "Grow", link: "grow" },
+    { title: "Expansion/Diversification", link: "expansion-diversification" },
+    { title: "Autoparts", link: "" },
+  ]);
 });
 </script>
 <style lang="scss">

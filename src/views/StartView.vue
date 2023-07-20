@@ -1,12 +1,16 @@
 <script setup>
-import { onMounted, ref, watch } from "vue";
-
+import { onMounted, ref, watch, defineEmits } from "vue";
+const emit = defineEmits(["breadcrumbs"]);
 const isOpen = ref(false);
 
 const businessLink = ref(null);
 const selectProvince = ref("");
 onMounted(() => {
   window.scrollTo(0, 0);
+  emit("breadcrumbs", [
+    { title: "Home", link: "dashboard" },
+    { title: "Start", link: "" },
+  ]);
 });
 
 const links = ref([

@@ -10,7 +10,6 @@
   "dependencies": {
     "autoprefixer": "^10",
     "core-js": "^3.8.3",
-    "mitt": "^3.0.1",
     "pinia": "^2.0.0-rc.10",
     "postcss": "^8",
     "tailwindcss": "^3",
