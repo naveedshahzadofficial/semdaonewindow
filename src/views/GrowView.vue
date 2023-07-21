@@ -50,7 +50,7 @@ const tileServices = ref([
     <div class="px-8 py-8 min-h-[500px]">
       <div class="flex justify-evenly items-center pt-2">
         <div
-          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-400 to-green-200 bg-opacity-60 m-2"
+          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-60 m-2"
         >
           <div class="h-full flex flex-col justify-between items-center py-6">
             <template
@@ -91,7 +91,7 @@ const tileServices = ref([
           </div>
         </div>
         <div
-          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-400 to-green-200 bg-opacity-50 m-2"
+          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
         >
           <div class="h-full flex flex-col justify-center items-center py-6">
             <RouterLink
@@ -119,7 +119,7 @@ const tileServices = ref([
           </div>
         </div>
         <div
-          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-400 to-green-200 bg-opacity-50 m-2"
+          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
         >
           <div class="h-full flex flex-col justify-evenly items-center py-6">
             <RouterLink
@@ -177,7 +177,7 @@ const tileServices = ref([
 
       <div class="flex justify-evenly items-center pt-2">
         <div
-          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-400 to-green-200 bg-opacity-50 m-2"
+          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
         >
           <div class="h-full flex flex-col justify-center items-center py-6">
             <RouterLink
@@ -205,7 +205,7 @@ const tileServices = ref([
           </div>
         </div>
         <div
-          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-400 to-green-200 bg-opacity-50 m-2"
+          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
         >
           <div class="h-full flex flex-col justify-center items-center py-6">
             <RouterLink
@@ -238,7 +238,7 @@ const tileServices = ref([
       <div class="hidden flex justify-between items-center mt-8 mx-[95px]">
         <RouterLink
           :to="{ name: 'business-information-resources' }"
-          class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl"
+          class="bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl"
         >
           <span class="relative"
             ><img
@@ -263,7 +263,7 @@ const tileServices = ref([
         </RouterLink>
         <RouterLink
           :to="{ name: 'general-registrations-licenses' }"
-          class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl"
+          class="bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl"
         >
           <span class="relative"
             ><img
