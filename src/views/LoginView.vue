@@ -25,11 +25,16 @@ async function onSubmit(values) {
   <div class="min-h-screen flex items-center justify-center">
     <div class="grid grid-cols-2">
       <div class="flex flex-col items-center space-y-6">
-        <img
-          class="pt-6"
-          src="@/assets/images/logo-blue-dot.png"
-          alt="SMEDA-Logo"
-        />
+        <div class="flex pt-6 space-x-6">
+          <img
+            src="@/assets/images/logo-blue-dot.png"
+            alt="SMEDA-Logo"
+          />
+          <img
+            src="@/assets/images/pakistan-logo.png"
+            alt="Pakistan-Logo"
+          />
+        </div>
         <h1 class="font-bold text-primary-light text-4xl">SME ONE WINDOW</h1>
         <div class="font-normal text-primary-dark text-sm text-justify ps-10">
           SMEDA One Window is a one-stop shop where government organizations or

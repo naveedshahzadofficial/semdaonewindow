@@ -13,10 +13,17 @@
           </h1>
         </div>
 
-        <img
-          src="@/assets/images/header-banner.png"
-          alt="banner"
-        />
+        <div class="flex items-center space-x-4">
+          <img
+            class="h-20"
+            src="@/assets/images/pakistan-logo.png"
+            alt="Pakistan-Logo"
+          />
+          <img
+            src="@/assets/images/header-banner.png"
+            alt="banner"
+          />
+        </div>
       </div>
     </div>
   </header>
