@@ -12,7 +12,7 @@ onMounted(() => {
 </script>
 <template>
   <div class="-mx-6">
-    <h1 class="flex items-center">
+    <h1 class="flex items-center space-x-2">
       <span
         ><img
           src="@/assets/images/heading-left.png"
@@ -35,7 +35,7 @@ onMounted(() => {
         <a
           href="http://www.enc.com.pk"
           target="_blank"
-          class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white"
+          class="text-blue-500 hover:underline"
           >Apply for new Connection</a
         >
       </li>

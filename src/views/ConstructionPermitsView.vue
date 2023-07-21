@@ -12,7 +12,7 @@ onMounted(() => {
 </script>
 <template>
   <div class="-mx-6">
-    <h1 class="flex items-center">
+    <h1 class="flex items-center space-x-2">
       <span
         ><img
           src="@/assets/images/heading-left.png"
@@ -33,14 +33,13 @@ onMounted(() => {
       specific geographical region.
     </p>
     <p class="font-normal pb-4">
-      To access more information, kindly click below.
+      To access more information, kindly click
+      <a
+        href="https://ekhidmat.punjab.gov.pk/construction-industry-services"
+        target="_blank"
+        class="text-blue-500 hover:underline"
+        >here</a
+      >
     </p>
-
-    <a
-      href="https://ekhidmat.punjab.gov.pk/construction-industry-services"
-      target="_blank"
-      class="font-normal px-2 py-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white"
-      >e-Khidmat Markaz
-    </a>
   </div>
 </template>

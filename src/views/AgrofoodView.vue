@@ -28,7 +28,7 @@ td {
 <template>
   <div class="flex justify-between">
     <div class="-mx-6">
-      <h1 class="flex items-center">
+      <h1 class="flex items-center space-x-2">
         <span
           ><img
             src="@/assets/images/heading-left.png"
