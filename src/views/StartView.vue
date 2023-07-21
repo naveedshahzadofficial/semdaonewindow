@@ -46,6 +46,12 @@ watch(selectProvince, () => {
   }
 });
 </script>
+<style scoped lang="scss">
+.img-info-icon {
+  max-width: 100%;
+  max-height: 100%;
+}
+</style>
 <template>
   <div class="-mx-6">
     <h1 class="flex items-center space-x-2">
@@ -70,6 +76,11 @@ watch(selectProvince, () => {
         target="_blank"
         class="group h-[270px] w-[250px] bg-[#B47EED] rounded-3xl flex flex-col items-center justify-center relative gap-3 overflow-hidden cursor-pointer"
       >
+        <img
+          class="absolute top-0 right-0 object-cover"
+          src="@/assets/images/info-icon.png"
+          alt="Sole Proprietorship"
+        />
         <span class="relative">
           <img
             class="object-cover transition-opacity"
@@ -99,6 +110,11 @@ watch(selectProvince, () => {
         @click.prevent="isOpen = true"
         class="group h-[270px] w-[250px] bg-[#2FBBA1] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer overflow-hidden"
       >
+        <img
+          class="absolute top-0 right-0 object-cover"
+          src="@/assets/images/info-icon.png"
+          alt="Association of Persons"
+        />
         <span class="relative">
           <img
             class="object-cover transition-opacity"
@@ -129,6 +145,11 @@ watch(selectProvince, () => {
         target="_blank"
         class="group h-[270px] w-[250px] bg-[#FA8365] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer overflow-hidden"
       >
+        <img
+          class="absolute top-0 right-0 object-cover"
+          src="@/assets/images/info-icon.png"
+          alt="Company"
+        />
         <span class="relative">
           <img
             class="object-cover transition-opacity"
