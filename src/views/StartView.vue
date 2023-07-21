@@ -2,8 +2,10 @@
 import { onMounted, ref, watch, defineEmits } from "vue";
 const emit = defineEmits(["breadcrumbs"]);
 const isOpen = ref(false);
+const isOpenInfo = ref(false);
 
 const businessLink = ref(null);
+const infoContent = ref(null);
 const selectProvince = ref("");
 onMounted(() => {
   window.scrollTo(0, 0);
@@ -35,6 +37,83 @@ const links = ref([
     link: "https://business.kp.gov.pk/guidelines",
   },
 ]);
+
+const infos = ref([
+  {
+    id: 1,
+    title: "Sole Proprietorship",
+    content: `<p>
+            An AOP is a form of partnership. When two or more people become
+            joint-owners with a view to carry on a business together and sharing
+            the profits and losses in agreed proportions of their investment
+            ratios, they are in a partnership agreement. The Partnership Act,
+            1932, has defined Partnership as, "The relation which subsists
+            between persons who have agreed to combine their property, labour or
+            skill in some business and to share the profits and losses, thereof,
+            between them.
+          </p>`,
+  },
+  {
+    id: 2,
+    title: "Association of Persons",
+    content: `<p>A sole proprietorship also known as a sole trader/sole owner, or simply proprietorship is a type of business entity, which is owned and run by one individual and where there is no legal distinction between the owner and the business. All profits and all losses accrue to the sole owner (proprietor/trader).</p><p>The owner owns all assets of the business and all debts of the business are his debts, he must pay them from their personal resources. This means that the owner has unlimited liability. It is a sole proprietorship in the sense that the owner has no partners (partnership).</p><p>A sole proprietor may do business with a trade name other than his or her legal name. This also allows the proprietor to open a business account with banking institutions.</p>`,
+  },
+  {
+    id: 3,
+    title: "Company",
+    content: `<h3 class="font-bold my-2">Single Member:</h3>
+          <p>
+            A single member company is a class of private company, limited by
+            shares, which is incorporated with one member, or whose membership
+            is reduced to one person. It shall not issue an invitation to the
+            public to subscribe for any share of the company.
+          </p>
+          <p>
+            Moreover, the company shall not register any shares in the name of
+            two or more persons to hold one or more shares individually or
+            jointly; and number of members of the company shall be limited to a
+            single person. Every single member company shall have at least one
+            director.
+          </p>
+          <h3 class="font-bold my-2">Private Limited:</h3>
+          <p>Private Limited Company means a company where:</p>
+          <ul class="list-disc ps-8">
+            <li>
+              Shareholders cannot sell or transfer their shares without offering
+              them first to other shareholders for purchase
+            </li>
+            <li>
+              Shareholders cannot offer their shares to the general public over
+              a stock exchange
+            </li>
+            <li>
+              The number of shareholders cannot exceed a fixed figure (commonly
+              50)
+            </li>
+            <li>
+              The shareholders' liability is limited to the shares held by them
+            </li>
+            <li>
+              The lifespan of the company is indefinite; its existence does not
+              cease with the death of a director or shareholder
+            </li>
+          </ul>
+          <h3 class="font-bold my-2">Public Limited:</h3>
+          <p>
+            A Public Limited Company is one where the shares are offered to the
+            general public and can be acquired by anyone, either privately,
+            during an initial public offering or through trades on the stock
+            market. The company is strictly regulated, and is required by law to
+            publish its complete and true financial position so that investors
+            can determine the true worth of its stock (shares).
+          </p>`,
+  },
+]);
+
+const findInfoContent = (info_id) => {
+  infoContent.value = infos.value.find((info) => info.id === info_id);
+  isOpenInfo.value = true;
+};
 
 watch(selectProvince, () => {
   console.log(selectProvince.value);
@@ -72,110 +151,127 @@ watch(selectProvince, () => {
     <div class="px-8 pt-4 min-h-fit">
       <!-- Start: Tiles -->
       <div class="flex items-center justify-center space-x-8 py-8">
-        <a
-          href="https://www.fbr.gov.pk/"
-          target="_blank"
-          class="group h-[270px] w-[250px] bg-[#B47EED] rounded-3xl flex flex-col items-center justify-center relative gap-3 overflow-hidden cursor-pointer"
-        >
-          <img
-            class="hidden absolute top-0 right-0 object-cover"
-            src="@/assets/images/info-icon.png"
-            alt="Sole Proprietorship"
-          />
-          <span class="relative">
-            <img
-              class="object-cover transition-opacity"
-              src="@/assets/images/sole-proprietorship.png"
-              alt="Sole Proprietorship"
-            />
-            <img
-              class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-              src="@/assets/images/sole-proprietorship-hover.png"
-              alt="Sole Proprietorship"
-            />
-          </span>
-
-          <h2
-            class="font-normal text-center text-primary-dark text-base group-hover:text-white break-words px-2"
-          >
-            Sole Proprietorship
-          </h2>
-
-          <img
-            class="absolute -bottom-2 -right-3 opacity-20 object-cover"
-            src="@/assets/images/sole-proprietorship-opacity.png"
-            alt="Sole Proprietorship"
-          />
-        </a>
         <div
-          @click.prevent="isOpen = true"
-          class="group h-[270px] w-[250px] bg-[#2FBBA1] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer overflow-hidden"
+          class="h-[270px] w-[250px] bg-[#B47EED] rounded-3xl relative gap-3 cursor-pointer"
         >
           <img
-            class="hidden absolute top-0 right-0 object-cover"
+            @click.prevent="findInfoContent(1)"
+            class="absolute -top-2 -right-2 object-cover hover:invert"
+            src="@/assets/images/info-icon.png"
+            alt="Sole Proprietorship"
+          />
+          <a
+            href="https://www.fbr.gov.pk/"
+            target="_blank"
+            class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
+          >
+            <span class="relative">
+              <img
+                class="object-cover transition-opacity"
+                src="@/assets/images/sole-proprietorship.png"
+                alt="Sole Proprietorship"
+              />
+              <img
+                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                src="@/assets/images/sole-proprietorship-hover.png"
+                alt="Sole Proprietorship"
+              />
+            </span>
+
+            <h2
+              class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
+            >
+              Sole Proprietorship
+            </h2>
+
+            <img
+              class="absolute -bottom-2 -right-3 opacity-20 object-cover"
+              src="@/assets/images/sole-proprietorship-opacity.png"
+              alt="Sole Proprietorship"
+            />
+          </a>
+        </div>
+        <div
+          class="h-[270px] w-[250px] bg-[#2FBBA1] rounded-3xl relative gap-3 cursor-pointer"
+        >
+          <img
+            @click.prevent="findInfoContent(2)"
+            class="absolute -top-2 -right-2 object-cover hover:invert"
             src="@/assets/images/info-icon.png"
             alt="Association of Persons"
           />
-          <span class="relative">
-            <img
-              class="object-cover transition-opacity"
-              src="@/assets/images/association-of-persons.png"
-              alt="Association of Persons"
-            />
-            <img
-              class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-              src="@/assets/images/association-of-persons-hover.png"
-              alt="Association of Persons"
-            />
-          </span>
-
-          <h2
-            class="font-normal text-center text-primary-dark text-base group-hover:text-white break-words px-2"
+          <div
+            @click.prevent="isOpen = true"
+            class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
-            Association of Persons
-          </h2>
+            <span class="relative">
+              <img
+                class="object-cover transition-opacity"
+                src="@/assets/images/association-of-persons.png"
+                alt="Association of Persons"
+              />
+              <img
+                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                src="@/assets/images/association-of-persons-hover.png"
+                alt="Association of Persons"
+              />
+            </span>
 
-          <img
-            class="absolute -bottom-1 -right-4 opacity-20 object-cover"
-            src="@/assets/images/association-of-persons-opacity.png"
-            alt="Association of Persons"
-          />
+            <h2
+              class="font-medium text-center text-primary-dark text-lg group-hover:text-white break-words px-2"
+            >
+              Association of Persons
+            </h2>
+
+            <img
+              class="absolute -bottom-1 -right-4 opacity-20 object-cover"
+              src="@/assets/images/association-of-persons-opacity.png"
+              alt="Association of Persons"
+            />
+          </div>
         </div>
-        <a
+        <div
           href="https://eservices.secp.gov.pk/eServices/"
           target="_blank"
-          class="group h-[270px] w-[250px] bg-[#FA8365] rounded-3xl flex flex-col items-center justify-center relative gap-3 cursor-pointer overflow-hidden"
+          class="h-[270px] w-[250px] bg-[#FA8365] rounded-3xl relative gap-3 cursor-pointer"
         >
           <img
-            class="hidden absolute top-0 right-0 object-cover"
+            @click.prevent="findInfoContent(3)"
+            class="absolute -top-2 -right-2 object-cover hover:invert"
             src="@/assets/images/info-icon.png"
             alt="Company"
           />
-          <span class="relative">
-            <img
-              class="object-cover transition-opacity"
-              src="@/assets/images/company.png"
-              alt="Company"
-            />
-            <img
-              class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-              src="@/assets/images/company-hover.png"
-              alt="Company"
-            />
-          </span>
-
-          <h2
-            class="font-normal text-center text-primary-dark text-base group-hover:text-white break-words px-2"
+          <a
+            href="https://eservices.secp.gov.pk/eServices/"
+            target="_blank"
+            class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
-            Company
-          </h2>
+            <span class="relative">
+              <img
+                class="object-cover transition-opacity"
+                src="@/assets/images/company.png"
+                alt="Company"
+              />
+              <img
+                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                src="@/assets/images/company-hover.png"
+                alt="Company"
+              />
+            </span>
 
-          <img
-            class="absolute -bottom-1 -right-4 opacity-20 object-cover"
-            src="@/assets/images/company-opacity.png"
-            alt="Company"
-          />
-        </a>
+            <h2
+              class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
+            >
+              Company
+            </h2>
+
+            <img
+              class="absolute -bottom-1 -right-4 opacity-20 object-cover"
+              src="@/assets/images/company-opacity.png"
+              alt="Company"
+            />
+          </a>
+        </div>
       </div>
       <!-- End: Tiles -->
     </div>
@@ -200,12 +296,14 @@ watch(selectProvince, () => {
         <span
           class="border-r border-primary-dark h-10 mr-4 group-hover:border-white"
         ></span>
-        <span class="w-full px-5 font-medium text-base text-primary-dark">
+        <span
+          class="w-full px-5 font-medium text-base text-primary-dark group-hover:text-white"
+        >
           General Registrations /Licenses
         </span>
       </RouterLink>
     </div>
-    <!-- Modal Overlay -->
+    <!-- Begin: Provinces Modal -->
     <div
       v-if="isOpen"
       class="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center z-50"
@@ -234,5 +332,34 @@ watch(selectProvince, () => {
         </button>
       </div>
     </div>
+    <!-- End: Provinces Modal -->
+
+    <!-- Begin: Provinces Modal -->
+    <div
+      v-if="isOpenInfo"
+      class="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center z-50"
+    >
+      <!-- Modal Content -->
+      <div class="bg-white p-8 rounded shadow-md w-full mx-10">
+        <h2
+          class="text-primary-dark text-base font-bold mb-4"
+          v-if="infoContent.title"
+        >
+          {{ infoContent.title }}
+        </h2>
+        <div
+          class="text-justify"
+          v-if="infoContent.content"
+          v-html="infoContent.content"
+        ></div>
+        <button
+          @click="isOpenInfo = false"
+          class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+    <!-- End: Provinces Modal -->
   </section>
 </template>
