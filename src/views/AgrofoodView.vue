@@ -141,6 +141,35 @@ td {
       </ul>
       <h3 class="font-bold text-sm">Others</h3>
       <ul class="pb-4 list-disc ps-8">
+        <li>Halal Certificate</li>
+        <li>
+          License to Food Business Operator working food products in any area
+          but selling products within jurisdiction of Punjab Food Authority
+        </li>
+        <li>Certificate Food Product Registration</li>
+        <li>Label approval</li>
+        <li>Transit Permit to carry wood/forest produce</li>
+        <li>Leasing of fishing rights</li>
+        <li>License for FAT Rendering Unit</li>
+        <li>Food grain license</li>
+        <li>Flour mills registration/wheat quota Enlistment</li>
+        <li>Distribution & Sale of Pesticide</li>
+        <li>Distribution and Sale Fertilizer</li>
+        <li>License for sugar Broker</li>
+        <li>License for Purchasing Agent</li>
+        <li>Registration of market functionaries</li>
+        <li>Registration of Market Workers</li>
+        <li>
+          Installation License for cotton ginning, pressing and seed oil factory
+        </li>
+        <li>
+          Working License for cotton ginning, pressing and seed oil factory
+        </li>
+        <li>Crop variety testing and approval</li>
+        <li>Crop variety registration</li>
+        <li>Registration of seed and person</li>
+        <li>Conformity Assessment of product</li>
+
         <li>License for Installation of New Distillery Plant.</li>
         <li>NOC for Effluent Disposal</li>
         <li>Verification of test reports of L.T Installation</li>

@@ -43,7 +43,7 @@ async function onSubmit(values) {
           fostering a business-friendly environment for small and medium-sized
           enterprises.
         </div>
-        <h2 class="font-medium text-center text-primary-dark text-sm">
+        <h2 class="hidden font-medium text-center text-primary-dark text-sm">
           Please Login to access your account
         </h2>
         <Form
@@ -74,7 +74,7 @@ async function onSubmit(values) {
                 <div class="text-red-500 text-xs">{{ errors.username }}</div>
               </div>
             </div>
-            <div>
+            <div class="my-2.5">
               <label
                 for="password"
                 class="w-full block font-normal text-xs leading-6 text-gray-500"

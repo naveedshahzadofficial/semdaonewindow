@@ -134,6 +134,12 @@ td {
       </ul>
       <h3 class="font-bold text-sm">Others</h3>
       <ul class="pb-4 list-disc ps-8">
+        <li>Registration with National Council for Tib</li>
+        <li>Registration with National Council for Homeopathy</li>
+        <li>Registration with Pakistan Veterinary Medical Council</li>
+        <li>Drug Sale License pharmacist/medical store</li>
+        <li>License for import of Drugs</li>
+        <li>Registration of Pesticide Distributors</li>
         <li>License for Installation of New Distillery Plant.</li>
         <li>NOC for Effluent Disposal</li>
         <li>Verification of test reports of L.T Installation</li>
