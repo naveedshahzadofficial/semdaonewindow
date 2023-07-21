@@ -27,7 +27,7 @@ async function onSubmit(values) {
       <div class="flex flex-col items-center space-y-6">
         <img
           class="pt-6"
-          src="@/assets/images/logo.png"
+          src="@/assets/images/logo-blue-dot.png"
           alt="SMEDA-Logo"
         />
         <h1 class="font-bold text-primary-light text-4xl">SME ONE WINDOW</h1>
@@ -120,6 +120,7 @@ async function onSubmit(values) {
         <img
           src="@/assets/images/bg-login.png"
           alt="bg login"
+          class="pe-6"
         />
       </div>
     </div>

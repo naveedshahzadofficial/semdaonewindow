@@ -6,7 +6,7 @@ onMounted(() => {
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Grow", link: "grow" },
-    { title: "General Registrations Licenses", link: "" },
+    { title: "General Registrations/Licenses", link: "" },
   ]);
 });
 </script>
@@ -35,15 +35,27 @@ td {
           />
         </span>
         <span class="text-primary-dark font-semibold"
-          >General Registrations Licenses</span
+          >General Registrations / Licenses</span
         >
       </h1>
     </div>
   </div>
 
   <div class="px-8 py-8 min-h-[500px]">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem commodi
-    dignissimos ratione, neque aperiam asperiores laboriosam animi odio nulla
-    laborum rerum exercitationem esse sunt ea iste quis impedit! Eum.
+    <ul class="pb-4 list-disc ps-8">
+      <li>Registration of trade mark/Copy right</li>
+      <li>Registration of partnership</li>
+      <li>Registration of Company</li>
+      <li>NTN/Registration with SMEDA</li>
+      <li>Registration for payment of tax on services</li>
+      <li>Professional Tax registration</li>
+      <li>L-17 License (Retail sale)</li>
+      <li>L-17 License (Whole-Sale)</li>
+      <li>Environmental Approval - EIA & IEE</li>
+      <li>PESSI Registration</li>
+      <li>Shops & Establishment Registration</li>
+      <li>Registration of Factories</li>
+      <li>Patent and Desing Registration</li>
+    </ul>
   </div>
 </template>

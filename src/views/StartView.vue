@@ -215,16 +215,13 @@ watch(selectProvince, () => {
       <div>
         <select
           v-model="selectProvince"
-          class="bg-slate-100 text-black text-base rounded-sm py-1 px-1.5 w-40"
+          class="bg-slate-100 text-black text-base rounded-sm py-1 px-1.5 w-full"
         >
           <option value="">Select Province</option>
           <option value="punjab">Punjab</option>
-          <option value="islamabad">Islamabad Capital Territory</option>
           <option value="sindh">Sindh</option>
           <option value="kpk">Khyber Pakhtunkhwa</option>
           <option value="balochistan">Balochistan</option>
-          <option value="gilgit">Gilgit-Baltistan</option>
-          <option value="kashmir">Azad Jammu and Kashmir</option>
         </select>
       </div>
 
