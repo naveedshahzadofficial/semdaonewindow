@@ -24,8 +24,6 @@ onMounted(() => {
   </div>
 
   <div class="px-8 py-8 min-h-[500px]">
-    <h2 class="font-semibold py-2">Pakistan Single Window (PSW)</h2>
-
     <p class="font-normal pb-4">
       Pakistan Single Window (PSW) system serves as an established centralized
       hub designed to streamline and digitize cross-border trade processes in
@@ -43,7 +41,7 @@ onMounted(() => {
       <a
         href="https://www.psw.gov.pk/"
         target="_blank"
-        class="text-blue-500 hover:underline"
+        class="text-blue-500 font-bold hover:underline"
         >here</a
       >
     </p>

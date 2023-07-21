@@ -37,7 +37,7 @@ onMounted(() => {
       <a
         href="https://sezmis.invest.gov.pk/sez"
         target="_blank"
-        class="text-blue-500 hover:underline"
+        class="text-blue-500 font-bold hover:underline"
         >here</a
       >
     </p>

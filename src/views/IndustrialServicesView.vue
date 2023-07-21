@@ -40,7 +40,7 @@ onMounted(() => {
       <a
         href="https://ekhidmat.punjab.gov.pk/industrial-services"
         target="_blank"
-        class="text-blue-500 hover:underline"
+        class="text-blue-500 font-bold hover:underline"
         >here</a
       >
     </p>

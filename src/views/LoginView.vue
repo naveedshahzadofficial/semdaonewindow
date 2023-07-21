@@ -82,9 +82,9 @@ async function onSubmit(values) {
                   autocomplete="current-password"
                   required
                   class="w-full block font-medium rounded-xl border-0 py-0.5 px-2 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                  :class="{ 'ring-1 ring-red-500 text-xs': errors.password }"
+                  :class="{ 'ring-1 ring-red-500': errors.password }"
                 />
-                <div class="text-red-500">{{ errors.password }}</div>
+                <div class="text-red-500 text-xs">{{ errors.password }}</div>
               </div>
             </div>
             <div class="pt-2">

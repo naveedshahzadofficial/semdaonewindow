@@ -31,17 +31,37 @@ onMounted(() => {
     </p>
     <ul class="pb-4 list-disc ps-8">
       <li>
-        Electricity
         <a
           href="http://www.enc.com.pk"
           target="_blank"
-          class="text-blue-500 hover:underline"
-          >Apply for new Connection</a
+          class="text-primary-dark hover:underline"
+          >Electricity</a
         >
       </li>
-      <li>Water Supply</li>
-      <li>Gas Supply</li>
-      <li>Telecommunications</li>
+      <li>
+        <a
+          href="https://wasa.punjab.gov.pk"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Water Supply</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.sngpl.com.pk"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Gas Supply</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://ptcl.com.pk"
+          target="_blank"
+          class="text-primary-dark hover:underline"
+          >Telecommunications</a
+        >
+      </li>
     </ul>
   </div>
 </template>
