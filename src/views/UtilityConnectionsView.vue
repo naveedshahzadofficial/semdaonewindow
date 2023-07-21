@@ -41,7 +41,7 @@ onMounted(() => {
         </li>
         <li>
           <a
-            href="https://wasa.punjab.gov.pk"
+            href="https://wasa.punjab.gov.pk/new_connection"
             target="_blank"
             class="text-blue-500 font-bold hover:underline"
             >Water Supply</a
