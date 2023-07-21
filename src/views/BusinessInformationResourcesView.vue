@@ -139,7 +139,7 @@ onMounted(() => {
 
       <div class="flex items-center justify-center">
         <RouterLink
-          :to="{ name: 'general-registrations-licenses' }"
+          :to="{ name: 'sme-resources' }"
           class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl max-w-md"
         >
           <span class="relative"
