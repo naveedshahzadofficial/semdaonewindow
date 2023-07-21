@@ -45,12 +45,16 @@ onMounted(() => {
       with legal and financial professionals who can provide guidance tailored
       to your specific circumstances.
     </p>
-    <ul class="pb-4 list-disc ps-8">
+    <p class="font-normal pb-4">
+      For valuable insights and general guidelines on starting a business,
+      please refer to the links given below:
+    </p>
+    <ul class="pb-4">
       <li>
         <a
           href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=196:business-startup&Itemid=981"
           target="_blank"
-          class="text-primary-dark hover:underline"
+          class="text-blue-500 font-bold hover:underline"
           >Business Guides</a
         >
       </li>
@@ -58,7 +62,7 @@ onMounted(() => {
         <a
           href="https://smeda.org/index.php?option=com_content&view=article&id=146&Itemid=676"
           target="_blank"
-          class="text-primary-dark hover:underline"
+          class="text-blue-500 font-bold hover:underline"
           >Business Development Training Videos</a
         >
       </li>
@@ -66,7 +70,7 @@ onMounted(() => {
         <a
           href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=225&Itemid=1386"
           target="_blank"
-          class="text-primary-dark hover:underline"
+          class="text-blue-500 font-bold hover:underline"
           >Basic Financial Model</a
         >
       </li>
@@ -74,10 +78,35 @@ onMounted(() => {
         <a
           href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=122&Itemid=308"
           target="_blank"
-          class="text-primary-dark hover:underline"
+          class="text-blue-500 font-bold hover:underline"
           >Pre-feasibility Studies</a
         >
       </li>
     </ul>
+    <div class="flex items-center justify-center">
+      <RouterLink
+        :to="{ name: 'general-registrations-licenses' }"
+        class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl max-w-md"
+      >
+        <span class="relative"
+          ><img
+            class="object-cover transition-opacity"
+            src="@/assets/images/general-registrations-licenses.png"
+            alt="General Registrations /Licenses"
+          />
+          <img
+            class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+            src="@/assets/images/general-registrations-licenses-hover.png"
+            alt="General Registrations /Licenses"
+          />
+        </span>
+        <span
+          class="border-r border-primary-dark h-10 mr-4 group-hover:border-white"
+        ></span>
+        <span class="w-full px-5 font-medium text-base text-primary-dark">
+          General Registrations /Licenses
+        </span>
+      </RouterLink>
+    </div>
   </div>
 </template>

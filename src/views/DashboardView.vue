@@ -10,7 +10,7 @@ onMounted(() => {
 <template>
   <section>
     <p class="text-primary-dark text-center font-semibold">
-      Its all about Doing Business
+      Its All About Doing Business
     </p>
     <!-- Start: Tiles -->
     <div class="flex items-center justify-center space-x-14 py-32">

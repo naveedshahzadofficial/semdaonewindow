@@ -6,7 +6,6 @@ onMounted(() => {
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Grow", link: "grow" },
-    { title: "Expansion/Diversification", link: "expansion-diversification" },
     { title: "General Registrations Licenses", link: "" },
   ]);
 });

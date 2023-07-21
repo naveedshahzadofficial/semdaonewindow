@@ -29,12 +29,12 @@ onMounted(() => {
       must. Here are the links to acquire essential utility connections,
       including electricity, water supply, gas supply, and telecommunications:
     </p>
-    <ul class="pb-4 list-disc ps-8">
+    <ul class="pb-4">
       <li>
         <a
           href="http://www.enc.com.pk"
           target="_blank"
-          class="text-primary-dark hover:underline"
+          class="text-blue-500 font-bold hover:underline"
           >Electricity</a
         >
       </li>
@@ -42,7 +42,7 @@ onMounted(() => {
         <a
           href="https://wasa.punjab.gov.pk"
           target="_blank"
-          class="text-primary-dark hover:underline"
+          class="text-blue-500 font-bold hover:underline"
           >Water Supply</a
         >
       </li>
@@ -50,7 +50,7 @@ onMounted(() => {
         <a
           href="https://www.sngpl.com.pk"
           target="_blank"
-          class="text-primary-dark hover:underline"
+          class="text-blue-500 font-bold hover:underline"
           >Gas Supply</a
         >
       </li>
@@ -58,7 +58,7 @@ onMounted(() => {
         <a
           href="https://ptcl.com.pk"
           target="_blank"
-          class="text-primary-dark hover:underline"
+          class="text-blue-500 font-bold hover:underline"
           >Telecommunications</a
         >
       </li>

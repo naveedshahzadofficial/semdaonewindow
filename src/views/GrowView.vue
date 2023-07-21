@@ -172,10 +172,70 @@ const tileServices = ref([
       </div>
     </div>
 
-    <div class="flex justify-center items-center mt-8">
+    <div class="flex justify-evenly items-center pt-2">
+      <div
+        class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-400 to-green-200 bg-opacity-50 m-2"
+      >
+        <div class="h-full flex flex-col justify-center items-center py-6">
+          <RouterLink
+            :to="{ name: 'business-information-resources' }"
+            class="flex flex-col items-center group cursor-pointer gap-1.5"
+          >
+            <span class="relative"
+              ><img
+                class="transition-opacity"
+                src="@/assets/images/construction-permits.png"
+                alt="Business Information Resources"
+              />
+              <img
+                class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                src="@/assets/images/construction-permits-hover.png"
+                alt="Business Information Resources"
+              />
+            </span>
+            <span
+              class="font-medium text-base text-primary-dark group-hover:text-primary-light px-2 text-center"
+            >
+              Business Information Resources
+            </span>
+          </RouterLink>
+        </div>
+      </div>
+      <div
+        class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-400 to-green-200 bg-opacity-50 m-2"
+      >
+        <div class="h-full flex flex-col justify-center items-center py-6">
+          <RouterLink
+            :to="{ name: 'general-registrations-licenses' }"
+            class="flex flex-col items-center group cursor-pointer gap-1.5"
+          >
+            <span class="relative"
+              ><img
+                class="transition-opacity"
+                src="@/assets/images/general-registrations-licenses-hover.png"
+                alt="General Registrations /Licenses"
+              />
+              <img
+                class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                src="@/assets/images/general-registrations-licenses.png"
+                alt="General Registrations /Licenses"
+              />
+            </span>
+            <span
+              class="font-medium text-base text-primary-dark group-hover:text-primary-light px-2 text-center"
+            >
+              General Registrations /Licenses
+            </span>
+          </RouterLink>
+        </div>
+      </div>
+      <div class="w-[262px] h-[346px] rounded-3xl m-2"></div>
+    </div>
+
+    <div class="hidden flex justify-between items-center mt-8 mx-[95px]">
       <RouterLink
         :to="{ name: 'business-information-resources' }"
-        class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-3xl"
+        class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl"
       >
         <span class="relative"
           ><img
@@ -196,6 +256,31 @@ const tileServices = ref([
           class="w-full px-5 font-medium text-base text-primary-dark group-hover:text-primary-light"
         >
           Business Information Resources
+        </span>
+      </RouterLink>
+      <RouterLink
+        :to="{ name: 'general-registrations-licenses' }"
+        class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl"
+      >
+        <span class="relative"
+          ><img
+            class="object-cover transition-opacity"
+            src="@/assets/images/general-registrations-licenses-hover.png"
+            alt="Business Information Resources"
+          />
+          <img
+            class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+            src="@/assets/images/general-registrations-licenses.png"
+            alt="Business Information Resources"
+          />
+        </span>
+        <span
+          class="border-r border-primary-dark h-10 mr-4 group-hover:border-white"
+        ></span>
+        <span
+          class="w-full px-5 font-medium text-base text-primary-dark group-hover:text-white"
+        >
+          General Registrations /Licenses
         </span>
       </RouterLink>
     </div>
