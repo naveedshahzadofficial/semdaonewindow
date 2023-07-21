@@ -110,6 +110,12 @@ const routes = [
         meta: { title: "General Registrations Licenses" },
         component: () => import("@/views/GeneralRegistrationsLicensesView.vue"),
       },
+      {
+        path: "/app/sme-resources",
+        name: "sme-resources",
+        meta: { title: "SME Resources" },
+        component: () => import("@/views/SMEResourcesView.vue"),
+      },
     ],
   },
   // catch all redirect to home page

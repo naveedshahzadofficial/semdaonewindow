@@ -9,14 +9,13 @@ const onLoadedBreadcrumbs = (_breadcrumbs) => {
 <template>
   <HeaderDefault />
   <BreadCrumbs :breadcrumbs="breadcrumbs" />
-  <div
+
+  <main
     class="min-h-screen bg-[url('@/assets/images/bg-dashboard.jpg')] bg-cover bg-no-repeat"
   >
-    <main>
-      <div class="w-full mx-auto px-4 py-8">
-        <router-view @breadcrumbs="onLoadedBreadcrumbs" />
-      </div>
-    </main>
-  </div>
+    <div class="w-full mx-auto">
+      <router-view @breadcrumbs="onLoadedBreadcrumbs" />
+    </div>
+  </main>
   <FooterDefault />
 </template>

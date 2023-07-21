@@ -8,7 +8,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <section>
+  <section class="px-4 py-8">
     <p class="text-primary-dark text-center font-semibold">
       Its All About Doing Business
     </p>

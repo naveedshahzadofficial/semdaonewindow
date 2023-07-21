@@ -6,7 +6,11 @@ onMounted(() => {
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Grow", link: "grow" },
-    { title: "Utility Connections", link: "" },
+    {
+      title: "Business Information Resources",
+      link: "business-information-resources",
+    },
+    { title: "SME Resources", link: "" },
   ]);
 });
 </script>
@@ -20,47 +24,51 @@ onMounted(() => {
             alt="heading-icon"
           />
         </span>
-        <span class="text-primary-dark font-semibold">Utility Connections</span>
+        <span class="text-primary-dark font-semibold">SME Resources</span>
       </h1>
     </div>
 
     <div class="px-8 py-8 min-h-[500px]">
-      <p class="font-normal pb-4">
-        To ensure the smooth setup and operation of any business, utilities are
-        must. Here are the links to acquire essential utility connections,
-        including electricity, water supply, gas supply, and telecommunications:
-      </p>
-      <ul class="pb-4">
+      <ul>
         <li>
           <a
-            href="http://www.enc.com.pk"
+            href="https://moip.gov.pk/"
             target="_blank"
             class="text-blue-500 font-bold hover:underline"
-            >Electricity</a
+            >Ministry of Industries and Production</a
           >
         </li>
         <li>
           <a
-            href="https://wasa.punjab.gov.pk"
+            href="https://www.commerce.gov.pk/"
             target="_blank"
             class="text-blue-500 font-bold hover:underline"
-            >Water Supply</a
+            >Ministry of Commerce</a
           >
         </li>
         <li>
           <a
-            href="https://www.sngpl.com.pk"
+            href="https://tdap.gov.pk/"
             target="_blank"
             class="text-blue-500 font-bold hover:underline"
-            >Gas Supply</a
+            >Trade Development Authority of Pakistan</a
           >
         </li>
         <li>
           <a
-            href="https://ptcl.com.pk"
+            href="https://micadr.com/"
             target="_blank"
             class="text-blue-500 font-bold hover:underline"
-            >Telecommunications</a
+            >Musaliha International Center for Arbitration and Dispute
+            Resolution (MICADR)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://fto.gov.pk/"
+            target="_blank"
+            class="text-blue-500 font-bold hover:underline"
+            >Federal Tax Ombudsman</a
           >
         </li>
       </ul>

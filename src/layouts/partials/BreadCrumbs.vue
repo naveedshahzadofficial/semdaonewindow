@@ -8,7 +8,7 @@ defineProps({
 <template>
   <div
     v-if="breadcrumbs"
-    class="w-full bg-blue-400 h-8"
+    class="w-full bg-[#0064e9] h-8"
   >
     <ul class="flex items-center px-4 h-full">
       <template

@@ -26,104 +26,110 @@ td {
 }
 </style>
 <template>
-  <div class="flex justify-between">
-    <div class="-mx-6">
-      <h1 class="flex items-center space-x-2">
-        <span
-          ><img
-            src="@/assets/images/heading-left.png"
-            alt="heading-icon"
-          />
-        </span>
-        <span class="text-primary-dark font-semibold">Cutlery Sector</span>
-      </h1>
+  <section class="px-4 py-8">
+    <div class="flex justify-between">
+      <div class="-mx-6">
+        <h1 class="flex items-center space-x-2">
+          <span
+            ><img
+              src="@/assets/images/heading-left.png"
+              alt="heading-icon"
+            />
+          </span>
+          <span class="text-primary-dark font-semibold">Cutlery Sector</span>
+        </h1>
+      </div>
     </div>
-  </div>
 
-  <div class="px-8 py-8 min-h-[500px]">
-    <h1
-      class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
-    >
-      Sector Briefs
-    </h1>
-    <ul class="pb-4 list-disc ps-8">
-      <li>
-        <a
-          href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20-%20Kitchenware%20Cutlery%202020.pdf"
-          class="text-primary-dark hover:underline"
-          >Kitchenware Cutlery [2020]</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20-%20Non-Kitchenware%20Cutlery%202020.pdf"
-          class="text-primary-dark hover:underline"
-          >Non-Kitchenware Cutlery [2020]</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20of%20Pakistan%202018.pdf"
-          class="text-primary-dark hover:underline"
-          >Cutlery Sector of Pakistan [2018]</a
-        >
-      </li>
-    </ul>
+    <div class="px-8 py-8 min-h-[500px]">
+      <h1
+        class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
+      >
+        Sector Briefs
+      </h1>
+      <ul class="pb-4 list-disc ps-8">
+        <li>
+          <a
+            href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20-%20Kitchenware%20Cutlery%202020.pdf"
+            class="text-primary-dark hover:underline"
+            >Kitchenware Cutlery [2020]</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20-%20Non-Kitchenware%20Cutlery%202020.pdf"
+            class="text-primary-dark hover:underline"
+            >Non-Kitchenware Cutlery [2020]</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20of%20Pakistan%202018.pdf"
+            class="text-primary-dark hover:underline"
+            >Cutlery Sector of Pakistan [2018]</a
+          >
+        </li>
+      </ul>
 
-    <h1
-      class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
-    >
-      Know Your Approvals
-    </h1>
-    <h3 class="font-bold text-sm">Construction</h3>
-    <ul class="pb-4 list-disc ps-8">
-      <li>NOC for Building Plan Approval</li>
-      <li>Building Plan Approval</li>
-      <li>Building Plans Approval, Controlled Area</li>
-      <li>Building Plans Approval, LDA Housing Scheme</li>
-      <li>Revised / Addition / Alteration / Rebuild Building Plans Approval</li>
-      <li>Annual Commercialization Renewal</li>
-      <li>Approval of conversion of land use</li>
-      <li>Conversion of land use</li>
-      <li>
-        L-42-B License (Possession of rectified spirit for educational,
-        scientific purpose)
-      </li>
-      <li>
-        L-42-B License (Possession of rectified spirit for industrial purpose)
-      </li>
-      <li>Land Use - Permissible Commercial</li>
-      <li>Land use- Permitted Commercial (List A Roads)</li>
-      <li>Plot Sub division Approval</li>
-      <li>NOC for right of way</li>
-    </ul>
-    <h3 class="font-bold text-sm">PHA</h3>
-    <ul class="pb-4 list-disc ps-8">
-      <li>NOC for Installation of Billboards</li>
-      <li>NOC for installation of streamers</li>
-    </ul>
-    <h3 class="font-bold text-sm">Industry Department</h3>
-    <ul class="pb-4 list-disc ps-8">
-      <li>Registration of boilers</li>
-      <li>Registration of pressure vessels</li>
-      <li>Verification of weighing/measuring instruments</li>
-    </ul>
-    <h3 class="font-bold text-sm">Irrigation</h3>
-    <ul class="pb-4 list-disc ps-8">
-      <li>Agreement for usage of irrigation water for industrial purposes</li>
-      <li>NOC form Irrigation Department that site is not prone to flooding</li>
-      <li>Permission of new tube well/ ejector pump</li>
-      <li>Water connection</li>
-    </ul>
-    <h3 class="font-bold text-sm">Others</h3>
-    <ul class="pb-4 list-disc ps-8">
-      <li>License for Installation of New Distillery Plant.</li>
-      <li>NOC for Effluent Disposal</li>
-      <li>Verification of test reports of L.T Installation</li>
-      <li>NOC of H.T Installations</li>
-      <li>Recommendations for import approval</li>
-      <li>Completion Certificate</li>
-      <li>Confirmation of compliance</li>
-    </ul>
-  </div>
+      <h1
+        class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
+      >
+        Know Your Approvals
+      </h1>
+      <h3 class="font-bold text-sm">Construction</h3>
+      <ul class="pb-4 list-disc ps-8">
+        <li>NOC for Building Plan Approval</li>
+        <li>Building Plan Approval</li>
+        <li>Building Plans Approval, Controlled Area</li>
+        <li>Building Plans Approval, LDA Housing Scheme</li>
+        <li>
+          Revised / Addition / Alteration / Rebuild Building Plans Approval
+        </li>
+        <li>Annual Commercialization Renewal</li>
+        <li>Approval of conversion of land use</li>
+        <li>Conversion of land use</li>
+        <li>
+          L-42-B License (Possession of rectified spirit for educational,
+          scientific purpose)
+        </li>
+        <li>
+          L-42-B License (Possession of rectified spirit for industrial purpose)
+        </li>
+        <li>Land Use - Permissible Commercial</li>
+        <li>Land use- Permitted Commercial (List A Roads)</li>
+        <li>Plot Sub division Approval</li>
+        <li>NOC for right of way</li>
+      </ul>
+      <h3 class="font-bold text-sm">PHA</h3>
+      <ul class="pb-4 list-disc ps-8">
+        <li>NOC for Installation of Billboards</li>
+        <li>NOC for installation of streamers</li>
+      </ul>
+      <h3 class="font-bold text-sm">Industry Department</h3>
+      <ul class="pb-4 list-disc ps-8">
+        <li>Registration of boilers</li>
+        <li>Registration of pressure vessels</li>
+        <li>Verification of weighing/measuring instruments</li>
+      </ul>
+      <h3 class="font-bold text-sm">Irrigation</h3>
+      <ul class="pb-4 list-disc ps-8">
+        <li>Agreement for usage of irrigation water for industrial purposes</li>
+        <li>
+          NOC form Irrigation Department that site is not prone to flooding
+        </li>
+        <li>Permission of new tube well/ ejector pump</li>
+        <li>Water connection</li>
+      </ul>
+      <h3 class="font-bold text-sm">Others</h3>
+      <ul class="pb-4 list-disc ps-8">
+        <li>License for Installation of New Distillery Plant.</li>
+        <li>NOC for Effluent Disposal</li>
+        <li>Verification of test reports of L.T Installation</li>
+        <li>NOC of H.T Installations</li>
+        <li>Recommendations for import approval</li>
+        <li>Completion Certificate</li>
+        <li>Confirmation of compliance</li>
+      </ul>
+    </div>
+  </section>
 </template>
