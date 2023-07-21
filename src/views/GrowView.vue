@@ -64,17 +64,17 @@ const tileServices = ref([
                 <span class="relative"
                   ><img
                     class="transition-opacity"
-                    :src="tileService.icon"
+                    :src="tileService.icon_hover"
                     :alt="tileService.name"
                   />
                   <img
                     class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                    :src="tileService.icon_hover"
+                    :src="tileService.icon"
                     :alt="tileService.name"
                   />
                 </span>
                 <span
-                  class="font-medium text-base text-primary-dark group-hover:text-primary-light"
+                  class="font-medium text-base text-primary-dark group-hover:text-white"
                   >{{ tileService.name }}</span
                 >
               </RouterLink>
@@ -101,17 +101,17 @@ const tileServices = ref([
               <span class="relative"
                 ><img
                   class="transition-opacity"
-                  src="@/assets/images/expansion-diversification.png"
+                  src="@/assets/images/expansion-diversification-hover.png"
                   alt="Expansion / Diversification"
                 />
                 <img
                   class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/expansion-diversification-hover.png"
+                  src="@/assets/images/expansion-diversification.png"
                   alt="Expansion / Diversification"
                 />
               </span>
               <span
-                class="font-medium text-base text-primary-dark group-hover:text-primary-light"
+                class="font-medium text-base text-primary-dark group-hover:text-white"
               >
                 Expansion / Diversification
               </span>
@@ -129,17 +129,17 @@ const tileServices = ref([
               <span class="relative"
                 ><img
                   class="transition-opacity"
-                  src="@/assets/images/construction-permits.png"
+                  src="@/assets/images/construction-permits-hover.png"
                   alt="Construction Permits"
                 />
                 <img
                   class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/construction-permits-hover.png"
+                  src="@/assets/images/construction-permits.png"
                   alt="Construction Permits"
                 />
               </span>
               <span
-                class="font-medium text-base text-primary-dark group-hover:text-primary-light"
+                class="font-medium text-base text-primary-dark group-hover:text-white"
               >
                 Construction Permits
               </span>
@@ -156,17 +156,17 @@ const tileServices = ref([
               <span class="relative"
                 ><img
                   class="transition-opacity"
-                  src="@/assets/images/utility-connections.png"
+                  src="@/assets/images/utility-connections-hover.png"
                   alt="Utility Connections"
                 />
                 <img
                   class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/utility-connections-hover.png"
+                  src="@/assets/images/utility-connections.png"
                   alt="Utility Connections"
                 />
               </span>
               <span
-                class="font-medium text-base text-primary-dark group-hover:text-primary-light"
+                class="font-medium text-base text-primary-dark group-hover:text-white"
               >
                 Utility Connections
               </span>
@@ -187,17 +187,17 @@ const tileServices = ref([
               <span class="relative"
                 ><img
                   class="transition-opacity"
-                  src="@/assets/images/business-information-resources.png"
+                  src="@/assets/images/business-information-resources-hover.png"
                   alt="Business Information Resources"
                 />
                 <img
                   class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/business-information-resources-hover.png"
+                  src="@/assets/images/business-information-resources.png"
                   alt="Business Information Resources"
                 />
               </span>
               <span
-                class="font-medium text-base text-primary-dark group-hover:text-primary-light px-2 text-center"
+                class="font-medium text-base text-primary-dark group-hover:text-white px-2 text-center"
               >
                 Business Information Resources
               </span>
@@ -215,17 +215,17 @@ const tileServices = ref([
               <span class="relative"
                 ><img
                   class="transition-opacity"
-                  src="@/assets/images/general-registrations-licenses-hover.png"
+                  src="@/assets/images/general-registrations-licenses.png"
                   alt="General Registrations /Licenses"
                 />
                 <img
                   class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/general-registrations-licenses.png"
+                  src="@/assets/images/general-registrations-licenses-hover.png"
                   alt="General Registrations /Licenses"
                 />
               </span>
               <span
-                class="font-medium text-base text-primary-dark group-hover:text-primary-light px-2 text-center"
+                class="font-medium text-base text-primary-dark group-hover:text-white px-2 text-center"
               >
                 General Registrations /Licenses
               </span>
