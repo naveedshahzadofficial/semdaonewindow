@@ -12,13 +12,14 @@ onMounted(() => {
 });
 </script>
 <template>
+  <RouterLink :to="{ name: 'sme-resources' }">
+    <img
+      src="@/assets/images/sme-resources-banner.png"
+      alt="SME REsources"
+      class="object-cover"
+    />
+  </RouterLink>
   <section class="px-4 py-8">
-    <div>
-      <img
-        src="@/assets/images/sme-resources-banner.png"
-        alt="SME REsources"
-      />
-    </div>
     <div class="-mx-6">
       <h1 class="flex items-center space-x-2">
         <span
