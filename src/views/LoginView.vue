@@ -37,10 +37,11 @@ async function onSubmit(values) {
         </div>
         <h1 class="font-bold text-primary-light text-4xl">SME ONE WINDOW</h1>
         <div class="font-normal text-primary-dark text-sm text-justify ps-10">
-          SMEDA One Window is a one-stop shop where government organizations or
-          departments have consolidated their services and information. To
-          acquire permits, licenses or relevant information, submit necessary
-          documents and complete the required procedures.
+          SME One Window: A convenient, one-stop platform for entrepreneurs to
+          access government services, permits, licenses, and vital information
+          in a hassle-free manner. Simplifying processes, saving time, and
+          fostering a business-friendly environment for small and medium-sized
+          enterprises.
         </div>
         <h2 class="font-medium text-center text-primary-dark text-sm">
           Please Login to access your account
