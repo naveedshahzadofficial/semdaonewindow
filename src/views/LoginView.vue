@@ -118,7 +118,7 @@ async function onSubmit(values) {
             class="text-primary-dark font-semibold hover:text-primary-light"
             href="https://smerp.smeda.org/register"
             target="_blank"
-            >Signup and register your SMEs with SMEDA</a
+            >Signup and register yourself with SMEDA</a
           >
         </div>
       </div>

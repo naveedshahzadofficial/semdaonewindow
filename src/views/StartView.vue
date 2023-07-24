@@ -42,6 +42,11 @@ const infos = ref([
   {
     id: 1,
     title: "Sole Proprietorship",
+    content: `<p>A sole proprietorship also known as a sole trader/sole owner, or simply proprietorship is a type of business entity, which is owned and run by one individual and where there is no legal distinction between the owner and the business. All profits and all losses accrue to the sole owner (proprietor/trader).</p><p>The owner owns all assets of the business and all debts of the business are his debts, he must pay them from their personal resources. This means that the owner has unlimited liability. It is a sole proprietorship in the sense that the owner has no partners (partnership).</p><p>A sole proprietor may do business with a trade name other than his or her legal name. This also allows the proprietor to open a business account with banking institutions.</p>`,
+  },
+  {
+    id: 2,
+    title: "Association of Persons",
     content: `<p>
             An AOP is a form of partnership. When two or more people become
             joint-owners with a view to carry on a business together and sharing
@@ -52,11 +57,6 @@ const infos = ref([
             skill in some business and to share the profits and losses, thereof,
             between them.
           </p>`,
-  },
-  {
-    id: 2,
-    title: "Association of Persons",
-    content: `<p>A sole proprietorship also known as a sole trader/sole owner, or simply proprietorship is a type of business entity, which is owned and run by one individual and where there is no legal distinction between the owner and the business. All profits and all losses accrue to the sole owner (proprietor/trader).</p><p>The owner owns all assets of the business and all debts of the business are his debts, he must pay them from their personal resources. This means that the owner has unlimited liability. It is a sole proprietorship in the sense that the owner has no partners (partnership).</p><p>A sole proprietor may do business with a trade name other than his or her legal name. This also allows the proprietor to open a business account with banking institutions.</p>`,
   },
   {
     id: 3,
@@ -342,7 +342,7 @@ watch(selectProvince, () => {
       <!-- Modal Content -->
       <div class="bg-white p-8 rounded shadow-md w-full mx-10">
         <h2
-          class="text-primary-dark text-base font-bold mb-4"
+          class="text-primary-dark text-lg font-bold mb-4"
           v-if="infoContent.title"
         >
           {{ infoContent.title }}
