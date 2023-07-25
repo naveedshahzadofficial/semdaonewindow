@@ -9,6 +9,7 @@ const infoContent = ref(null);
 const selectProvince = ref("");
 onMounted(() => {
   window.scrollTo(0, 0);
+  emit("background", require('@/assets/images/bg-dashboard.jpg'));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Start", link: "" },
@@ -146,7 +147,7 @@ watch(selectProvince, () => {
       <!-- Start: Tiles -->
       <div class="flex items-center justify-center space-x-8 py-8">
         <div
-          class="h-[270px] w-[250px] bg-[#B47EED] rounded-3xl relative gap-3 cursor-pointer"
+          class="h-[439px] w-[296px] bg-[url('@/assets/images/sole-bg.png')] bg-cover bg-no-repeat rounded relative gap-3 cursor-pointer"
         >
           <img
             @click.prevent="findInfoContent(1)"
@@ -159,34 +160,17 @@ watch(selectProvince, () => {
             target="_blank"
             class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
-            <span class="relative">
-              <img
-                class="object-cover transition-opacity"
-                src="@/assets/images/sole-proprietorship.png"
-                alt="Sole Proprietorship"
-              />
-              <img
-                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                src="@/assets/images/sole-proprietorship-hover.png"
-                alt="Sole Proprietorship"
-              />
-            </span>
-
+            <div class="mt-52">
             <h2
               class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
             >
               Sole Proprietorship
             </h2>
-
-            <img
-              class="absolute -bottom-2 -right-3 opacity-20 object-cover"
-              src="@/assets/images/sole-proprietorship-opacity.png"
-              alt="Sole Proprietorship"
-            />
+            </div>
           </a>
         </div>
         <div
-          class="h-[270px] w-[250px] bg-[#2FBBA1] rounded-3xl relative gap-3 cursor-pointer"
+          class="h-[439px] w-[296px] bg-[url('@/assets/images/association-bg.png')] bg-cover bg-no-repeat rounded relative gap-3 cursor-pointer"
         >
           <img
             @click.prevent="findInfoContent(2)"
@@ -198,36 +182,19 @@ watch(selectProvince, () => {
             @click.prevent="isOpen = true"
             class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
-            <span class="relative">
-              <img
-                class="object-cover transition-opacity"
-                src="@/assets/images/association-of-persons.png"
-                alt="Association of Persons"
-              />
-              <img
-                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                src="@/assets/images/association-of-persons-hover.png"
-                alt="Association of Persons"
-              />
-            </span>
-
+            <div class="mt-52">
             <h2
               class="font-medium text-center text-primary-dark text-lg group-hover:text-white break-words px-2"
             >
               Association of Persons
             </h2>
-
-            <img
-              class="absolute -bottom-1 -right-4 opacity-20 object-cover"
-              src="@/assets/images/association-of-persons-opacity.png"
-              alt="Association of Persons"
-            />
+            </div>
           </div>
         </div>
         <div
           href="https://eservices.secp.gov.pk/eServices/"
           target="_blank"
-          class="h-[270px] w-[250px] bg-[#FA8365] rounded-3xl relative gap-3 cursor-pointer"
+          class="h-[439px] w-[296px] bg-[url('@/assets/images/company-bg.png')] bg-cover bg-no-repeat rounded relative gap-3 cursor-pointer"
         >
           <img
             @click.prevent="findInfoContent(3)"
@@ -240,37 +207,21 @@ watch(selectProvince, () => {
             target="_blank"
             class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
-            <span class="relative">
-              <img
-                class="object-cover transition-opacity"
-                src="@/assets/images/company.png"
-                alt="Company"
-              />
-              <img
-                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                src="@/assets/images/company-hover.png"
-                alt="Company"
-              />
-            </span>
+            <div class="mt-52">
 
             <h2
               class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
             >
               Company
             </h2>
-
-            <img
-              class="absolute -bottom-1 -right-4 opacity-20 object-cover"
-              src="@/assets/images/company-opacity.png"
-              alt="Company"
-            />
+            </div>
           </a>
         </div>
       </div>
       <!-- End: Tiles -->
     </div>
 
-    <div class="flex items-center justify-center pb-8">
+    <div class="hidden flex items-center justify-center pb-8">
       <RouterLink
         :to="{ name: 'general-registrations-licenses' }"
         class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl max-w-md"

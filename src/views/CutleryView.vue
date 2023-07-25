@@ -3,6 +3,7 @@ import { onMounted, defineEmits } from "vue";
 const emit = defineEmits(["breadcrumbs"]);
 onMounted(() => {
   window.scrollTo(0, 0);
+  emit("background", require('@/assets/images/bg-dashboard.jpg'));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Grow", link: "grow" },

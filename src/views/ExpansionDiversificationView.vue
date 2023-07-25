@@ -4,6 +4,7 @@ import { onMounted, defineEmits } from "vue";
 const emit = defineEmits(["breadcrumbs"]);
 onMounted(() => {
   window.scrollTo(0, 0);
+  emit("background", require('@/assets/images/bg-dashboard.jpg'));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Grow", link: "grow" },
@@ -72,6 +73,31 @@ onMounted(() => {
         />
       </div>
       <!-- End: Tiles -->
+      <div class="flex items-center justify-center">
+        <RouterLink
+            :to="{ name: 'general-registrations-licenses' }"
+            class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl max-w-md"
+        >
+          <span class="relative"
+          ><img
+              class="object-cover transition-opacity"
+              src="@/assets/images/general-registrations-licenses.png"
+              alt="General Registrations /Licenses"
+          />
+            <img
+                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                src="@/assets/images/general-registrations-licenses-hover.png"
+                alt="General Registrations /Licenses"
+            />
+          </span>
+          <span
+              class="border-r border-primary-dark h-10 mr-4 group-hover:border-white"
+          ></span>
+          <span class="w-full px-5 font-medium text-base text-primary-dark group-hover:text-white">
+            General Registrations /Licenses
+          </span>
+        </RouterLink>
+      </div>
     </div>
   </section>
 </template>

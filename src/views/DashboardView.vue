@@ -4,6 +4,7 @@ import { onMounted, defineEmits } from "vue";
 const emit = defineEmits(["breadcrumbs"]);
 onMounted(() => {
   window.scrollTo(0, 0);
+  emit("background", require('@/assets/images/bg-dashboard.jpg'));
   emit("breadcrumbs", [{ title: "Home", link: "" }]);
 });
 </script>
@@ -15,10 +16,11 @@ onMounted(() => {
       </span>
     </h3>
     <!-- Start: Tiles -->
-    <div class="flex items-center justify-center space-x-14 py-32">
+    <div class="flex items-center justify-center space-x-14 py-16">
       <TileCircleComponent
         :tile="{
           title: 'Plan',
+          bg: require('@/assets/images/plan-bg.png'),
           icon: require('@/assets/images/plain-icon.png'),
           icon_hover: require('@/assets/images/plain-icon-hover.png'),
           link: 'plan',
@@ -28,6 +30,7 @@ onMounted(() => {
       <TileCircleComponent
         :tile="{
           title: 'Start',
+          bg: require('@/assets/images/start-bg.png'),
           icon: require('@/assets/images/start-icon.png'),
           icon_hover: require('@/assets/images/start-icon-hover.png'),
           link: 'start',
@@ -37,6 +40,7 @@ onMounted(() => {
       <TileCircleComponent
         :tile="{
           title: 'Grow',
+          bg: require('@/assets/images/grow-bg.png'),
           icon: require('@/assets/images/grow-icon.png'),
           icon_hover: require('@/assets/images/grow-icon-hover.png'),
           link: 'grow',

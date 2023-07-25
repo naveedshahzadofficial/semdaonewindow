@@ -3,6 +3,7 @@ import { onMounted, defineEmits } from "vue";
 const emit = defineEmits(["breadcrumbs"]);
 onMounted(() => {
   window.scrollTo(0, 0);
+  emit("background", require('@/assets/images/bg-dashboard.jpg'));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Plan", link: "" },
@@ -78,7 +79,7 @@ onMounted(() => {
           >
         </li>
       </ul>
-      <div class="flex">
+      <div class="hidden flex">
         <RouterLink
           :to="{ name: 'general-registrations-licenses' }"
           class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl max-w-md"

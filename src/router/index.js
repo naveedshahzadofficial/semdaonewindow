@@ -116,6 +116,12 @@ const routes = [
         meta: { title: "SME Resources" },
         component: () => import("@/views/SMEResourcesView.vue"),
       },
+      {
+        path: "/app/complaints-feedback",
+        name: "complaints-feedback",
+        meta: { title: "Complaints Feedback" },
+        component: () => import("@/views/ComplaintsFeedbackView.vue"),
+      },
     ],
   },
   // catch all redirect to home page

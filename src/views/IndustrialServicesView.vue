@@ -3,6 +3,7 @@ import { onMounted, defineEmits } from "vue";
 const emit = defineEmits(["breadcrumbs"]);
 onMounted(() => {
   window.scrollTo(0, 0);
+  emit("background", require('@/assets/images/Industrial-Services-bg.jpg'));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Grow", link: "grow" },
@@ -18,27 +19,30 @@ onMounted(() => {
       </h1>
     </div>
 
-    <div class="px-8 py-8 min-h-[500px]">
-      <p class="font-normal pb-4">
-        Integrating convenience and efficiency, e-Khidmat by the Government of
-        Punjab presents specialized Industrial services aimed at providing
-        optimal support for the Industry. It encompasses a comprehensive suite
-        of specialized services tailored for Inspection authorities,
-        Manufacturers, and Operators engaged in the management of Boilers and
-        Pressure vessels. Additionally, it also addresses the interests of
-        Dealers, Manufacturers, Repairers, and Users of Weights & Measures,
-        delivering indispensable information and customized assistance to
-        optimize their operational practices.
-      </p>
-      <p class="font-normal pb-4">
-        For further details and registration, click
-        <a
-          href="https://ekhidmat.punjab.gov.pk/industrial-services"
-          target="_blank"
-          class="text-blue-500 font-bold hover:underline"
+    <div class="px-8 py-8 min-h-[500px] grid grid-cols-3">
+      <div class="col-span-2">
+        <p class="font-normal pb-4">
+          Integrating convenience and efficiency, e-Khidmat by the Government of
+          Punjab presents specialized Industrial services aimed at providing
+          optimal support for the Industry. It encompasses a comprehensive suite
+          of specialized services tailored for Inspection authorities,
+          Manufacturers, and Operators engaged in the management of Boilers and
+          Pressure vessels. Additionally, it also addresses the interests of
+          Dealers, Manufacturers, Repairers, and Users of Weights & Measures,
+          delivering indispensable information and customized assistance to
+          optimize their operational practices.
+        </p>
+        <p class="font-normal pb-4">
+          For further details and registration, click
+          <a
+              href="https://ekhidmat.punjab.gov.pk/industrial-services"
+              target="_blank"
+              class="text-blue-500 font-bold hover:underline"
           >here</a
-        >
-      </p>
+          >
+        </p>
+      </div>
+      <div class="h-[388px] w-[370px] bg-[url('@/assets/images/Industrial-Services-side.png')] bg-cover bg-no-repeat rounded-2xl"></div>
     </div>
   </section>
 </template>
