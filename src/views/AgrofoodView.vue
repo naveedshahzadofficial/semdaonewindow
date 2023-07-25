@@ -29,14 +29,8 @@ td {
   <section class="px-4 py-8">
     <div class="flex justify-between">
       <div class="-mx-6">
-        <h1 class="flex items-center space-x-2">
-          <span
-            ><img
-              src="@/assets/images/heading-left.png"
-              alt="heading-icon"
-            />
-          </span>
-          <span class="text-primary-dark font-semibold">Agro Food</span>
+        <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]">
+          <span class="text-white font-semibold ml-8">Agro Food</span>
         </h1>
       </div>
     </div>
@@ -47,7 +41,7 @@ td {
       >
         Sector Briefs
       </h1>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>
           <a
             href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=36:horticultureaagriculture&Itemid=139"
@@ -63,7 +57,7 @@ td {
       >
         Pre-feasibility report
       </h1>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>
           <a
             href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=124:agriculture-food-processing&Itemid=308"
@@ -79,7 +73,7 @@ td {
       >
         Business Guides
       </h1>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>
           <a
             href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=176:agrofood&Itemid=981"
@@ -96,7 +90,7 @@ td {
         Know Your Approvals
       </h1>
       <h3 class="font-bold text-sm">Construction</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>NOC for Building Plan Approval</li>
         <li>Building Plan Approval</li>
         <li>Building Plans Approval, Controlled Area</li>
@@ -120,7 +114,7 @@ td {
         <li>NOC for right of way</li>
       </ul>
       <h3 class="font-bold text-sm">PHA</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>NOC for Installation of Billboards</li>
         <li>NOC for installation of streamers</li>
       </ul>
@@ -131,7 +125,7 @@ td {
         <li>Verification of weighing/measuring instruments</li>
       </ul>
       <h3 class="font-bold text-sm">Irrigation</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Agreement for usage of irrigation water for industrial purposes</li>
         <li>
           NOC form Irrigation Department that site is not prone to flooding
@@ -140,7 +134,7 @@ td {
         <li>Water connection</li>
       </ul>
       <h3 class="font-bold text-sm">Others</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Halal Certificate</li>
         <li>
           License to Food Business Operator working food products in any area

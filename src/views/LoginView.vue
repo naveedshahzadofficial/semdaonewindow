@@ -43,8 +43,8 @@ async function onSubmit(values) {
           fostering a business-friendly environment for small and medium-sized
           enterprises.
         </div>
-        <h2 class="hidden font-medium text-center text-primary-dark text-sm">
-          Please Login to access your account
+        <h2 class="font-medium text-center text-primary-dark text-sm">
+          Existing Users, Login Here
         </h2>
         <Form
           @submit="onSubmit"
@@ -113,12 +113,12 @@ async function onSubmit(values) {
           </div>
         </Form>
         <div class="text-gray-500">
-          New user?
+          New Business/User? Register
           <a
             class="text-primary-dark font-semibold hover:text-primary-light"
             href="https://smerp.smeda.org/register"
             target="_blank"
-            >Signup and register yourself with SMEDA</a
+            >Here</a
           >
         </div>
       </div>

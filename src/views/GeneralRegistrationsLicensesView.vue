@@ -28,32 +28,24 @@ td {
   <section class="px-4 py-8">
     <div class="flex justify-between">
       <div class="-mx-6">
-        <h1 class="flex items-center space-x-2">
-          <span
-            ><img
-              src="@/assets/images/heading-left.png"
-              alt="heading-icon"
-            />
-          </span>
-          <span class="text-primary-dark font-semibold"
-            >General Registrations / Licenses</span
-          >
+        <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[400px]">
+          <span class="text-white font-semibold ml-8">General Registrations / Licenses</span>
         </h1>
       </div>
     </div>
 
     <div class="px-8 py-8 min-h-[500px]">
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Registration of trade mark/Copy right</li>
         <li>Registration of partnership</li>
         <li>Registration of Company</li>
-        <li>NTN/Registration with SMEDA</li>
+        <li>NTN Registration</li>
         <li>Registration for payment of tax on services</li>
         <li>Professional Tax registration</li>
         <li>L-17 License (Retail sale)</li>
         <li>L-17 License (Whole-Sale)</li>
         <li>Environmental Approval - EIA & IEE</li>
-        <li>PESSI Registration</li>
+        <li>ESSI Registration</li>
         <li>Shops & Establishment Registration</li>
         <li>Registration of Factories</li>
         <li>Patent and Desing Registration</li>

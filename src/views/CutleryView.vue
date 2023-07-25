@@ -47,7 +47,7 @@ td {
       >
         Sector Briefs
       </h1>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>
           <a
             href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20-%20Kitchenware%20Cutlery%202020.pdf"
@@ -77,7 +77,7 @@ td {
         Know Your Approvals
       </h1>
       <h3 class="font-bold text-sm">Construction</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>NOC for Building Plan Approval</li>
         <li>Building Plan Approval</li>
         <li>Building Plans Approval, Controlled Area</li>
@@ -101,18 +101,18 @@ td {
         <li>NOC for right of way</li>
       </ul>
       <h3 class="font-bold text-sm">PHA</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize" >
         <li>NOC for Installation of Billboards</li>
         <li>NOC for installation of streamers</li>
       </ul>
       <h3 class="font-bold text-sm">Industry Department</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Registration of boilers</li>
         <li>Registration of pressure vessels</li>
         <li>Verification of weighing/measuring instruments</li>
       </ul>
       <h3 class="font-bold text-sm">Irrigation</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Agreement for usage of irrigation water for industrial purposes</li>
         <li>
           NOC form Irrigation Department that site is not prone to flooding
@@ -121,7 +121,7 @@ td {
         <li>Water connection</li>
       </ul>
       <h3 class="font-bold text-sm">Others</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Halal Certificate</li>
         <li>Food business license/Registration</li>
         <li>Quality testing</li>

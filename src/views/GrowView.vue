@@ -102,18 +102,18 @@ const tileServices = ref([
                 ><img
                   class="transition-opacity"
                   src="@/assets/images/expansion-diversification-hover.png"
-                  alt="Expansion / Diversification"
+                  alt="Sector/Business Specific Information"
                 />
                 <img
                   class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
                   src="@/assets/images/expansion-diversification.png"
-                  alt="Expansion / Diversification"
+                  alt="Sector/Business Specific Information"
                 />
               </span>
               <span
-                class="font-medium text-base text-primary-dark group-hover:text-white"
+                class="font-medium text-base text-center text-primary-dark group-hover:text-white"
               >
-                Expansion / Diversification
+                Sector/Business Specific Information
               </span>
             </RouterLink>
           </div>

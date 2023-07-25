@@ -47,7 +47,7 @@ td {
       >
         Pre-Feasibility Reports
       </h1>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>
           <a
             href="https://smeda.org/phocadownload/Prefeasibility_Studies/Engineering_and_Manufacturing/Motorcycle%20Chain%20Manufacturing%20Unit%20Rs.%20247.13%20million%20Jan-2023.pdf"
@@ -83,7 +83,7 @@ td {
         Know Your Approvals
       </h1>
       <h3 class="font-bold text-sm">Construction</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>NOC for Building Plan Approval</li>
         <li>Building Plan Approval</li>
         <li>Building Plans Approval, Controlled Area</li>
@@ -107,18 +107,18 @@ td {
         <li>NOC for right of way</li>
       </ul>
       <h3 class="font-bold text-sm">PHA</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>NOC for Installation of Billboards</li>
         <li>NOC for installation of streamers</li>
       </ul>
       <h3 class="font-bold text-sm">Industry Department</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Registration of boilers</li>
         <li>Registration of pressure vessels</li>
         <li>Verification of weighing/measuring instruments</li>
       </ul>
       <h3 class="font-bold text-sm">Irrigation</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Agreement for usage of irrigation water for industrial purposes</li>
         <li>
           NOC form Irrigation Department that site is not prone to flooding
@@ -127,7 +127,7 @@ td {
         <li>Water connection</li>
       </ul>
       <h3 class="font-bold text-sm">Others</h3>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="pb-4 list-disc ps-8 capitalize">
         <li>License for Installation of New Distillery Plant.</li>
         <li>NOC for Effluent Disposal</li>
         <li>Verification of test reports of L.T Installation</li>

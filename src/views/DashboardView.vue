@@ -9,9 +9,11 @@ onMounted(() => {
 </script>
 <template>
   <section class="px-4 py-8">
-    <p class="text-primary-dark text-center font-semibold">
+    <h3 class="text-3xl font-extrabold text-center text-gray-900 dark:text-white md:text-2xl lg:text-3xl">
+      <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
       Its All About Doing Business
-    </p>
+      </span>
+    </h3>
     <!-- Start: Tiles -->
     <div class="flex items-center justify-center space-x-14 py-32">
       <TileCircleComponent

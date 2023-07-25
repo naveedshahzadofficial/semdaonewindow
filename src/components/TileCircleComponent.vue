@@ -37,7 +37,7 @@ defineProps({ tile: { required: true, type: Object } });
 
     <p
       v-if="tile.tag_line"
-      class="text-black font-normal text-center"
+      class="text-black font-normal text-center h-[25px]"
     >
       {{ tile.tag_line }}
     </p>

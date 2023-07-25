@@ -12,14 +12,8 @@ onMounted(() => {
 <template>
   <section class="px-4 py-8">
     <div class="-mx-6">
-      <h1 class="flex items-center space-x-2">
-        <span
-          ><img
-            src="@/assets/images/heading-left.png"
-            alt="heading-icon"
-          />
-        </span>
-        <span class="text-primary-dark font-semibold">Plan Your Business</span>
+      <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]">
+        <span class="text-white font-semibold ml-8">Plan Your Business</span>
       </h1>
     </div>
 
@@ -50,7 +44,7 @@ onMounted(() => {
         For valuable insights and general guidelines on starting a business,
         please refer to the links given below:
       </p>
-      <ul class="pb-4">
+      <ul class="pb-4 list-disc ps-8">
         <li>
           <a
             href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=196:business-startup&Itemid=981"
@@ -84,7 +78,7 @@ onMounted(() => {
           >
         </li>
       </ul>
-      <div class="flex items-center justify-center">
+      <div class="flex">
         <RouterLink
           :to="{ name: 'general-registrations-licenses' }"
           class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl max-w-md"
