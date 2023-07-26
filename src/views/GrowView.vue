@@ -37,14 +37,8 @@ const tileServices = ref([
 <template>
   <section class="px-4 py-8">
     <div class="-mx-6">
-      <h1 class="flex items-center space-x-2">
-        <span
-          ><img
-            src="@/assets/images/heading-left.png"
-            alt="heading-icon"
-          />
-        </span>
-        <span class="text-primary-dark font-semibold">Grow Your Business</span>
+      <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]">
+        <span class="text-white font-semibold ml-8">Grow Your Business</span>
       </h1>
     </div>
 

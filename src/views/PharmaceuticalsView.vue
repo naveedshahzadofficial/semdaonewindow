@@ -7,7 +7,7 @@ onMounted(() => {
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Grow", link: "grow" },
-    { title: "Expansion/Diversification", link: "expansion-diversification" },
+    { title: "Sector/Business Specific Information", link: "expansion-diversification" },
     { title: "Pharmaceutical Sector", link: "" },
   ]);
 });
@@ -30,25 +30,15 @@ td {
   <section class="px-4 py-8">
     <div class="flex justify-between">
       <div class="-mx-6">
-        <h1 class="flex items-center space-x-2">
-          <span
-            ><img
-              src="@/assets/images/heading-left.png"
-              alt="heading-icon"
-            />
-          </span>
-          <span class="text-primary-dark font-semibold"
-            >Pharmaceutical Sector</span
-          >
+        <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[270px]">
+          <span class="text-white font-semibold ml-4">Pharmaceutical Sector</span>
         </h1>
       </div>
     </div>
 
     <div class="px-8 py-8 min-h-[500px]">
-      <h1
-        class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
-      >
-        Sector Briefs
+      <h1 class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]">
+        <span class="text-primary-dark font-semibold ml-4">Sector Briefs</span>
       </h1>
       <ul class="pb-4 list-disc ps-8 capitalize">
         <li>
@@ -59,10 +49,8 @@ td {
           >
         </li>
       </ul>
-      <h1
-        class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
-      >
-        Pharmaceutical Pre-Feasibility Reports
+      <h1 class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[360px] h-[37px]">
+        <span class="text-primary-dark font-semibold ml-4">Pharmaceutical Pre-Feasibility Reports</span>
       </h1>
       <ul class="pb-4 list-disc ps-8 capitalize">
         <li>
@@ -83,13 +71,10 @@ td {
           >
         </li>
       </ul>
-
-      <h1
-        class="my-4 bg-gradient-to-r from-blue-600 to-green-400 rounded-md text-white py-2 px-2"
-      >
-        Know Your Approvals
+      <h1 class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]">
+        <span class="text-primary-dark font-semibold ml-4">Know Your Approvals</span>
       </h1>
-      <h3 class="font-bold text-sm">Construction</h3>
+      <h3 class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Construction</h3>
       <ul class="pb-4 list-disc ps-8 capitalize">
         <li>NOC for Building Plan Approval</li>
         <li>Building Plan Approval</li>
@@ -113,18 +98,18 @@ td {
         <li>Plot Sub division Approval</li>
         <li>NOC for right of way</li>
       </ul>
-      <h3 class="font-bold text-sm">PHA</h3>
+      <h3 class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">PHA</h3>
       <ul class="pb-4 list-disc ps-8 capitalize">
         <li>NOC for Installation of Billboards</li>
         <li>NOC for installation of streamers</li>
       </ul>
-      <h3 class="font-bold text-sm">Industry Department</h3>
+      <h3 class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Industry Department</h3>
       <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Registration of boilers</li>
         <li>Registration of pressure vessels</li>
         <li>Verification of weighing/measuring instruments</li>
       </ul>
-      <h3 class="font-bold text-sm">Irrigation</h3>
+      <h3 class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Irrigation</h3>
       <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Agreement for usage of irrigation water for industrial purposes</li>
         <li>
@@ -133,7 +118,7 @@ td {
         <li>Permission of new tube well/ ejector pump</li>
         <li>Water connection</li>
       </ul>
-      <h3 class="font-bold text-sm">Others</h3>
+      <h3 class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Others</h3>
       <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Registration with National Council for Tib</li>
         <li>Registration with National Council for Homeopathy</li>

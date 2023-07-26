@@ -23,7 +23,7 @@ async function onSubmit(values) {
 
 <template>
   <div class="min-h-screen flex items-center justify-center">
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div class="flex flex-col items-center space-y-6">
         <div class="flex pt-6 space-x-6">
           <img
@@ -36,7 +36,7 @@ async function onSubmit(values) {
           />
         </div>
         <h1 class="font-bold text-primary-light text-4xl">SME ONE WINDOW</h1>
-        <div class="font-normal text-primary-dark text-sm text-justify ps-10">
+        <div class="font-normal text-primary-dark text-sm ps-10">
           SME One Window: A convenient, one-stop platform for entrepreneurs to
           access government services, permits, licenses, and vital information
           in a hassle-free manner. Simplifying processes, saving time, and
@@ -122,12 +122,8 @@ async function onSubmit(values) {
           >
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center">
-        <img
-          src="@/assets/images/bg-login.png"
-          alt="bg login"
-          class="pe-6"
-        />
+      <div class="flex flex-col items-center justify-center mx-6 bg-[url('@/assets/images/login-bg.jpg')] bg-cover bg-no-repeat rounded-2xl">
+
       </div>
     </div>
   </div>
