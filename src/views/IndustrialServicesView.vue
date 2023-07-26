@@ -1,9 +1,9 @@
 <script setup>
 import { onMounted, defineEmits } from "vue";
-const emit = defineEmits(["breadcrumbs"]);
+const emit = defineEmits(["breadcrumbs", "background"]);
 onMounted(() => {
   window.scrollTo(0, 0);
-  emit("background", require('@/assets/images/Industrial-Services-bg.jpg'));
+  emit("background", require("@/assets/images/Industrial-Services-bg.jpg"));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Grow", link: "grow" },
@@ -14,7 +14,9 @@ onMounted(() => {
 <template>
   <section class="px-4 py-8">
     <div class="-mx-6">
-      <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]">
+      <h1
+        class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]"
+      >
         <span class="text-white font-semibold ml-8">Industrial Services</span>
       </h1>
     </div>
@@ -35,14 +37,16 @@ onMounted(() => {
         <p class="font-normal pb-4">
           For further details and registration, click
           <a
-              href="https://ekhidmat.punjab.gov.pk/industrial-services"
-              target="_blank"
-              class="text-blue-500 font-bold hover:underline"
-          >here</a
+            href="https://ekhidmat.punjab.gov.pk/industrial-services"
+            target="_blank"
+            class="text-blue-500 font-bold hover:underline"
+            >here</a
           >
         </p>
       </div>
-      <div class="h-[388px] w-[370px] bg-[url('@/assets/images/Industrial-Services-side.png')] bg-cover bg-no-repeat rounded-2xl"></div>
+      <div
+        class="h-[388px] w-[370px] bg-[url('@/assets/images/Industrial-Services-side.png')] bg-cover bg-no-repeat rounded-2xl"
+      ></div>
     </div>
   </section>
 </template>

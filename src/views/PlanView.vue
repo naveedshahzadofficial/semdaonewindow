@@ -1,9 +1,9 @@
 <script setup>
 import { onMounted, defineEmits } from "vue";
-const emit = defineEmits(["breadcrumbs"]);
+const emit = defineEmits(["breadcrumbs", "background"]);
 onMounted(() => {
   window.scrollTo(0, 0);
-  emit("background", require('@/assets/images/bg-dashboard.jpg'));
+  emit("background", require("@/assets/images/bg-dashboard.jpg"));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Plan", link: "" },
@@ -13,7 +13,9 @@ onMounted(() => {
 <template>
   <section class="px-4 py-8">
     <div class="-mx-6">
-      <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]">
+      <h1
+        class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]"
+      >
         <span class="text-white font-semibold ml-8">Plan Your Business</span>
       </h1>
     </div>

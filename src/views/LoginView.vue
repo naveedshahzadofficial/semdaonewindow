@@ -22,7 +22,7 @@ async function onSubmit(values) {
 </script>
 
 <template>
-  <div class="min-h-screen flex items-center justify-center">
+  <div class="md:min-h-screen flex items-center justify-center">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div class="flex flex-col items-center space-y-6">
         <div class="flex pt-6 space-x-6">
@@ -122,9 +122,9 @@ async function onSubmit(values) {
           >
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center mx-6 bg-[url('@/assets/images/login-bg.jpg')] bg-cover bg-no-repeat rounded-2xl">
-
-      </div>
+      <div
+        class="hidden md:flex flex-col items-center justify-center mx-6 bg-[url('@/assets/images/login-bg.jpg')] bg-cover bg-no-repeat rounded-2xl"
+      ></div>
     </div>
   </div>
 </template>

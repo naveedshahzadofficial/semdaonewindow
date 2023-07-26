@@ -1,22 +1,28 @@
 <script setup>
 import { TileCircleComponent } from "@/components";
 import { onMounted, defineEmits } from "vue";
-const emit = defineEmits(["breadcrumbs"]);
+const emit = defineEmits(["breadcrumbs", "background"]);
 onMounted(() => {
   window.scrollTo(0, 0);
-  emit("background", require('@/assets/images/bg-dashboard.jpg'));
+  emit("background", require("@/assets/images/bg-dashboard.jpg"));
   emit("breadcrumbs", [{ title: "Home", link: "" }]);
 });
 </script>
 <template>
   <section class="px-4 py-8">
-    <h3 class="text-3xl font-extrabold text-center text-gray-900 dark:text-white md:text-2xl lg:text-3xl">
-      <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-      Its All About Doing Business
+    <h3
+      class="text-xl font-extrabold text-center text-gray-900 dark:text-white md:text-2xl lg:text-3xl"
+    >
+      <span
+        class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
+      >
+        Its All About Doing Business
       </span>
     </h3>
     <!-- Start: Tiles -->
-    <div class="flex items-center justify-center space-x-14 py-16">
+    <div
+      class="flex flex-col items-center justify-center space-y-4 mt-8 mb-16 md:flex-row md:space-y-0 md:space-x-14 md:my-16"
+    >
       <TileCircleComponent
         :tile="{
           title: 'Plan',

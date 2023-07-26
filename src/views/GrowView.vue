@@ -1,9 +1,9 @@
 <script setup>
 import { ref, onMounted, defineEmits } from "vue";
-const emit = defineEmits(["breadcrumbs"]);
+const emit = defineEmits(["breadcrumbs", "background"]);
 onMounted(() => {
   window.scrollTo(0, 0);
-  emit("background", require('@/assets/images/bg-dashboard.jpg'));
+  emit("background", require("@/assets/images/bg-dashboard.jpg"));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Grow", link: "" },
@@ -37,7 +37,9 @@ const tileServices = ref([
 <template>
   <section class="px-4 py-8">
     <div class="-mx-6">
-      <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]">
+      <h1
+        class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]"
+      >
         <span class="text-white font-semibold ml-8">Grow Your Business</span>
       </h1>
     </div>
@@ -204,8 +206,8 @@ const tileServices = ref([
         >
           <div class="h-full flex flex-col justify-center items-center py-6">
             <a
-                href="https://www.remitpakistan.org/"
-                target="_blank"
+              href="https://www.remitpakistan.org/"
+              target="_blank"
               class="flex flex-col items-center group cursor-pointer gap-1.5"
             >
               <span class="relative"
@@ -228,26 +230,28 @@ const tileServices = ref([
             </a>
           </div>
         </div>
-        <div class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2">
+        <div
+          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
+        >
           <div class="h-full flex flex-col justify-center items-center py-6">
             <RouterLink
-                :to="{ name: 'complaints-feedback' }"
-                class="flex flex-col items-center group cursor-pointer gap-1.5"
+              :to="{ name: 'complaints-feedback' }"
+              class="flex flex-col items-center group cursor-pointer gap-1.5"
             >
               <span class="relative"
-              ><img
+                ><img
                   class="transition-opacity"
                   src="@/assets/images/cluster-profiles.png"
                   alt="Complaints / Feedback"
-              />
+                />
                 <img
-                    class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                    src="@/assets/images/cluster-profiles-hover.png"
-                    alt="Complaints / Feedback"
+                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  src="@/assets/images/cluster-profiles-hover.png"
+                  alt="Complaints / Feedback"
                 />
               </span>
               <span
-                  class="font-medium text-base text-primary-dark group-hover:text-white px-2 text-center"
+                class="font-medium text-base text-primary-dark group-hover:text-white px-2 text-center"
               >
                 Complaints / Feedback
               </span>

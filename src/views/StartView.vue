@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref, watch, defineEmits } from "vue";
-const emit = defineEmits(["breadcrumbs"]);
+const emit = defineEmits(["breadcrumbs", "background"]);
 const isOpen = ref(false);
 const isOpenInfo = ref(false);
 
@@ -9,7 +9,7 @@ const infoContent = ref(null);
 const selectProvince = ref("");
 onMounted(() => {
   window.scrollTo(0, 0);
-  emit("background", require('@/assets/images/bg-dashboard.jpg'));
+  emit("background", require("@/assets/images/bg-dashboard.jpg"));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Start", link: "" },
@@ -135,7 +135,9 @@ watch(selectProvince, () => {
 <template>
   <section class="px-4 py-8">
     <div class="-mx-6">
-      <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]">
+      <h1
+        class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]"
+      >
         <span class="text-white font-semibold ml-8">Start Your Business</span>
       </h1>
     </div>
@@ -161,11 +163,11 @@ watch(selectProvince, () => {
             class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
             <div class="mt-52">
-            <h2
-              class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
-            >
-              Sole Proprietorship
-            </h2>
+              <h2
+                class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
+              >
+                Sole Proprietorship
+              </h2>
             </div>
           </a>
         </div>
@@ -183,11 +185,11 @@ watch(selectProvince, () => {
             class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
             <div class="mt-52">
-            <h2
-              class="font-medium text-center text-primary-dark text-lg group-hover:text-white break-words px-2"
-            >
-              Association of Persons
-            </h2>
+              <h2
+                class="font-medium text-center text-primary-dark text-lg group-hover:text-white break-words px-2"
+              >
+                Association of Persons
+              </h2>
             </div>
           </div>
         </div>
@@ -208,12 +210,11 @@ watch(selectProvince, () => {
             class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
             <div class="mt-52">
-
-            <h2
-              class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
-            >
-              Company
-            </h2>
+              <h2
+                class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
+              >
+                Company
+              </h2>
             </div>
           </a>
         </div>
