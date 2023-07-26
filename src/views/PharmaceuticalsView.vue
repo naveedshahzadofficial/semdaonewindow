@@ -32,7 +32,7 @@ td {
 <template>
   <section class="px-4 py-8">
     <div class="flex justify-between">
-      <div class="-mx-6">
+      <div class="-ms-6">
         <h1
           class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[270px]"
         >
@@ -59,9 +59,9 @@ td {
         </li>
       </ul>
       <h1
-        class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[360px] h-[37px]"
+        class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[300px] md:w-[360px] h-[37px]"
       >
-        <span class="text-primary-dark font-semibold ml-4"
+        <span class="text-primary-dark font-semibold ml-4 text-xs md:text-base"
           >Pharmaceutical Pre-Feasibility Reports</span
         >
       </h1>

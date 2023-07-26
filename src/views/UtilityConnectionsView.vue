@@ -16,7 +16,7 @@ onMounted(() => {
 </script>
 <template>
   <section class="px-4 py-8">
-    <div class="-mx-6">
+    <div class="-ms-6">
       <h1
         class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]"
       >
@@ -24,7 +24,7 @@ onMounted(() => {
       </h1>
     </div>
 
-    <div class="px-8 py-8 min-h-[500px] grid grid-cols-3">
+    <div class="px-8 py-8 min-h-[500px] grid grid-cols-1 md:grid-cols-3">
       <div class="col-span-2">
         <p class="font-normal pb-4">
           To ensure the smooth setup and operation of any business, utilities
@@ -68,8 +68,14 @@ onMounted(() => {
         </ul>
       </div>
       <div
-        class="h-[388px] w-[370px] bg-[url('@/assets/images/Utility-Connections-side.png')] bg-cover bg-no-repeat rounded-2xl"
-      ></div>
+        class="flex items-center justify-center w-[300px] md:w-[370px] md:h-[388px]"
+      >
+        <img
+          class="object-cover rounded-2xl"
+          src="@/assets/images/Utility-Connections-side.png"
+          alt="Utility Connections"
+        />
+      </div>
     </div>
   </section>
 </template>

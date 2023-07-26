@@ -14,7 +14,7 @@ onMounted(() => {
 </script>
 <template>
   <section class="px-4 py-8">
-    <div class="-mx-6">
+    <div class="-ms-6 overflow-hidden">
       <h1
         class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[450px]"
       >
@@ -31,7 +31,9 @@ onMounted(() => {
       </p>
 
       <!-- Start: Tiles -->
-      <div class="flex items-center justify-center space-x-10 py-10">
+      <div
+        class="flex flex-col items-center justify-center space-y-6 py-10 md:flex-row md:space-y-0 md:space-x-10"
+      >
         <TileComponent
           :tile="{
             title: 'Cutlery',
@@ -77,7 +79,7 @@ onMounted(() => {
         />
       </div>
       <!-- End: Tiles -->
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center mb-10 md:mb-0">
         <RouterLink
           :to="{ name: 'general-registrations-licenses' }"
           class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl max-w-md"
@@ -98,7 +100,7 @@ onMounted(() => {
             class="border-r border-primary-dark h-10 mr-4 group-hover:border-white"
           ></span>
           <span
-            class="w-full px-5 font-medium text-base text-primary-dark group-hover:text-white"
+            class="w-full px-5 font-medium text-sm md:text-base text-primary-dark group-hover:text-white"
           >
             General Registrations /Licenses
           </span>

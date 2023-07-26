@@ -8,7 +8,7 @@ defineProps({
 <template>
   <div
     v-if="breadcrumbs"
-    class="w-full bg-[#0064e9] h-8"
+    class="w-full bg-[#0064e9] h-8 overflow-hidden"
   >
     <ul class="flex items-center px-4 h-full">
       <template
@@ -17,20 +17,21 @@ defineProps({
       >
         <li
           v-if="breadcrumb.link"
-          class="cursor-pointer text-primary-dark font-semibold hover:text-primary-light"
+          class="cursor-pointer text-primary-dark font-normal md:font-semibold hover:text-primary-light text-xs md:text-sm"
         >
           <RouterLink :to="{ name: breadcrumb.link }">
             {{ breadcrumb.title }}
           </RouterLink>
         </li>
         <li v-else>
-          <span class="text-gray-200 font-semibold">{{
-            breadcrumb.title
-          }}</span>
+          <span
+            class="text-gray-200 font-normal md:font-semibold text-xs md:text-sm"
+            >{{ breadcrumb.title }}</span
+          >
         </li>
         <li
           v-if="breadcrumbs.length - 1 !== index"
-          class="text-gray-300 font-semibold"
+          class="text-gray-300 font-normal md:font-semibold text-xs md:text-sm"
         >
           &nbsp;/&nbsp;
         </li>

@@ -46,7 +46,7 @@ const tileServices = ref([
 
     <div class="px-8 py-8 min-h-[500px] mb-10 md:mb-0">
       <div
-        class="flex flex-col items-center pt-2 space-y-6 md:flex-row md:justify-evenly"
+        class="flex flex-col items-center pt-2 space-y-6 md:flex-row md:justify-evenly md:space-y-0"
       >
         <div
           class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-60 m-2"
@@ -175,7 +175,7 @@ const tileServices = ref([
       </div>
 
       <div
-        class="flex flex-col items-center pt-6 space-y-6 md:flex-row md:justify-evenly md:pt-2"
+        class="flex flex-col items-center pt-6 space-y-6 md:flex-row md:justify-evenly md:pt-2 md:space-y-0"
       >
         <div
           class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"

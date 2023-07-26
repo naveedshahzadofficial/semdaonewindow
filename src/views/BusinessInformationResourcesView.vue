@@ -14,7 +14,7 @@ onMounted(() => {
 </script>
 <template>
   <section class="px-4 py-8">
-    <div class="-mx-6">
+    <div class="-ms-6">
       <h1
         class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[400px]"
       >
@@ -31,7 +31,9 @@ onMounted(() => {
       </p>
 
       <!-- Start: Tiles -->
-      <div class="flex items-center justify-center space-x-10 py-10">
+      <div
+        class="flex flex-col items-center justify-center py-6 space-y-6 md:flex-row md:space-y-0 md:space-x-10 md:py-10"
+      >
         <TileLinkComponent
           :tile="{
             title: 'Pre-feasibility Studies',
@@ -76,7 +78,9 @@ onMounted(() => {
           }"
         />
       </div>
-      <div class="flex items-center justify-center space-x-10 py-10">
+      <div
+        class="flex flex-col items-center justify-center space-y-6 md:flex-row md:space-y-0 md:space-x-10 md:py-10"
+      >
         <TileLinkComponent
           :tile="{
             title: 'Cluster Profiles',
@@ -123,7 +127,7 @@ onMounted(() => {
       </div>
       <!-- End: Tiles -->
 
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center my-10 md:mb-0">
         <RouterLink
           :to="{ name: 'sme-resources' }"
           class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl max-w-md"

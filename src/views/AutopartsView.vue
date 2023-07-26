@@ -32,7 +32,7 @@ td {
 <template>
   <section class="px-4 py-8">
     <div class="flex justify-between">
-      <div class="-mx-6">
+      <div class="-ms-6">
         <h1
           class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]"
         >
