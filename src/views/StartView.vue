@@ -134,7 +134,7 @@ watch(selectProvince, () => {
 </style>
 <template>
   <section class="px-4 py-8">
-    <div class="-mx-6">
+    <div class="-ms-6">
       <h1
         class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]"
       >
@@ -147,7 +147,9 @@ watch(selectProvince, () => {
 
     <div class="px-8 pt-4 min-h-fit">
       <!-- Start: Tiles -->
-      <div class="flex items-center justify-center space-x-8 py-8">
+      <div
+        class="flex flex-col items-center justify-center space-y-4 mt-6 mb-16 md:flex-row md:space-y-0 md:space-x-8 md:my-8"
+      >
         <div
           class="h-[439px] w-[296px] bg-[url('@/assets/images/sole-bg.png')] bg-cover bg-no-repeat rounded relative gap-3 cursor-pointer"
         >
@@ -222,40 +224,13 @@ watch(selectProvince, () => {
       <!-- End: Tiles -->
     </div>
 
-    <div class="hidden flex items-center justify-center pb-8">
-      <RouterLink
-        :to="{ name: 'general-registrations-licenses' }"
-        class="bg-gradient-to-tr from-blue-500 to-green-200 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl max-w-md"
-      >
-        <span class="relative"
-          ><img
-            class="object-cover transition-opacity"
-            src="@/assets/images/general-registrations-licenses.png"
-            alt="General Registrations /Licenses"
-          />
-          <img
-            class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-            src="@/assets/images/general-registrations-licenses-hover.png"
-            alt="General Registrations /Licenses"
-          />
-        </span>
-        <span
-          class="border-r border-primary-dark h-10 mr-4 group-hover:border-white"
-        ></span>
-        <span
-          class="w-full px-5 font-medium text-base text-primary-dark group-hover:text-white"
-        >
-          General Registrations /Licenses
-        </span>
-      </RouterLink>
-    </div>
     <!-- Begin: Provinces Modal -->
     <div
       v-if="isOpen"
       class="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center z-50"
     >
-      <!-- Modal Content -->
-      <div class="bg-white p-8 rounded shadow-md w-full max-w-sm">
+      <!-- Begin: Provinces Modal -->
+      <div class="bg-white mx-10 md:mx-0 p-8 rounded shadow-md w-full max-w-sm">
         <h2 class="text-primary-dark text-base font-bold mb-4">Province</h2>
         <div>
           <select
@@ -280,13 +255,15 @@ watch(selectProvince, () => {
     </div>
     <!-- End: Provinces Modal -->
 
-    <!-- Begin: Provinces Modal -->
+    <!-- Begin: Content Modal -->
     <div
       v-if="isOpenInfo"
       class="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center z-50"
     >
       <!-- Modal Content -->
-      <div class="bg-white p-8 rounded shadow-md w-full mx-10">
+      <div
+        class="bg-white p-8 rounded shadow-md w-full mx-6 max-w-md max-h-full overflow-y-auto md:max-w-full md:mx-10"
+      >
         <h2
           class="text-primary-dark text-lg font-bold mb-4"
           v-if="infoContent.title"
@@ -306,6 +283,6 @@ watch(selectProvince, () => {
         </button>
       </div>
     </div>
-    <!-- End: Provinces Modal -->
+    <!-- End: Content Modal -->
   </section>
 </template>

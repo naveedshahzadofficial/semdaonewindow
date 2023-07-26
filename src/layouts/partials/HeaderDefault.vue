@@ -2,10 +2,7 @@
   <header>
     <div class="w-full mx-auto">
       <div class="flex justify-between items-center">
-        <RouterLink
-          :to="{ name: 'dashboard' }"
-          class=""
-        >
+        <RouterLink :to="{ name: 'dashboard' }">
           <div class="flex items-center px-4">
             <img
               src="@/assets/images/logo-blue-dot.png"

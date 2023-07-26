@@ -36,7 +36,7 @@ const tileServices = ref([
 
 <template>
   <section class="px-4 py-8">
-    <div class="-mx-6">
+    <div class="-ms-6">
       <h1
         class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]"
       >
@@ -44,8 +44,10 @@ const tileServices = ref([
       </h1>
     </div>
 
-    <div class="px-8 py-8 min-h-[500px]">
-      <div class="flex justify-evenly items-center pt-2">
+    <div class="px-8 py-8 min-h-[500px] mb-10 md:mb-0">
+      <div
+        class="flex flex-col items-center pt-2 space-y-6 md:flex-row md:justify-evenly"
+      >
         <div
           class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-60 m-2"
         >
@@ -172,7 +174,9 @@ const tileServices = ref([
         </div>
       </div>
 
-      <div class="flex justify-evenly items-center pt-2">
+      <div
+        class="flex flex-col items-center pt-6 space-y-6 md:flex-row md:justify-evenly md:pt-2"
+      >
         <div
           class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
         >
@@ -258,59 +262,6 @@ const tileServices = ref([
             </RouterLink>
           </div>
         </div>
-      </div>
-
-      <div class="hidden flex justify-between items-center mt-8 mx-[95px]">
-        <RouterLink
-          :to="{ name: 'business-information-resources' }"
-          class="bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl"
-        >
-          <span class="relative"
-            ><img
-              class="object-cover transition-opacity"
-              src="@/assets/images/construction-permits.png"
-              alt="Business Information Resources"
-            />
-            <img
-              class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-              src="@/assets/images/construction-permits-hover.png"
-              alt="Business Information Resources"
-            />
-          </span>
-          <span
-            class="border-r border-white h-10 mr-4 group-hover:border-primary-light"
-          ></span>
-          <span
-            class="w-full px-5 font-medium text-base text-primary-dark group-hover:text-primary-light"
-          >
-            Business Information Resources
-          </span>
-        </RouterLink>
-        <RouterLink
-          :to="{ name: 'general-registrations-licenses' }"
-          class="bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 flex items-center group cursor-pointer gap-1.5 px-4 py-2 rounded-2xl"
-        >
-          <span class="relative"
-            ><img
-              class="object-cover transition-opacity"
-              src="@/assets/images/general-registrations-licenses-hover.png"
-              alt="Business Information Resources"
-            />
-            <img
-              class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-              src="@/assets/images/general-registrations-licenses.png"
-              alt="Business Information Resources"
-            />
-          </span>
-          <span
-            class="border-r border-primary-dark h-10 mr-4 group-hover:border-white"
-          ></span>
-          <span
-            class="w-full px-5 font-medium text-base text-primary-dark group-hover:text-white"
-          >
-            General Registrations /Licenses
-          </span>
-        </RouterLink>
       </div>
     </div>
   </section>

@@ -5,7 +5,9 @@
     <div
       class="w-full mx-auto px-4 text-center text-white font-poppins font-light text-xs"
     >
-      <div class="flex justify-between">
+      <div
+        class="flex flex-col justify-between space-y-1 md:flex-row md:space-y-0"
+      >
         <div>
           &copy;
           <a
