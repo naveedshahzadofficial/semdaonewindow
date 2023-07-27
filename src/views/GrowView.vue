@@ -49,6 +49,114 @@ const tileServices = ref([
         class="flex flex-col items-center pt-2 space-y-6 md:flex-row md:justify-evenly md:space-y-0"
       >
         <div
+          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
+        >
+          <div class="h-full flex flex-col justify-evenly items-center py-6">
+            <RouterLink
+              :to="{ name: 'expansion-diversification' }"
+              class="flex flex-col items-center group cursor-pointer gap-1.5"
+            >
+              <span class="relative"
+                ><img
+                  class="transition-opacity"
+                  src="@/assets/images/expansion-diversification-hover.png"
+                  alt="Sector/Business Specific Information"
+                />
+                <img
+                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  src="@/assets/images/expansion-diversification.png"
+                  alt="Sector/Business Specific Information"
+                />
+              </span>
+              <span
+                class="font-medium text-base text-center text-primary-dark group-hover:text-white"
+              >
+                Sector/Business Specific Information
+              </span>
+            </RouterLink>
+            <div class="flex w-2/4">
+              <hr class="w-full h-px bg-primary-dark bg-opacity-60 border-0" />
+            </div>
+            <RouterLink
+              :to="{ name: 'business-information-resources' }"
+              class="flex flex-col items-center group cursor-pointer gap-1.5"
+            >
+              <span class="relative"
+                ><img
+                  class="transition-opacity"
+                  src="@/assets/images/business-information-resources-hover.png"
+                  alt="Business Information Resources"
+                />
+                <img
+                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  src="@/assets/images/business-information-resources.png"
+                  alt="Business Information Resources"
+                />
+              </span>
+              <span
+                class="font-medium text-base text-primary-dark group-hover:text-white px-2 text-center"
+              >
+                Business Information Resources
+              </span>
+            </RouterLink>
+          </div>
+        </div>
+        <div
+          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
+        >
+          <div class="h-full flex flex-col justify-evenly items-center py-6">
+            <a
+              href="https://www.remitpakistan.org/"
+              target="_blank"
+              class="flex flex-col items-center group cursor-pointer gap-1.5"
+            >
+              <span class="relative"
+                ><img
+                  class="transition-opacity"
+                  src="@/assets/images/general-registrations-licenses.png"
+                  alt="SMEDA eLearning Export Portal"
+                />
+                <img
+                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  src="@/assets/images/general-registrations-licenses-hover.png"
+                  alt="SMEDA eLearning Export Portal"
+                />
+              </span>
+              <span
+                class="font-medium text-base text-primary-dark group-hover:text-white px-2 text-center"
+              >
+                SMEDA eLearning Export Portal
+              </span>
+            </a>
+            <div class="flex w-2/4">
+              <hr class="w-full h-px bg-primary-dark bg-opacity-60 border-0" />
+            </div>
+            <a
+              href="https://pakistan.tradeportal.org/"
+              target="_blank"
+              class="flex flex-col items-center group cursor-pointer gap-1.5"
+            >
+              <span class="relative"
+                ><img
+                  class="transition-opacity"
+                  src="@/assets/images/general-registrations-licenses.png"
+                  alt="Pakistan Trade Portal"
+                />
+                <img
+                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  src="@/assets/images/general-registrations-licenses-hover.png"
+                  alt="Pakistan Trade Portal"
+                />
+              </span>
+              <span
+                class="font-medium text-base text-primary-dark group-hover:text-white px-2 text-center"
+              >
+                Pakistan Trade Portal
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
           class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-60 m-2"
         >
           <div class="h-full flex flex-col justify-between items-center py-6">
@@ -89,34 +197,11 @@ const tileServices = ref([
             </template>
           </div>
         </div>
-        <div
-          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
-        >
-          <div class="h-full flex flex-col justify-center items-center py-6">
-            <RouterLink
-              :to="{ name: 'expansion-diversification' }"
-              class="flex flex-col items-center group cursor-pointer gap-1.5"
-            >
-              <span class="relative"
-                ><img
-                  class="transition-opacity"
-                  src="@/assets/images/expansion-diversification-hover.png"
-                  alt="Sector/Business Specific Information"
-                />
-                <img
-                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/expansion-diversification.png"
-                  alt="Sector/Business Specific Information"
-                />
-              </span>
-              <span
-                class="font-medium text-base text-center text-primary-dark group-hover:text-white"
-              >
-                Sector/Business Specific Information
-              </span>
-            </RouterLink>
-          </div>
-        </div>
+      </div>
+
+      <div
+        class="flex flex-col items-center pt-6 space-y-6 md:flex-row md:justify-evenly md:pt-2 md:space-y-0"
+      >
         <div
           class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
         >
@@ -172,68 +257,7 @@ const tileServices = ref([
             </RouterLink>
           </div>
         </div>
-      </div>
 
-      <div
-        class="flex flex-col items-center pt-6 space-y-6 md:flex-row md:justify-evenly md:pt-2 md:space-y-0"
-      >
-        <div
-          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
-        >
-          <div class="h-full flex flex-col justify-center items-center py-6">
-            <RouterLink
-              :to="{ name: 'business-information-resources' }"
-              class="flex flex-col items-center group cursor-pointer gap-1.5"
-            >
-              <span class="relative"
-                ><img
-                  class="transition-opacity"
-                  src="@/assets/images/business-information-resources-hover.png"
-                  alt="Business Information Resources"
-                />
-                <img
-                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/business-information-resources.png"
-                  alt="Business Information Resources"
-                />
-              </span>
-              <span
-                class="font-medium text-base text-primary-dark group-hover:text-white px-2 text-center"
-              >
-                Business Information Resources
-              </span>
-            </RouterLink>
-          </div>
-        </div>
-        <div
-          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
-        >
-          <div class="h-full flex flex-col justify-center items-center py-6">
-            <a
-              href="https://www.remitpakistan.org/"
-              target="_blank"
-              class="flex flex-col items-center group cursor-pointer gap-1.5"
-            >
-              <span class="relative"
-                ><img
-                  class="transition-opacity"
-                  src="@/assets/images/general-registrations-licenses.png"
-                  alt="SMEDA eLearning Export Portal"
-                />
-                <img
-                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/general-registrations-licenses-hover.png"
-                  alt="SMEDA eLearning Export Portal"
-                />
-              </span>
-              <span
-                class="font-medium text-base text-primary-dark group-hover:text-white px-2 text-center"
-              >
-                SMEDA eLearning Export Portal
-              </span>
-            </a>
-          </div>
-        </div>
         <div
           class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
         >
@@ -262,6 +286,7 @@ const tileServices = ref([
             </RouterLink>
           </div>
         </div>
+        <div class="w-[262px] h-[346px] m-2 hidden md:block"></div>
       </div>
     </div>
   </section>
