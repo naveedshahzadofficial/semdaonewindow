@@ -138,13 +138,13 @@ const tileServices = ref([
             >
               <span class="relative"
                 ><img
-                  class="transition-opacity"
-                  src="@/assets/images/general-registrations-licenses.png"
+                  class="transition-opacity h-11 w-11"
+                  src="@/assets/images/pre-feasibility-studies.png"
                   alt="Pakistan Trade Portal"
                 />
                 <img
-                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/general-registrations-licenses-hover.png"
+                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100 h-11 w-11"
+                  src="@/assets/images/pre-feasibility-studies-hover.png"
                   alt="Pakistan Trade Portal"
                 />
               </span>
