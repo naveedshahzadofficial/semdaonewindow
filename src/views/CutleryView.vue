@@ -47,7 +47,7 @@ td {
       >
         <span class="text-primary-dark font-semibold ml-4">Sector Briefs</span>
       </h1>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="pb-4 list-disc ps-8 normal-case">
         <li>
           <a
             href="https://smeda.org/phocadownload/Sectoral_Information/Light_Engineering/Cutlery%20Sector%20-%20Kitchenware%20Cutlery%202020.pdf"
@@ -82,7 +82,7 @@ td {
       >
         Construction
       </h3>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="pb-4 list-disc ps-8 normal-case">
         <li>NOC for Building Plan Approval</li>
         <li>Building Plan Approval</li>
         <li>Building Plans Approval, Controlled Area</li>
@@ -91,28 +91,28 @@ td {
           Revised / Addition / Alteration / Rebuild Building Plans Approval
         </li>
         <li>Annual Commercialization Renewal</li>
-        <li>Approval of conversion of land use</li>
-        <li>Conversion of land use</li>
+        <li>Approval of Conversion of Land Use</li>
+        <li>Conversion of Land Use</li>
         <li>
-          L-42-B License (Possession of rectified spirit for educational,
-          scientific purpose)
+          L-42-B License (Possession of Rectified Spirit for Educational,
+          Scientific Purpose)
         </li>
         <li>
-          L-42-B License (Possession of rectified spirit for industrial purpose)
+          L-42-B License (Possession of Rectified Spirit for Industrial Purpose)
         </li>
         <li>Land Use - Permissible Commercial</li>
-        <li>Land use- Permitted Commercial (List A Roads)</li>
-        <li>Plot Sub division Approval</li>
-        <li>NOC for right of way</li>
+        <li>Land Use- Permitted Commercial (List A Roads)</li>
+        <li>Plot Sub Division Approval</li>
+        <li>NOC for Right of Way</li>
       </ul>
       <h3
         class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
       >
         PHA
       </h3>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="pb-4 list-disc ps-8">
         <li>NOC for Installation of Billboards</li>
-        <li>NOC for installation of streamers</li>
+        <li>NOC for Installation of Streamers</li>
       </ul>
       <h3
         class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
@@ -120,9 +120,9 @@ td {
         Industry Department
       </h3>
       <ul class="pb-4 list-disc ps-8 capitalize">
-        <li>Registration of boilers</li>
-        <li>Registration of pressure vessels</li>
-        <li>Verification of weighing/measuring instruments</li>
+        <li>Registration of Boilers</li>
+        <li>Registration of Pressure Vessels</li>
+        <li>Verification of Weighing/Measuring Instruments</li>
       </ul>
       <h3
         class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
@@ -130,12 +130,12 @@ td {
         Irrigation
       </h3>
       <ul class="pb-4 list-disc ps-8 capitalize">
-        <li>Agreement for usage of irrigation water for industrial purposes</li>
+        <li>Agreement for Usage of Irrigation Water for Industrial Purposes</li>
         <li>
-          NOC form Irrigation Department that site is not prone to flooding
+          NOC form Irrigation Department that Site is Not Prone to Flooding
         </li>
-        <li>Permission of new tube well/ ejector pump</li>
-        <li>Water connection</li>
+        <li>Permission of New Tube Well/ Ejector Pump</li>
+        <li>Water Connection</li>
       </ul>
       <h3
         class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
@@ -144,15 +144,15 @@ td {
       </h3>
       <ul class="pb-4 list-disc ps-8 capitalize">
         <li>Halal Certificate</li>
-        <li>Food business license/Registration</li>
-        <li>Quality testing</li>
+        <li>Food Business License/Registration</li>
+        <li>Quality Testing</li>
         <li>License for Installation of New Distillery Plant.</li>
         <li>NOC for Effluent Disposal</li>
-        <li>Verification of test reports of L.T Installation</li>
+        <li>Verification of Test Reports of L.T Installation</li>
         <li>NOC of H.T Installations</li>
-        <li>Recommendations for import approval</li>
+        <li>Recommendations for Import Approval</li>
         <li>Completion Certificate</li>
-        <li>Confirmation of compliance</li>
+        <li>Confirmation of Compliance</li>
       </ul>
     </div>
   </section>

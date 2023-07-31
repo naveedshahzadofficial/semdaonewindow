@@ -258,36 +258,55 @@ const tileServices = ref([
           </div>
         </div>
 
-        <div
-          class="w-[262px] h-[346px] rounded-3xl bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 m-2"
-        >
-          <div class="h-full flex flex-col justify-center items-center py-6">
-            <RouterLink
-              :to="{ name: 'complaints-feedback' }"
-              class="flex flex-col items-center group cursor-pointer gap-1.5"
-            >
-              <span class="relative"
-                ><img
-                  class="transition-opacity"
-                  src="@/assets/images/cluster-profiles.png"
-                  alt="Complaints / Feedback"
-                />
-                <img
-                  class="absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/cluster-profiles-hover.png"
-                  alt="Complaints / Feedback"
-                />
-              </span>
-              <span
-                class="font-medium text-base text-primary-dark group-hover:text-white px-2 text-center"
-              >
-                Complaints / Feedback
-              </span>
-            </RouterLink>
-          </div>
-        </div>
+        <div class="w-[262px] h-[346px] m-2 hidden md:block"></div>
         <div class="w-[262px] h-[346px] m-2 hidden md:block"></div>
       </div>
+    </div>
+    <div class="-ms-6">
+      <h1 class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[280px]">
+        <span class="text-white font-semibold ml-8">Complaints / Feedback</span>
+      </h1>
+    </div>
+    <h1 class="flex items-center my-4 py-2 px-2 ">
+      <span class="text-primary-dark font-semibold ml-4">Assistant Manager (Punjab)</span>
+    </h1>
+    <div class="flex px-6 mb-10 md:mb-0">
+      <div class=" flex-col md:flex-row md:justify-evenly md:space-y-0">
+        <span class="absolute">
+        <img
+            class="object-cover"
+            src="@/assets/images/Call-Icon.jpg"
+            alt="(042)111-111-456"
+        />
+      </span>
+        <span class="font-light text-base text-primary-dark group-hover:text-white pl-6 px-4"
+      >(042)111-111-456</span
+      >
+      </div>
+      <div class=" flex-col md:flex-row md:justify-evenly md:space-y-0">
+        <span class="absolute">
+        <img
+            class="object-cover"
+            src="@/assets/images/mail-icon.jpg"
+            alt="helpdesk.punjab@smeda.org.pk"
+        />
+      </span>
+        <span class="font-light text-base text-primary-dark group-hover:text-white pl-6 px-4"
+        >helpdesk.punjab@smeda.org.pk</span
+        >
+      </div>
+    </div>
+    <div class="h-full flex flex-col justify-between ml-6 mb-10">
+        <span class="absolute">
+        <img
+            class="object-cover"
+            src="@/assets/images/Address-Icon.jpg"
+            alt="Address"
+        />
+      </span>
+        <span class="font-light text-base text-primary-dark group-hover:text-white pl-6 px-4"
+      >3rd Floor, 3rd Building, Aiwan-e-Iqbal Complex, Egerton Road, Lahore</span
+      >
     </div>
   </section>
 </template>

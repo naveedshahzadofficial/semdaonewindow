@@ -47,7 +47,7 @@ td {
       >
         <span class="text-primary-dark font-semibold ml-4">Sector Briefs</span>
       </h1>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="pb-4 list-disc ps-8">
         <li>
           <a
             href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=36:horticultureaagriculture&Itemid=139"
@@ -64,7 +64,7 @@ td {
           >Pre-feasibility report</span
         >
       </h1>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="pb-4 list-disc ps-8">
         <li>
           <a
             href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=124:agriculture-food-processing&Itemid=308"
@@ -81,7 +81,7 @@ td {
           >Business Guides</span
         >
       </h1>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="pb-4 list-disc ps-8">
         <li>
           <a
             href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=176:agrofood&Itemid=981"
@@ -103,7 +103,7 @@ td {
       >
         Construction
       </h3>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="pb-4 list-disc ps-8">
         <li>NOC for Building Plan Approval</li>
         <li>Building Plan Approval</li>
         <li>Building Plans Approval, Controlled Area</li>
@@ -112,28 +112,28 @@ td {
           Revised / Addition / Alteration / Rebuild Building Plans Approval
         </li>
         <li>Annual Commercialization Renewal</li>
-        <li>Approval of conversion of land use</li>
-        <li>Conversion of land use</li>
+        <li>Approval of Conversion of Land Use</li>
+        <li>Conversion of Land Use</li>
         <li>
-          L-42-B License (Possession of rectified spirit for educational,
-          scientific purpose)
+          L-42-B License (Possession of Rectified Spirit for Educational,
+          Scientific Purpose)
         </li>
         <li>
-          L-42-B License (Possession of rectified spirit for industrial purpose)
+          L-42-B License (Possession of Rectified Spirit for Industrial Purpose)
         </li>
         <li>Land Use - Permissible Commercial</li>
         <li>Land use- Permitted Commercial (List A Roads)</li>
-        <li>Plot Sub division Approval</li>
-        <li>NOC for right of way</li>
+        <li>Plot Sub Division Approval</li>
+        <li>NOC for Right of Way</li>
       </ul>
       <h3
         class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
       >
         PHA
       </h3>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="pb-4 list-disc ps-8">
         <li>NOC for Installation of Billboards</li>
-        <li>NOC for installation of streamers</li>
+        <li>NOC for Installation of Streamers</li>
       </ul>
       <h3
         class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
@@ -141,65 +141,65 @@ td {
         Industry Department
       </h3>
       <ul class="pb-4 list-disc ps-8">
-        <li>Registration of boilers</li>
-        <li>Registration of pressure vessels</li>
-        <li>Verification of weighing/measuring instruments</li>
+        <li>Registration of Boilers</li>
+        <li>Registration of Pressure Vessels</li>
+        <li>Verification of Weighing/Measuring Instruments</li>
       </ul>
       <h3
         class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
       >
         Irrigation
       </h3>
-      <ul class="pb-4 list-disc ps-8 capitalize">
-        <li>Agreement for usage of irrigation water for industrial purposes</li>
+      <ul class="pb-4 list-disc ps-8">
+        <li>Agreement for Usage of Irrigation Water for Industrial Purposes</li>
         <li>
-          NOC form Irrigation Department that site is not prone to flooding
+          NOC form Irrigation Department that Site is Not Prone to Flooding
         </li>
-        <li>Permission of new tube well/ ejector pump</li>
-        <li>Water connection</li>
+        <li>Permission of New Tube Well/ Ejector Pump</li>
+        <li>Water Connection</li>
       </ul>
       <h3
         class="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
       >
         Others
       </h3>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="pb-4 list-disc ps-8">
         <li>Halal Certificate</li>
         <li>
-          License to Food Business Operator working food products in any area
-          but selling products within jurisdiction of Punjab Food Authority
+          License to Food Business Operator Working Food Products in Any Area
+          But Selling Products within Jurisdiction of Punjab Food Authority
         </li>
         <li>Certificate Food Product Registration</li>
-        <li>Label approval</li>
-        <li>Transit Permit to carry wood/forest produce</li>
-        <li>Leasing of fishing rights</li>
+        <li>Label Approval</li>
+        <li>Transit Permit to Carry Wood/Forest Produce</li>
+        <li>Leasing of Fishing Rights</li>
         <li>License for FAT Rendering Unit</li>
-        <li>Food grain license</li>
-        <li>Flour mills registration/wheat quota Enlistment</li>
+        <li>Food Grain License</li>
+        <li>Flour Mills Registration/Wheat Quota Enlistment</li>
         <li>Distribution & Sale of Pesticide</li>
         <li>Distribution and Sale Fertilizer</li>
-        <li>License for sugar Broker</li>
+        <li>License for Sugar Broker</li>
         <li>License for Purchasing Agent</li>
-        <li>Registration of market functionaries</li>
+        <li>Registration of Market Functionaries</li>
         <li>Registration of Market Workers</li>
         <li>
-          Installation License for cotton ginning, pressing and seed oil factory
+          Installation License for Cotton Ginning, Pressing and Seed Oil Factory
         </li>
         <li>
-          Working License for cotton ginning, pressing and seed oil factory
+          Working License for Cotton Ginning, Pressing and Seed Oil Factory
         </li>
-        <li>Crop variety testing and approval</li>
-        <li>Crop variety registration</li>
-        <li>Registration of seed and person</li>
-        <li>Conformity Assessment of product</li>
+        <li>Crop Variety Testing and Approval</li>
+        <li>Crop Variety Registration</li>
+        <li>Registration of Seed and Person</li>
+        <li>Conformity Assessment of Product</li>
 
         <li>License for Installation of New Distillery Plant.</li>
         <li>NOC for Effluent Disposal</li>
-        <li>Verification of test reports of L.T Installation</li>
+        <li>Verification of Test Reports of L.T Installation</li>
         <li>NOC of H.T Installations</li>
-        <li>Recommendations for import approval</li>
+        <li>Recommendations for Import Approval</li>
         <li>Completion Certificate</li>
-        <li>Confirmation of compliance</li>
+        <li>Confirmation of Compliance</li>
       </ul>
     </div>
   </section>

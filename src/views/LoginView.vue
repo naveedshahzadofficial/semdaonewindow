@@ -123,7 +123,7 @@ async function onSubmit(values) {
         </div>
       </div>
       <div
-        class="hidden md:flex flex-col items-center justify-center mx-6 bg-[url('@/assets/images/login-bg.jpg')] bg-cover bg-no-repeat rounded-2xl"
+        class="hidden md:flex flex-col items-center justify-center ml-6 mr-2 bg-[url('@/assets/images/login-bg.jpg')] bg-cover bg-no-repeat rounded-2xl"
       ></div>
     </div>
   </div>
