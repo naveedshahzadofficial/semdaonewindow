@@ -9,7 +9,6 @@ const infoContent = ref(null);
 const selectProvince = ref("");
 onMounted(() => {
   window.scrollTo(0, 0);
-  emit("background", require("@/assets/images/bg-dashboard.jpg"));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
     { title: "Start", link: "" },
@@ -134,10 +133,8 @@ watch(selectProvince, () => {
 </style>
 <template>
   <section class="px-4 py-8">
-    <div class="-ms-6">
-      <h1
-        class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]"
-      >
+    <div class="-mx-6">
+      <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]">
         <span class="text-white font-semibold ml-8">Start Your Business</span>
       </h1>
     </div>
@@ -147,11 +144,9 @@ watch(selectProvince, () => {
 
     <div class="px-8 pt-4 min-h-fit">
       <!-- Start: Tiles -->
-      <div
-        class="flex flex-col items-center justify-center space-y-4 mt-6 mb-16 md:flex-row md:space-y-0 md:space-x-8 md:my-8"
-      >
+      <div class="flex flex-col items-center justify-center space-y-4 mt-6 mb-16 md:flex-row md:space-y-0 md:space-x-8 md:my-8">
         <div
-          class="h-[439px] w-[296px] bg-[url('@/assets/images/sole-bg.png')] bg-cover bg-no-repeat rounded relative gap-3 cursor-pointer"
+          class="h-[270px] w-[250px] bg-[#B47EED] rounded-3xl relative gap-3 cursor-pointer"
         >
           <img
             @click.prevent="findInfoContent(1)"
@@ -160,21 +155,38 @@ watch(selectProvince, () => {
             alt="Sole Proprietorship"
           />
           <a
-            href="https://www.fbr.gov.pk/"
+            href="https://www.fbr.gov.pk/categ/register-income-tax/51147/30846/61149"
             target="_blank"
             class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
-            <div class="mt-52">
-              <h2
-                class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
-              >
-                Sole Proprietorship
-              </h2>
-            </div>
+            <span class="relative">
+              <img
+                class="object-cover transition-opacity"
+                src="@/assets/images/sole-proprietorship.png"
+                alt="Sole Proprietorship"
+              />
+              <img
+                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                src="@/assets/images/sole-proprietorship-hover.png"
+                alt="Sole Proprietorship"
+              />
+            </span>
+
+            <h2
+              class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
+            >
+              Sole Proprietorship
+            </h2>
+
+            <img
+              class="absolute -bottom-2 -right-3 opacity-20 object-cover"
+              src="@/assets/images/sole-proprietorship-opacity.png"
+              alt="Sole Proprietorship"
+            />
           </a>
         </div>
         <div
-          class="h-[439px] w-[296px] bg-[url('@/assets/images/association-bg.png')] bg-cover bg-no-repeat rounded relative gap-3 cursor-pointer"
+          class="h-[270px] w-[250px] bg-[#2FBBA1] rounded-3xl relative gap-3 cursor-pointer"
         >
           <img
             @click.prevent="findInfoContent(2)"
@@ -186,19 +198,35 @@ watch(selectProvince, () => {
             @click.prevent="isOpen = true"
             class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
-            <div class="mt-52">
-              <h2
-                class="font-medium text-center text-primary-dark text-lg group-hover:text-white break-words px-2"
-              >
-                Association of Persons
-              </h2>
-            </div>
+            <span class="relative">
+              <img
+                class="object-cover transition-opacity"
+                src="@/assets/images/association-of-persons.png"
+                alt="Association of Persons"
+              />
+              <img
+                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                src="@/assets/images/association-of-persons-hover.png"
+                alt="Association of Persons"
+              />
+            </span>
+
+            <h2
+              class="font-medium text-center text-primary-dark text-lg group-hover:text-white break-words px-2"
+            >
+              Association of Persons
+            </h2>
+
+            <img
+              class="absolute -bottom-1 -right-4 opacity-20 object-cover"
+              src="@/assets/images/association-of-persons-opacity.png"
+              alt="Association of Persons"
+            />
           </div>
         </div>
-        <div
-          href="https://eservices.secp.gov.pk/eServices/"
-          target="_blank"
-          class="h-[439px] w-[296px] bg-[url('@/assets/images/company-bg.png')] bg-cover bg-no-repeat rounded relative gap-3 cursor-pointer"
+        <RouterLink
+            :to="{ name: 'company' }"
+            class="h-[270px] w-[250px] bg-[#FA8365] rounded-3xl relative gap-3 cursor-pointer"
         >
           <img
             @click.prevent="findInfoContent(3)"
@@ -206,20 +234,36 @@ watch(selectProvince, () => {
             src="@/assets/images/info-icon.png"
             alt="Company"
           />
-          <a
-            href="https://eservices.secp.gov.pk/eServices/"
-            target="_blank"
+          <RouterLink
+              :to="{ name: 'company' }"
             class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
-            <div class="mt-52">
+            <span class="relative">
+              <img
+                  class="object-cover transition-opacity"
+                  src="@/assets/images/company.png"
+                  alt="Company"
+              />
+              <img
+                  class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  src="@/assets/images/company-hover.png"
+                  alt="Company"
+              />
+            </span>
+            <div class="">
               <h2
                 class="font-medium text-center text-primary-dark text-xl group-hover:text-white break-words px-2"
               >
                 Company
               </h2>
+              <img
+                  class="absolute -bottom-1 -right-4 opacity-20 object-cover"
+                  src="@/assets/images/company-opacity.png"
+                  alt="Company"
+              />
             </div>
-          </a>
-        </div>
+          </RouterLink>
+        </RouterLink>
       </div>
       <!-- End: Tiles -->
     </div>

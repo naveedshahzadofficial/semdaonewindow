@@ -122,6 +122,12 @@ const routes = [
         meta: { title: "Complaints Feedback" },
         component: () => import("@/views/ComplaintsFeedbackView.vue"),
       },
+      {
+        path: "/app/company",
+        name: "company",
+        meta: { title: "Company" },
+        component: () => import("@/views/CompanyView.vue"),
+      },
     ],
   },
   // catch all redirect to home page

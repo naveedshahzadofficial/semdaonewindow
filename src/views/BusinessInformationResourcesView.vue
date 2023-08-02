@@ -7,7 +7,7 @@ onMounted(() => {
   emit("background", require("@/assets/images/bg-dashboard.jpg"));
   emit("breadcrumbs", [
     { title: "Home", link: "dashboard" },
-    { title: "Grow", link: "grow" },
+    { title: "Plan", link: "plan" },
     { title: "Business Information Resources", link: "" },
   ]);
 });
