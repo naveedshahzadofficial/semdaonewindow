@@ -10,7 +10,7 @@ const selectProvince = ref("");
 onMounted(() => {
   window.scrollTo(0, 0);
   emit("breadcrumbs", [
-    { title: "Home", link: "home", is_external: true },
+    { title: "Home", link: "https://upgrade.smeda.org/", is_external: true },
     { title: "Start", link: "" },
   ]);
 });
@@ -134,7 +134,9 @@ watch(selectProvince, () => {
 <template>
   <section class="px-4 py-8">
     <div class="-mx-6">
-      <h1 class="flex items-center space-x-2  bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]">
+      <h1
+        class="flex items-center space-x-2 bg-[url('@/assets/images/Patti.png')] bg-cover bg-no-repeat w-[250px]"
+      >
         <span class="text-white font-semibold ml-8">Start Your Business</span>
       </h1>
     </div>
@@ -144,7 +146,9 @@ watch(selectProvince, () => {
 
     <div class="px-8 pt-4 min-h-fit">
       <!-- Start: Tiles -->
-      <div class="flex flex-col items-center justify-center space-y-4 mt-6 mb-16 md:flex-row md:space-y-0 md:space-x-8 md:my-8">
+      <div
+        class="flex flex-col items-center justify-center space-y-4 mt-6 mb-16 md:flex-row md:space-y-0 md:space-x-8 md:my-8"
+      >
         <div
           class="h-[270px] w-[250px] bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 rounded-3xl relative gap-3 cursor-pointer"
         >
@@ -225,8 +229,8 @@ watch(selectProvince, () => {
           </div>
         </div>
         <RouterLink
-            :to="{ name: 'company' }"
-            class="h-[270px] w-[250px] bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 rounded-3xl relative gap-3 cursor-pointer"
+          :to="{ name: 'company' }"
+          class="h-[270px] w-[250px] bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 rounded-3xl relative gap-3 cursor-pointer"
         >
           <img
             @click.prevent="findInfoContent(3)"
@@ -235,19 +239,19 @@ watch(selectProvince, () => {
             alt="Company"
           />
           <RouterLink
-              :to="{ name: 'company' }"
+            :to="{ name: 'company' }"
             class="group h-full w-full flex flex-col items-center justify-center rounded-3xl relative gap-3 cursor-pointer overflow-hidden"
           >
             <span class="relative">
               <img
-                  class="object-cover transition-opacity"
-                  src="@/assets/images/company.png"
-                  alt="Company"
+                class="object-cover transition-opacity"
+                src="@/assets/images/company.png"
+                alt="Company"
               />
               <img
-                  class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  src="@/assets/images/company-hover.png"
-                  alt="Company"
+                class="object-cover absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                src="@/assets/images/company-hover.png"
+                alt="Company"
               />
             </span>
             <div class="">
@@ -257,9 +261,9 @@ watch(selectProvince, () => {
                 Company
               </h2>
               <img
-                  class="absolute -bottom-1 -right-4 opacity-20 object-cover"
-                  src="@/assets/images/company-opacity.png"
-                  alt="Company"
+                class="absolute -bottom-1 -right-4 opacity-20 object-cover"
+                src="@/assets/images/company-opacity.png"
+                alt="Company"
               />
             </div>
           </RouterLink>
