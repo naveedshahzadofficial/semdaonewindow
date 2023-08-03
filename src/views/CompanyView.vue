@@ -102,9 +102,8 @@ of reference you may visit Companies (incorporation) regulations, 2017 available
       <span class="font-normal mt-4 mb-4"> Stepwise procedure for online submission of application is as follows:-</span>
       <ul class="pb-4 list-none ps-8 normal-case">
         <li>
-          <h1 class="flex  my-4 py-2 abc w-[230px]">
-            <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-            <span class="text-primary-dark font-semibold pl-2">USER Registration</span>
+          <h1 class="flex  my-4 py-2">
+            <span class="text-primary-dark font-semibold">USER Registration</span>
           </h1>
           <span class="font-normal">Before processing online application for seeking name availability and incorporation, Personal
     Identification Number (PIN) is required to be obtained for registration of user through following
@@ -126,9 +125,8 @@ of reference you may visit Companies (incorporation) regulations, 2017 available
     separate User ID and password in the same manner for digitally signing the incorporation form. </span>
         </li>
         <li>
-          <h1 class="flex items-center my-4 py-2 abc w-[230px]">
-            <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-            <span class="text-primary-dark font-semibold pl-2">Login to eServices</span>
+          <h1 class="flex  my-4 py-2">
+            <span class="text-primary-dark font-semibold">Login to eServices</span>
           </h1>
           <ul class="pb-4 list-disc ps-8 normal-case">
             <li>After obtaining PIN, Click
@@ -155,9 +153,8 @@ of reference you may visit Companies (incorporation) regulations, 2017 available
       </h1>
       <ul class="pb-4 list-none ps-8 normal-case">
         <li>
-          <h1 class="flex items-center my-4 py-2 abc w-[360px]">
-            <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-            <span class="text-primary-dark font-semibold pl-2">1. Application and fee payment details:</span>
+          <h1 class="flex my-4 py-2">
+            <span class="text-primary-dark font-semibold">1. Application and fee payment details:</span>
           </h1>
           <span class="font-normal">For name reservation or name reservation and incorporation (combined), in data input
 page, provide three proposed names of company, its significance along with company kind
@@ -182,17 +179,15 @@ of MCB Bank Limited or United Bank Limited.
           </span>
         </li>
         <li>
-          <h1 class="flex my-4 py-2 abc w-[250px]">
-            <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-            <span class="text-primary-dark font-semibold pl-2">2. Company information:</span>
+          <h1 class="flex my-4 py-2">
+            <span class="text-primary-dark font-semibold">2. Company information:</span>
           </h1>
           <span class="">In this section enter company information such as registered office/correspondence
 address, telephone number, email address and principal line of business.</span>
         </li>
         <li>
-          <h1 class="flex items-center my-4 py-2 abc w-[300px]">
-            <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-            <span class="text-primary-dark font-semibold pl-2">3. Authorized & Paid up Capital:</span>
+          <h1 class="flex my-4 py-2">
+            <span class="text-primary-dark font-semibold">3. Authorized & Paid up Capital:</span>
           </h1>
           <span class="">Authorized capital means such capital as is authorized by the memorandum of the company to be
 the maximum amount of share capital of the company. A company cannot raise more capital than
@@ -202,9 +197,8 @@ Paid up capital means an amount of capital which is actually taken up by the mem
 subscribers of the company. </span>
         </li>
         <li>
-          <h1 class="flex items-center my-4 py-2 abc w-[420px]">
-            <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-            <span class="text-primary-dark font-semibold pl-2">4. Subscriber / Director/ chief executive details:</span>
+          <h1 class="flex my-4 py-2">
+            <span class="text-primary-dark font-semibold">4. Subscriber / Director/ chief executive details:</span>
           </h1>
           <span class="font-normal">Enter the particulars of subscribers, directors, chief executive in this section, to create and
 remove rows in the data entry form “add” and “remove” buttons have been provided in the
@@ -212,41 +206,36 @@ system.
  </span>
         </li>
         <li>
-          <h1 class="flex items-center my-4 py-2 abc w-[280px]">
-            <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-            <span class="text-primary-dark font-semibold pl-2">5. Applicant/ Declarant Details:</span>
+          <h1 class="flex my-4 py-2">
+            <span class="text-primary-dark font-semibold">5. Applicant/ Declarant Details:</span>
           </h1>
           <span class="font-normal">In this section enter name, address, telephone number, email address, CNIC/passport
 number of signatory.</span>
         </li>
         <li>
-          <h1 class="flex items-center my-4 py-2 abc w-[240px]">
-            <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-            <span class="text-primary-dark font-semibold pl-2">6. Press Continue Button:</span>
+          <h1 class="flex my-4 py-2">
+            <span class="text-primary-dark font-semibold">6. Press Continue Button:</span>
           </h1>
           <span class="">After entering the data provided at serial number (i) to (vi) above and by pressing continue
 button, process document listing page will be displayed containing the following
 hyperlinks:</span>
           <ul class="pb-4 list-none ps-8 normal-case">
             <li>
-              <h1 class="flex items-center my-4 py-2 abc w-[230px]">
-                <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                <span class="text-primary-dark font-semibold pl-2">a. <span class="">Update Form(s) Data:</span></span>
+              <h1 class="flex my-4 py-2">
+                <span class="text-primary-dark font-semibold">a. <span class="">Update Form(s) Data:</span></span>
               </h1>
               <span>Applicant can edit/update the already entered data by clicking this link.</span>
             </li>
             <li>
-              <h1 class="flex items-center my-4 py-2 abc w-[180px]">
-                <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                <span class="text-primary-dark font-semibold pl-2">b. <span class="">View Forms:</span></span>
+              <h1 class="flex my-4 py-2">
+                <span class="text-primary-dark font-semibold">b. <span class="">View Forms:</span></span>
               </h1>
               <span>Applicant can review the form generated automatically by using this link. It is pertinent
 to mention that this page is not editable and only available for review. </span>
             </li>
             <li>
-              <h1 class="flex items-center my-4 py-2 abc w-[280px]">
-                <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                <span class="text-primary-dark font-semibold pl-2">c. <span class="">Information for Third Parties:</span></span>
+              <h1 class="flex my-4 py-2">
+                <span class="text-primary-dark font-semibold">c. <span class="">Information for Third Parties:</span></span>
               </h1>
               <span>It is a mandatory requirement to provide officer additional information such as name of
 subscriber/director, personal address, country etc. by clicking this link for generation of
@@ -259,9 +248,8 @@ incorporation application.
  </span>
             </li>
             <li>
-              <h1 class="flex items-center my-4 py-2 abc w-[410px]">
-                <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                <span class="text-primary-dark font-semibold pl-2">d. <span class="">Fill New Attachment and incorporation Form:</span></span>
+              <h1 class="flex my-4 py-2">
+                <span class="text-primary-dark font-semibold">d. <span class="">Fill New Attachment and incorporation Form:</span></span>
               </h1>
               <span>By clicking this link, applicant can attach the documents in PDF format such as copy
 of CNIC, name availability letter, etc. (in case of combined incorporation process,
@@ -269,9 +257,8 @@ separate attachment of name availability letter is not required).
  </span>
             </li>
             <li>
-              <h1 class="flex items-center my-4 py-2 abc w-[450px]">
-                <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                <span class="text-primary-dark font-semibold pl-2">e. <span class="">Fill New Attachment Form Articles of Association: </span></span>
+              <h1 class="flex my-4 py-2">
+                <span class="text-primary-dark font-semibold">e. <span class="">Fill New Attachment Form Articles of Association: </span></span>
               </h1>
               <span>By clicking this link, applicant can attach the Articles of Association in PDF format.
 However, if Table-A has been opted at the time of entry in the data input form,
@@ -279,9 +266,8 @@ attachment of article is not required and in case of combined process, articles 
 association is auto-generated.</span>
             </li>
             <li>
-              <h1 class="flex items-center my-4 py-2 abc w-[500px]">
-                <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                <span class="text-primary-dark font-semibold pl-2">f. <span class="">Fill New Attachment Form Memorandum of Association: </span></span>
+              <h1 class="flex my-4 py-2">
+                <span class="text-primary-dark font-semibold">f. <span class="">Fill New Attachment Form Memorandum of Association: </span></span>
               </h1>
               <span>By clicking this link, applicant can attach the Memorandum of Association in PDF
 format. In case of combined incorporation process memorandum of association is auto-generated on selection of principal line of business/sector</span>
@@ -291,9 +277,8 @@ format. In case of combined incorporation process memorandum of association is a
               </small>
             </li>
             <li>
-              <h1 class="flex items-center my-4 py-2 abc w-[220px]">
-                <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                <span class="text-primary-dark font-semibold pl-2">g. <span class="">Fill New Bank Challan:</span></span>
+              <h1 class="flex my-4 py-2">
+                <span class="text-primary-dark font-semibold">g. <span class="">Fill New Bank Challan:</span></span>
               </h1>
               <span>By clicking this link, bank challan will be displayed. Bank Challan is automatically
 populated with prescribed fee and other information by the eServices application on
@@ -303,9 +288,8 @@ challan form.
               <span class="text-primary-dark font-semibold">Please note that do not print and pay challan before submitting the process/form.</span>
             </li>
             <li>
-              <h1 class="flex items-center my-4 py-2 abc w-[220px]">
-                <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                <span class="text-primary-dark font-semibold pl-2">h. <span class="">Sign Forms using PIN:</span></span>
+              <h1 class="flex my-4 py-2">
+                <span class="text-primary-dark font-semibold">h. <span class="">Sign Forms using PIN:</span></span>
               </h1>
               <span>Forms are signed using the Personal Identification Number (PIN). Please note that
 every subscriber needs to sign the documents by logging in user ID and entering their
@@ -316,15 +300,13 @@ keep this reference number for any future correspondence, if required.
 </span>
             </li>
             <li>
-              <h1 class="flex items-center my-4 py-2 abc w-[200px]">
-                <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                <span class="text-primary-dark font-semibold pl-2">i. <span class="">Make Payment:</span></span>
+              <h1 class="flex my-4 py-2">
+                <span class="text-primary-dark font-semibold">i. <span class="">Make Payment:</span></span>
               </h1>
-              <ul class="pb-4 pt-4 list-none ps-8 normal-case">
+              <ul class="list-none ps-8 normal-case">
                 <li>
-                  <h1 class="flex items-center my-4 py-2 abc w-[250px]">
-                    <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                    <span class="text-primary-dark font-semibold pl-2">Payment through Challan:</span>
+                  <h1 class="flex my-4 py-2">
+                    <span class="text-primary-dark font-semibold">Payment through Challan:</span>
                   </h1>
                   <span>Click on Submitted Processes link. Documents submitted along with bank challan will
 be displayed. Click and open challan and then press Print. Four copies will
@@ -335,9 +317,8 @@ bank shall retain the branch and bank copies and return remaining two copies (or
 and applicant copy) to the client. </span>
                 </li>
                 <li>
-                  <h1 class="flex items-center my-4 py-2 abc w-[280px]">
-                    <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                    <span class="text-primary-dark font-semibold pl-2">Payment through Credit Card:</span>
+                  <h1 class="flex my-4 py-2">
+                    <span class="text-primary-dark font-semibold">Payment through Credit Card:</span>
                   </h1>
                   <span>
                 To facilitate investors and speed up processing time of transactions in eServices, SECP
@@ -352,9 +333,8 @@ page at <a href="https://www.secp.gov.pk/document/eservices-online-payment-guide
               </span>
                 </li>
                 <li>
-                  <h1 class="flex items-center my-4 py-2 abc w-[360px]">
-                    <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                    <span class="text-primary-dark font-semibold pl-2">Payment through 1LINK Banking Network</span>
+                  <h1 class="flex my-4 py-2">
+                    <span class="text-primary-dark font-semibold">Payment through 1LINK Banking Network</span>
                   </h1>
                   <span>In order to further facilitate the SECP has enhanced the payment option by introducing
 1link payment facility. Now fee can be paid through internet banking, mobile banking,
@@ -362,9 +342,8 @@ ATM, easy paisa using 1LINK network. The applicant has to select SECP as a bille
 after login to internet banking or after login to ATM machine. </span>
                 </li>
                 <li>
-                  <h1 class="flex items-center my-4 py-2 abc w-[450px]">
-                    <img src="@/assets/images/heading-line.png" class="h-[25px]" >
-                    <span class="text-primary-dark font-semibold pl-2">Payment through MCB Online Fund Transfer Facility</span>
+                  <h1 class="flex my-4 py-2">
+                    <span class="text-primary-dark font-semibold">Payment through MCB Online Fund Transfer Facility</span>
                   </h1>
                   <span>The SECP has also arranged with MCB Bank Limited an “On-line Fund Transfer
 (OFT)” facility to pay SECP fee directly into SECP’s bank account in MCB through

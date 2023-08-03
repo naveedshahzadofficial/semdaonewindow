@@ -43,13 +43,13 @@ td {
 
     <div class="px-8 py-8 min-h-[500px]">
       <h1
-        class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]"
+        class="hidden flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]"
       >
         <span class="text-primary-dark font-semibold ml-4"
           >Pre-Feasibility Reports</span
         >
       </h1>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="hidden pb-4 list-disc ps-8">
         <li>
           <a
             href="https://smeda.org/phocadownload/Prefeasibility_Studies/Engineering_and_Manufacturing/Motorcycle%20Chain%20Manufacturing%20Unit%20Rs.%20247.13%20million%20Jan-2023.pdf"

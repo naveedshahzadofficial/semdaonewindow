@@ -45,11 +45,11 @@ td {
 
     <div class="px-8 py-8 min-h-[500px]">
       <h1
-        class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]"
+        class="hidden flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]"
       >
         <span class="text-primary-dark font-semibold ml-4">Sector Briefs</span>
       </h1>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="hidden pb-4 list-disc ps-8 capitalize">
         <li>
           <a
             href="https://smeda.org/phocadownload/Sectoral_Information/Pharmaceutical%20Sector%202022.pdf"
@@ -59,13 +59,13 @@ td {
         </li>
       </ul>
       <h1
-        class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[300px] md:w-[360px] h-[37px]"
+        class="hidden flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[300px] md:w-[360px] h-[37px]"
       >
         <span class="text-primary-dark font-semibold ml-4 text-xs md:text-base"
           >Pharmaceutical Pre-Feasibility Reports</span
         >
       </h1>
-      <ul class="pb-4 list-disc ps-8 capitalize">
+      <ul class="hidden pb-4 list-disc ps-8 capitalize">
         <li>
           <a
             href="https://smeda.org/phocadownload/Prefeasibility_Studies/Health_and_Medical/Medical%20Store%20Rs.%205.95%20million%20Oct-2021.pdf"

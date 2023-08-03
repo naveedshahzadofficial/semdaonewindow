@@ -43,11 +43,11 @@ td {
 
     <div class="px-8 py-8 min-h-[500px]">
       <h1
-        class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]"
+        class="hidden flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]"
       >
         <span class="text-primary-dark font-semibold ml-4">Sector Briefs</span>
       </h1>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="hidden pb-4 list-disc ps-8">
         <li>
           <a
             href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=36:horticultureaagriculture&Itemid=139"
@@ -58,13 +58,13 @@ td {
         </li>
       </ul>
       <h1
-        class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]"
+        class="hidden flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]"
       >
         <span class="text-primary-dark font-semibold ml-4"
           >Pre-feasibility report</span
         >
       </h1>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="hidden pb-4 list-disc ps-8">
         <li>
           <a
             href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=124:agriculture-food-processing&Itemid=308"
@@ -75,13 +75,13 @@ td {
         </li>
       </ul>
       <h1
-        class="flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]"
+        class="hidden flex items-center my-4 py-2 px-2 bg-[url('@/assets/images/Patti-Subheading.png')] bg-cover bg-no-repeat w-[250px] h-[27px]"
       >
         <span class="text-primary-dark font-semibold ml-4"
           >Business Guides</span
         >
       </h1>
-      <ul class="pb-4 list-disc ps-8">
+      <ul class="hidden pb-4 list-disc ps-8">
         <li>
           <a
             href="https://smeda.org/index.php?option=com_phocadownload&view=category&id=176:agrofood&Itemid=981"
