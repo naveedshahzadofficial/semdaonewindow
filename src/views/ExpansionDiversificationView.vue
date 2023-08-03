@@ -40,7 +40,7 @@ onMounted(() => {
             icon: require('@/assets/images/cutlery.png'),
             icon_hover: require('@/assets/images/cutlery-hover.png'),
             icon_side: require('@/assets/images/cutlery-opacity.png'),
-            classes: 'bg-orange-400',
+            classes: 'bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50',
             link: 'cutlery',
           }"
         />
@@ -51,7 +51,7 @@ onMounted(() => {
             icon: require('@/assets/images/pharmaceuticals.png'),
             icon_hover: require('@/assets/images/pharmaceuticals-hover.png'),
             icon_side: require('@/assets/images/pharmaceuticals-opacity.png'),
-            classes: 'bg-blue-400',
+            classes: 'bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50',
             link: 'pharmaceuticals',
           }"
         />
@@ -62,7 +62,7 @@ onMounted(() => {
             icon: require('@/assets/images/agrofood.png'),
             icon_hover: require('@/assets/images/agrofood-hover.png'),
             icon_side: require('@/assets/images/agrofood-opacity.png'),
-            classes: 'bg-red-400',
+            classes: 'bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50',
             link: 'agro-food',
           }"
         />
@@ -73,7 +73,7 @@ onMounted(() => {
             icon: require('@/assets/images/autoparts.png'),
             icon_hover: require('@/assets/images/autoparts-hover.png'),
             icon_side: require('@/assets/images/autoparts-opacity.png'),
-            classes: 'bg-slate-400',
+            classes: 'bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50',
             link: 'auto-parts',
           }"
         />

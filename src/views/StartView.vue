@@ -146,7 +146,7 @@ watch(selectProvince, () => {
       <!-- Start: Tiles -->
       <div class="flex flex-col items-center justify-center space-y-4 mt-6 mb-16 md:flex-row md:space-y-0 md:space-x-8 md:my-8">
         <div
-          class="h-[270px] w-[250px] bg-[#B47EED] rounded-3xl relative gap-3 cursor-pointer"
+          class="h-[270px] w-[250px] bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 rounded-3xl relative gap-3 cursor-pointer"
         >
           <img
             @click.prevent="findInfoContent(1)"
@@ -186,7 +186,7 @@ watch(selectProvince, () => {
           </a>
         </div>
         <div
-          class="h-[270px] w-[250px] bg-[#2FBBA1] rounded-3xl relative gap-3 cursor-pointer"
+          class="h-[270px] w-[250px] bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 rounded-3xl relative gap-3 cursor-pointer"
         >
           <img
             @click.prevent="findInfoContent(2)"
@@ -226,7 +226,7 @@ watch(selectProvince, () => {
         </div>
         <RouterLink
             :to="{ name: 'company' }"
-            class="h-[270px] w-[250px] bg-[#FA8365] rounded-3xl relative gap-3 cursor-pointer"
+            class="h-[270px] w-[250px] bg-gradient-to-tr from-blue-500 to-green-300 bg-opacity-50 rounded-3xl relative gap-3 cursor-pointer"
         >
           <img
             @click.prevent="findInfoContent(3)"
