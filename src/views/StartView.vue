@@ -10,7 +10,7 @@ const selectProvince = ref("");
 onMounted(() => {
   window.scrollTo(0, 0);
   emit("breadcrumbs", [
-    { title: "Home", link: "dashboard" },
+    { title: "Home", link: "home", is_external: true },
     { title: "Start", link: "" },
   ]);
 });

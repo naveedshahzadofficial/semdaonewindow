@@ -128,6 +128,10 @@ const routes = [
         meta: { title: "Company" },
         component: () => import("@/views/CompanyView.vue"),
       },
+      {
+        path: "https://upgrade.smeda.org/",
+        name: "home",
+      },
     ],
   },
   // catch all redirect to home page

@@ -19,7 +19,15 @@ defineProps({
           v-if="breadcrumb.link"
           class="cursor-pointer text-primary-dark font-normal md:font-semibold hover:text-primary-light text-xs md:text-sm"
         >
-          <RouterLink :to="{ name: breadcrumb.link }">
+          <a
+              :href="breadcrumbs.link"
+              v-if="breadcrumb?.is_external"
+          >{{ breadcrumb.title }}</a
+          >
+          <RouterLink
+              v-else
+              :to="{ name: breadcrumb.link }"
+          >
             {{ breadcrumb.title }}
           </RouterLink>
         </li>
